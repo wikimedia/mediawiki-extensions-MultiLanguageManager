@@ -1,0 +1,82 @@
+{
+	"name": "MultiLanguageManager",
+	"version": "1.29",
+	"author": [
+		"Robert Vogel <vogel@hallowel.com>",
+		"Patric Wirth <wirth.hallowelt.com>",
+		"Marc Despland"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:MultiLanguageManager",
+	"descriptionmsg": "mlm-desc",
+	"license-name": "GPL-2.0",
+	"type": "other",
+	"MessagesDirs": {
+		"MultiLanguageManager": [
+			"i18n"
+		]
+	},
+	"ConfigRegistry": {
+		"mlm": "MultiLanguageManager\\Setup::makeConfig"
+	},
+	"ExtensionFunctions": [
+		"MultiLanguageManager\\Setup::init"
+	],
+	"GroupPermissions": {
+		"*": {
+			"language": false
+		},
+		"user": {
+			"language": true
+		},
+		"sysop": {
+			"language": true
+		}
+	},
+	"Hooks": {
+		"UnitTestsList": "MultiLanguageManager\\Setup::onUnitTestsList",
+		"LoadExtensionSchemaUpdates": "MultiLanguageManager\\Setup::onLoadExtensionSchemaUpdates",
+		"BeforePageDisplay": "MultiLanguageManager\\Setup::onBeforePageDisplay",
+		"SkinTemplateNavigation::Universal": "MultiLanguageManager\\Setup::onSkinTemplateNavigation_Universal",
+		"ArticleDelete": "MultiLanguageManager\\Setup::onArticleDelete",
+		"SkinBuildSidebar": "MultiLanguageManager\\Setup::onSkinBuildSidebar",
+		"UserGetLanguageObject": "MultiLanguageManager\\Setup::onUserGetLanguageObject"
+	},
+	"SpecialPages": {
+		"MultiLanguageManager": "MultiLanguageManager\\Specials\\MultiLanguageManager"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "MultiLanguageManager/resources"
+	},
+	"ResourceModules": {
+		"ext.mlm.styles": {
+			"styles": [
+				"ext.mlm.less"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "MultiLanguageManager/resources"
+	},
+	"config_prefix": "mg",
+	"config": {
+		"AvailableLanguages": {
+			"value": [ "en", "cn", "fr", "it", "nl", "de" ]
+		},
+		"Permission": {
+			"value": "language"
+		},
+		"LanguageTableName": {
+			"value": "page_language"
+		},
+		"TranslationTableName": {
+			"value": "page_translation"
+		},
+		"SpecialPageName": {
+			"value": "MultiLanguageManager"
+		}
+	},
+	"load_composer_autoloader" : true,
+	"manifest_version": 2
+}

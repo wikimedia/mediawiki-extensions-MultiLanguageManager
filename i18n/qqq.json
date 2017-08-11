@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Patric Wirth <wirth@hallowelt.com>"
+		]
+	},
+	"multilanguagemanager": "Title of the special page",
+	"mlm-desc": "Description of MultiLanguageManager extension.",
+	"mlm-error-title-invalid": "Error message in case that a invalid title was provided",
+	"mlm-error-title-notexists": "Error message in case that a provided title does not exist",
+	"mlm-error-title-istalkpage": "Error message in case that a provided title is a talk page",
+	"mlm-error-title-nsnotallowed": "Error message in case that a provided title is in a namespace that has no translation enabled",
+	"mlm-error-title-isalreadytranslation": "Error message in case that a title already has a translation",
+	"mlm-error-title-isalreadysource": "Error message in case that a title is already declared to be the source of a translation",
+	"mlm-error-title-isnottranslation": "Error message in case that a title is no translation page",
+	"mlm-error-lang-invalid": "Error message in case that a invalis language code was provided",
+	"mlm-error-lang-notallowed": "Error message in case that a specific language code is not allowed by configuration",
+	"mlm-error-lang-alreadytraslated": "Error message in case that there is already a translation for a specific language code\n*Paramter $1 - The language code",
+	"mlm-input-label-sourcetitle": "Label for a textfield that allows specification of the source title",
+	"mlm-input-label-translationtitles": "Label of a section that lists translations of an article.\n*Paramter $1 - Number of available translations",
+	"mlm-input-label-save": "Label for a save button",
+	"mlm-input-label-delete": "Label for a delete button",
+	"mlm-contentaction-label": "Lable of a content action link that opens Special:MultiLanguageManager"
+}

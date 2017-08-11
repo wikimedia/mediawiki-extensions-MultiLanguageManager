@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Patric Wirth <wirth@hallowelt.com>"
+		]
+	},
+	"multilanguagemanager": "Multi language manager",
+	"mlm-desc": "Mediawiki extension to manage multi language in one MediaWiki.",
+	"mlm-error-title-invalid": "Invalid page name",
+	"mlm-error-title-notexists": "Page does not exist",
+	"mlm-error-title-istalkpage": "Talk pages can not be translated",
+	"mlm-error-title-nsnotallowed": "Invalid namespace for translation",
+	"mlm-error-title-isalreadytranslation": "Page is already a translation",
+	"mlm-error-title-isalreadysource": "Page is already a source",
+	"mlm-error-title-isnottranslation": "Page is not a translation",
+	"mlm-error-lang-invalid": "Invalid language",
+	"mlm-error-lang-notallowed": "Language is not allowed for translation",
+	"mlm-error-lang-alreadytraslated": "There is already a translation for language '$1'",
+	"mlm-input-label-sourcetitle": "Source page",
+	"mlm-input-label-translationtitles": "Translation {{plural:$1|page|pages}}",
+	"mlm-input-label-save": "Save",
+	"mlm-input-label-delete": "Delete",
+	"mlm-contentaction-label": "Manage translations"
+}
