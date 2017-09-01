@@ -55,10 +55,6 @@
 			]
 		}
 	},
-	"ResourceFileModulePaths": {
-		"localBasePath": "resources",
-		"remoteExtPath": "MultiLanguageManager/resources"
-	},
 	"config_prefix": "mg",
 	"config": {
 		"AvailableLanguages": {
