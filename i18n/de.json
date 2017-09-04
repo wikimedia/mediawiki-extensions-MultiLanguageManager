@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Metalhead64"
+		]
+	},
+	"multilanguagemanager": "Verwaltung mehrerer Sprachen",
+	"mlm-desc": "Ermöglicht die Verwaltung mehrerer Sprachen in einem Wiki",
+	"mlm-error-title-invalid": "Ungültiger Seitenname",
+	"mlm-error-title-notexists": "Die Seite ist nicht vorhanden",
+	"mlm-error-title-istalkpage": "Diskussionsseiten können nicht übersetzt werden.",
+	"mlm-error-title-nsnotallowed": "Ungültiger Namensraum zur Übersetzung",
+	"mlm-error-title-isalreadytranslation": "Die Seite ist bereits eine Übersetzung",
+	"mlm-error-title-isalreadysource": "Die Seite ist bereits eine Quelle",
+	"mlm-error-title-isnottranslation": "Die Seite ist keine Übersetzung",
+	"mlm-error-lang-invalid": "Ungültige Sprache",
+	"mlm-error-lang-notallowed": "Die Sprache wurde nicht zur Übersetzung freigegeben.",
+	"mlm-error-lang-alreadytraslated": "Es gibt bereits eine Übersetzung für die Sprache „$1“",
+	"mlm-input-label-sourcetitle": "Quellseite",
+	"mlm-input-label-translationtitles": "{{PLURAL:$1|Übersetzungsseite|Übersetzungsseiten}}",
+	"mlm-input-label-save": "Speichern",
+	"mlm-input-label-delete": "Löschen",
+	"mlm-contentaction-label": "Übersetzungen verwalten"
+}

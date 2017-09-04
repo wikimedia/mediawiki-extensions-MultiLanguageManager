@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226"
+		]
+	},
+	"multilanguagemanager": "多语言管理器",
+	"mlm-desc": "管理一个MediaWiki网站中多种语言的Mediawiki扩展。",
+	"mlm-error-title-invalid": "无效的页面名称",
+	"mlm-error-title-notexists": "页面不存在",
+	"mlm-error-title-istalkpage": "讨论页不能翻译",
+	"mlm-error-title-nsnotallowed": "用于翻译的名字空间无效",
+	"mlm-error-title-isalreadytranslation": "页面已经是翻译",
+	"mlm-error-title-isalreadysource": "页面已经是来源",
+	"mlm-error-title-isnottranslation": "页面并非翻译",
+	"mlm-error-lang-invalid": "无效语言",
+	"mlm-error-lang-notallowed": "语言不允许用于翻译",
+	"mlm-error-lang-alreadytraslated": "已存在“$1”语言的翻译",
+	"mlm-input-label-sourcetitle": "来源页面",
+	"mlm-input-label-translationtitles": "翻译{{plural:$1|页面}}",
+	"mlm-input-label-save": "保存",
+	"mlm-input-label-delete": "删除",
+	"mlm-contentaction-label": "管理翻译"
+}
