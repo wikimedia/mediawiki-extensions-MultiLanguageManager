@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"multilanguagemanager": "Повеќејазичен раководител",
+	"mlm-desc": "Додаток кој овозможува повеќе јазици на едно вики",
+	"mlm-error-title-invalid": "Неважечко име на страницата",
+	"mlm-error-title-notexists": "Страницата не постои",
+	"mlm-error-title-istalkpage": "Страниците за разговор не се преведуваат",
+	"mlm-error-title-nsnotallowed": "Неважечки именски простор за превод",
+	"mlm-error-title-isalreadytranslation": "Страницата е веќе превод",
+	"mlm-error-title-isalreadysource": "Страницата е веќе извор",
+	"mlm-error-title-isnottranslation": "Страницата не е превод",
+	"mlm-error-lang-invalid": "Неважечки јазик",
+	"mlm-error-lang-notallowed": "Јазикот не е дозволен за преведување",
+	"mlm-error-lang-alreadytraslated": "Веќе има превод за јазикот „$1“",
+	"mlm-input-label-sourcetitle": "Изворна страница",
+	"mlm-input-label-translationtitles": "{{PLURAL:$1|Преводна страница|Преводни страници}}",
+	"mlm-input-label-save": "Зачувај",
+	"mlm-input-label-delete": "Избриши",
+	"mlm-contentaction-label": "Раковод. со преводи"
+}

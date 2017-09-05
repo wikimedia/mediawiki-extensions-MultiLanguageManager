@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mikel Ibaiba"
+		]
+	},
+	"mlm-error-title-invalid": "Orri izen baliogabea",
+	"mlm-error-title-notexists": "Orria ez da existitzen",
+	"mlm-error-lang-invalid": "Hizkuntz baliogabea",
+	"mlm-error-lang-notallowed": "Hizkuntz hau itzulpenerako ezin da erabili",
+	"mlm-input-label-sourcetitle": "Iturriaren orria",
+	"mlm-input-label-save": "Gorde",
+	"mlm-input-label-delete": "Ezabatu",
+	"mlm-contentaction-label": "Itzulpenak kudeatu"
+}

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patric Wirth <wirth@hallowelt.com>"
+			"Patric Wirth <wirth@hallowelt.com>",
+			"Liuxinyu970226"
 		]
 	},
 	"multilanguagemanager": "Title of the special page",
@@ -18,7 +19,7 @@
 	"mlm-error-lang-alreadytraslated": "Error message in case that there is already a translation for a specific language code\n*Paramter $1 - The language code",
 	"mlm-input-label-sourcetitle": "Label for a textfield that allows specification of the source title",
 	"mlm-input-label-translationtitles": "Label of a section that lists translations of an article.\n*Paramter $1 - Number of available translations",
-	"mlm-input-label-save": "Label for a save button",
-	"mlm-input-label-delete": "Label for a delete button",
+	"mlm-input-label-save": "Label for a save button\n{{Identical|Save}}",
+	"mlm-input-label-delete": "Label for a delete button\n{{Identical|Delete}}",
 	"mlm-contentaction-label": "Lable of a content action link that opens Special:MultiLanguageManager"
 }

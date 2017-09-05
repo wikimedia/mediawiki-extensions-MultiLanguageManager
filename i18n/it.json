@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"mlm-error-title-invalid": "Nome pagina non valido",
+	"mlm-error-title-notexists": "La pagina non esiste",
+	"mlm-error-lang-invalid": "Lingua non valida",
+	"mlm-error-lang-notallowed": "La lingua non è consentita per la traduzione",
+	"mlm-error-lang-alreadytraslated": "Esiste già una traduzione per la lingua '$1'",
+	"mlm-input-label-save": "Salva",
+	"mlm-input-label-delete": "Cancella"
+}
