@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"امین اکبر"
+		]
+	},
+	"mlm-error-title-notexists": "صفحہ موجود نہیں",
+	"mlm-error-title-isalreadytranslation": "صفحہ پہلے ہی ایک ترجمہ ہے",
+	"mlm-error-title-isalreadysource": "صفحہ پہلے ہی ایک ماخذ ہے",
+	"mlm-error-title-isnottranslation": "صفحہ ترجمہ نہیں ہے",
+	"mlm-error-lang-notallowed": "ترجمہ کے لیے اس زبان کی اجازت نہیں",
+	"mlm-input-label-sourcetitle": "ماخذ صفحہ",
+	"mlm-input-label-save": "محفوظ",
+	"mlm-input-label-delete": "حذف"
+}

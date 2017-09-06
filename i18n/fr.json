@@ -1,21 +1,22 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wladek92"
+			"Wladek92",
+			"Verdy p"
 		]
 	},
-	"multilanguagemanager": "Gestionnaire multi-langue",
+	"multilanguagemanager": "Gestionnaire multilingue",
 	"mlm-desc": "Extension Mediawiki pour gérer plusieurs langues dans un MediaWiki.",
-	"mlm-error-title-invalid": "Nom de page invalide",
-	"mlm-error-title-notexists": "La page n'existe pas",
+	"mlm-error-title-invalid": "Nom de page non valide",
+	"mlm-error-title-notexists": "La page n’existe pas",
 	"mlm-error-title-istalkpage": "Les pages de discussion ne peuvent pas être traduites",
 	"mlm-error-title-nsnotallowed": "Espace de noms invalide pour la traduction",
 	"mlm-error-title-isalreadytranslation": "La page est déja une traduction",
 	"mlm-error-title-isalreadysource": "La page est déjà une page source",
-	"mlm-error-title-isnottranslation": "La page n'est pas une page traduite",
+	"mlm-error-title-isnottranslation": "La page n’est pas une page traduite",
 	"mlm-error-lang-invalid": "Langue non valide",
-	"mlm-error-lang-notallowed": "La langue n'est pas autorisée pour la traduction",
-	"mlm-error-lang-alreadytraslated": "Il existe déja une traduction pour la langue '$1'",
+	"mlm-error-lang-notallowed": "La langue n’est pas autorisée pour la traduction",
+	"mlm-error-lang-alreadytraslated": "Il existe déjà une traduction pour la langue ‹$1›",
 	"mlm-input-label-sourcetitle": "Page source",
 	"mlm-input-label-translationtitles": "{{plural:$1|Page traduite|Pages traduites}}",
 	"mlm-input-label-save": "Sauvegarder",
