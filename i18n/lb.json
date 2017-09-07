@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"mlm-error-title-notexists": "Säit gëtt et net",
+	"mlm-error-title-istalkpage": "Diskussiounssäite däerfen net iwwersat ginn",
+	"mlm-error-title-isalreadytranslation": "D'Säit ass schonn eng Iwwersetzung",
+	"mlm-error-title-isnottranslation": "D'Säit ass keng Iwwersetzung",
+	"mlm-error-lang-notallowed": "D'Sprooch ass net virgesi fir z'iwwersetzen",
+	"mlm-error-lang-alreadytraslated": "Et gëtt schonn eng Iwwersetzung fir d'Sprooch '$1'",
+	"mlm-input-label-sourcetitle": "Originalsäit",
+	"mlm-input-label-translationtitles": "Iwwersetzung {{PLURAL:$1|Säit|Säiten}}",
+	"mlm-input-label-save": "Späicheren",
+	"mlm-input-label-delete": "Läschen",
+	"mlm-contentaction-label": "Iwwersetzunge verwalten"
+}

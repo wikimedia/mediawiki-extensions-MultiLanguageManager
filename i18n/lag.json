@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Baba Tabita"
+		]
+	},
+	"mlm-error-title-notexists": "Ʉkuráasa sɨ ʉmwaarɨ tʉkʉ",
+	"mlm-error-title-isalreadysource": "Ʉkuráasa ʉkaarɨ nɨ nchoongo",
+	"mlm-error-title-isnottranslation": "Ʉkuráasa ʉhʉ sɨ ʉvariyʉli tʉkʉ",
+	"mlm-input-label-sourcetitle": "Ʉkuráasa wa nchoongo",
+	"mlm-input-label-translationtitles": "{{plural:$1|Ʉkuráasa wa|kuráasa ja}} ʉvariyʉli",
+	"mlm-input-label-delete": "Honola"
+}

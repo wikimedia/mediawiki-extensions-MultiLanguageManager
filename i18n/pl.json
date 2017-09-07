@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	},
+	"mlm-error-title-invalid": "Nieprawidłowa nazwa strony",
+	"mlm-error-title-notexists": "Strona nie istnieje",
+	"mlm-error-lang-invalid": "Nieprawidłowy język",
+	"mlm-input-label-sourcetitle": "Strona źródłowa",
+	"mlm-input-label-save": "Zapisz",
+	"mlm-input-label-delete": "Usuń"
+}

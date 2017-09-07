@@ -7,6 +7,7 @@
 	"mlm-error-title-notexists": "Ev rûpel tune ye",
 	"mlm-error-lang-notallowed": "Ev ziman nayê wergerandin",
 	"mlm-error-lang-alreadytraslated": "Ji xwe wergerek ji bo $1 heye",
+	"mlm-input-label-sourcetitle": "Rûpela çavkanî",
 	"mlm-input-label-save": "Tomar bike",
 	"mlm-input-label-delete": "Jê bibe"
 }
