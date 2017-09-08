@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Macofe"
+		]
+	},
+	"multilanguagemanager": "Gestor multiidioma",
+	"mlm-desc": "Extensión de Mediawiki para gestionar múltiples idiomas en una instancia de Mediawiki.",
+	"mlm-error-title-invalid": "Nombre de página no válido",
+	"mlm-error-title-notexists": "La página no existe",
+	"mlm-error-title-istalkpage": "Las páginas de discusión no se pueden traducir.",
+	"mlm-error-title-isalreadytranslation": "La página ya es una traducción",
+	"mlm-error-title-isalreadysource": "La página ya es una fuente",
+	"mlm-error-title-isnottranslation": "La página no es una traducción",
+	"mlm-error-lang-invalid": "Idioma no válido",
+	"mlm-error-lang-notallowed": "No se permite el idioma para su traducción",
+	"mlm-error-lang-alreadytraslated": "Ya existe una traducción para el idioma '$1'",
+	"mlm-input-label-sourcetitle": "Página de origen",
+	"mlm-input-label-save": "Guardar",
+	"mlm-input-label-delete": "Borrar",
+	"mlm-contentaction-label": "Gestionar traducciones"
+}

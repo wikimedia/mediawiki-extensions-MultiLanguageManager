@@ -4,10 +4,13 @@
 			"Robby"
 		]
 	},
+	"mlm-error-title-invalid": "Numm vun der säit net valabel",
 	"mlm-error-title-notexists": "Säit gëtt et net",
 	"mlm-error-title-istalkpage": "Diskussiounssäite däerfen net iwwersat ginn",
 	"mlm-error-title-isalreadytranslation": "D'Säit ass schonn eng Iwwersetzung",
+	"mlm-error-title-isalreadysource": "D'Säit ass schonn eng Quell",
 	"mlm-error-title-isnottranslation": "D'Säit ass keng Iwwersetzung",
+	"mlm-error-lang-invalid": "Net valabel Sprooch",
 	"mlm-error-lang-notallowed": "D'Sprooch ass net virgesi fir z'iwwersetzen",
 	"mlm-error-lang-alreadytraslated": "Et gëtt schonn eng Iwwersetzung fir d'Sprooch '$1'",
 	"mlm-input-label-sourcetitle": "Originalsäit",
