@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saraiki"
+		]
+	},
+	"mlm-error-title-notexists": "ایہ ورقہ موجود کائنی",
+	"mlm-error-lang-invalid": "غلط زبان",
+	"mlm-input-label-save": "بچاؤ",
+	"mlm-input-label-delete": "مٹاؤ"
+}
