@@ -4,9 +4,11 @@
 			"Robby"
 		]
 	},
+	"multilanguagemanager": "Méisproocheg Gestioun",
 	"mlm-error-title-invalid": "Numm vun der säit net valabel",
 	"mlm-error-title-notexists": "Säit gëtt et net",
 	"mlm-error-title-istalkpage": "Diskussiounssäite däerfen net iwwersat ginn",
+	"mlm-error-title-nsnotallowed": "Net valabelen Nummraum fir d'Iwwersetzung",
 	"mlm-error-title-isalreadytranslation": "D'Säit ass schonn eng Iwwersetzung",
 	"mlm-error-title-isalreadysource": "D'Säit ass schonn eng Quell",
 	"mlm-error-title-isnottranslation": "D'Säit ass keng Iwwersetzung",
