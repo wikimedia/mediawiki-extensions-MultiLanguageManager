@@ -5,6 +5,7 @@
 		]
 	},
 	"mlm-error-title-invalid": "اسم الصفحة غير صالح",
+	"mlm-error-title-notexists": "الصفحة غير موجودة",
 	"mlm-error-title-isalreadysource": "الصفحة مصدر بالفعل",
 	"mlm-error-lang-invalid": "لغة غير صالحة",
 	"mlm-input-label-save": "احفظ",
