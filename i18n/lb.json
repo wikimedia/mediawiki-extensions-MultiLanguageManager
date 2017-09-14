@@ -5,6 +5,7 @@
 		]
 	},
 	"multilanguagemanager": "Méisproocheg Gestioun",
+	"mlm-desc": "Mediawiki Erweiderung fir méi sproochen an enger MediaWiki ze geréieren",
 	"mlm-error-title-invalid": "Numm vun der säit net valabel",
 	"mlm-error-title-notexists": "Säit gëtt et net",
 	"mlm-error-title-istalkpage": "Diskussiounssäite däerfen net iwwersat ginn",
