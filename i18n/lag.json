@@ -7,6 +7,7 @@
 	"mlm-error-title-notexists": "Ʉkuráasa sɨ ʉmwaarɨ tʉkʉ",
 	"mlm-error-title-isalreadysource": "Ʉkuráasa ʉkaarɨ nɨ nchoongo",
 	"mlm-error-title-isnottranslation": "Ʉkuráasa ʉhʉ sɨ ʉvariyʉli tʉkʉ",
+	"mlm-error-lang-notallowed": "Ndʉʉsɨka sɨ yarúmirwe sa ʉvariyʉli",
 	"mlm-input-label-sourcetitle": "Ʉkuráasa wa nchoongo",
 	"mlm-input-label-translationtitles": "{{plural:$1|Ʉkuráasa wa|kuráasa ja}} ʉvariyʉli",
 	"mlm-input-label-delete": "Honola"
