@@ -15,6 +15,9 @@
 			"i18n"
 		]
 	},
+	"ExtensionMessagesFiles": {
+		"MultiLanguageManagerAliases": "MultiLanguageManager.alias.php"
+	},
 	"ConfigRegistry": {
 		"mlm": "MultiLanguageManager\\Setup::makeConfig"
 	},
