@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fader"
+		]
+	},
+	"mlm-error-lang-invalid": "Ogiltigt språk",
+	"mlm-input-label-sourcetitle": "Källsida",
+	"mlm-input-label-delete": "Radera"
+}
