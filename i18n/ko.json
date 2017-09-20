@@ -15,7 +15,7 @@
 	"mlm-error-title-isnottranslation": "문서는 번역문이 아닙니다",
 	"mlm-error-lang-invalid": "잘못된 언어",
 	"mlm-error-lang-notallowed": "언어가 번역에 허용되지 않습니다",
-	"mlm-error-lang-alreadytraslated": "'$1 언어의 번역이 이미 있습니다",
+	"mlm-error-lang-alreadytraslated": "'$1' 언어의 번역이 이미 있습니다",
 	"mlm-input-label-sourcetitle": "원본 문서",
 	"mlm-input-label-translationtitles": "번역 {{plural:$1|문서}}",
 	"mlm-input-label-save": "저장",
