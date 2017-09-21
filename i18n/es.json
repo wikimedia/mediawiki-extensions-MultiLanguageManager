@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Macofe"
+			"Macofe",
+			"Fitoschido"
 		]
 	},
 	"multilanguagemanager": "Gestor multiidioma",
@@ -14,7 +15,7 @@
 	"mlm-error-title-isnottranslation": "La página no es una traducción",
 	"mlm-error-lang-invalid": "Idioma no válido",
 	"mlm-error-lang-notallowed": "No se permite el idioma para su traducción",
-	"mlm-error-lang-alreadytraslated": "Ya existe una traducción para el idioma '$1'",
+	"mlm-error-lang-alreadytraslated": "Ya existe una traducción al idioma «$1»",
 	"mlm-input-label-sourcetitle": "Página de origen",
 	"mlm-input-label-save": "Guardar",
 	"mlm-input-label-delete": "Borrar",
