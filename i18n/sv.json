@@ -1,10 +1,26 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fader"
+			"Fader",
+			"Bengtsson96",
+			"WikiPhoenix"
 		]
 	},
+	"multilanguagemanager": "Flerspråkshanterare",
+	"mlm-desc": "Mediawiki-tillägg för att hantera fler språk på en MediaWiki.",
+	"mlm-error-title-invalid": "Ogiltigt sidnamn",
+	"mlm-error-title-notexists": "Sidan finns inte",
+	"mlm-error-title-istalkpage": "Diskussionssidor kan inte översättas",
+	"mlm-error-title-nsnotallowed": "Ogiltig namnrymd för översättning",
+	"mlm-error-title-isalreadytranslation": "Sidan är redan en översättning",
+	"mlm-error-title-isalreadysource": "Sidan är redan en källa",
+	"mlm-error-title-isnottranslation": "Sidan är inte en översättning",
 	"mlm-error-lang-invalid": "Ogiltigt språk",
+	"mlm-error-lang-notallowed": "Språket tillåts inte att översättas",
+	"mlm-error-lang-alreadytraslated": "Det finns redan en översättning för språket '$1'",
 	"mlm-input-label-sourcetitle": "Källsida",
-	"mlm-input-label-delete": "Radera"
+	"mlm-input-label-translationtitles": "{{plural:$1|Översättningssida|Översättningssidor}}",
+	"mlm-input-label-save": "Spara",
+	"mlm-input-label-delete": "Radera",
+	"mlm-contentaction-label": "Hantera översättningar"
 }
