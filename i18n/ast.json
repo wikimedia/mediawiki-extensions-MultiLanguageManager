@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"multilanguagemanager": "Alministrador de múltiples llingües",
+	"mlm-desc": "Estensión de Mediawiki p'alministrar más d'una llingua n'una Mediawiki.",
+	"mlm-error-title-invalid": "Nome de páxina inválidu",
+	"mlm-error-title-notexists": "La páxina nun esiste",
+	"mlm-error-title-istalkpage": "Les páxines d'alderique nun pueden traducise.",
+	"mlm-error-title-nsnotallowed": "Espaciu de nomes inválidu pa traducir",
+	"mlm-error-title-isalreadytranslation": "La páxina yá ye una traducción",
+	"mlm-error-title-isalreadysource": "La páxina yá ye una fonte",
+	"mlm-error-title-isnottranslation": "La páxina nun ye una traducción",
+	"mlm-error-lang-invalid": "Llingua inválida.",
+	"mlm-error-lang-notallowed": "Nun se permite traducir la llingua",
+	"mlm-error-lang-alreadytraslated": "Yá esiste una traducción la llingua '$1'",
+	"mlm-input-label-sourcetitle": "Páxina fonte",
+	"mlm-input-label-translationtitles": "{{plural:$1|páxina|páxines}} de traducción",
+	"mlm-input-label-save": "Guardar",
+	"mlm-input-label-delete": "Desaniciar",
+	"mlm-contentaction-label": "Alministrar traducciones"
+}
