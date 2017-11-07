@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ahmed-Najib-Biabani-Ibrahimkhel"
+		]
+	},
+	"multilanguagemanager": "څوژبيز مهارگر",
+	"mlm-input-label-sourcetitle": "د سرچينې مخ",
+	"mlm-input-label-translationtitles": "ژباړه {{PLURAL:$1|مخ|مخونه}}",
+	"mlm-input-label-save": "خوندي کول",
+	"mlm-input-label-delete": "ړنگول",
+	"mlm-contentaction-label": "ژباړې مهارول"
+}
