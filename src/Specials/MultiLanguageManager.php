@@ -74,10 +74,10 @@ class MultiLanguageManager extends \SpecialPage {
 			$this->getRequest()->getVal( 'mlm-sourcetitle', '' )
 		);
 
-		$oStatus = Helper::isValidTitle( $oSourceTitle );
-		if( !$oStatus->isOK() ) {
+		$status = Helper::isValidTitle( $oSourceTitle );
+		if( !$status->isOK() ) {
 			$this->outputError(
-				$oStatus->getHTML(),
+				$status->getHTML(),
 				wfMessage( 'mlm-input-label-sourcetitle' )->plain()
 			);
 			return false;
@@ -97,10 +97,10 @@ class MultiLanguageManager extends \SpecialPage {
 		}
 
 		if( !$oTranslation->isSourceTitle( $oSourceTitle ) ) {
-			$oStatus = $oTranslation->setSourceTitle( $oSourceTitle );
-			if( !$oStatus->isOK() ) {
+			$status = $oTranslation->setSourceTitle( $oSourceTitle );
+			if( !$status->isOK() ) {
 				$this->outputError(
-					$oStatus->getHTML(),
+					$status->getHTML(),
 					wfMessage( 'mlm-input-label-sourcetitle' )->plain()
 				);
 				return false;
@@ -108,9 +108,9 @@ class MultiLanguageManager extends \SpecialPage {
 		}
 
 		if( $this->getRequest()->getVal( 'mlm-delete', false ) ) {
-			$oStatus = $oTranslation->delete();
-			if( !$oStatus->isOK() ) {
-				$this->outputError( $oStatus->getHTML() );
+			$status = $oTranslation->delete();
+			if( !$status->isOK() ) {
+				$this->outputError( $status->getHTML() );
 				return false;
 			}
 			return true;
@@ -124,22 +124,22 @@ class MultiLanguageManager extends \SpecialPage {
 			$oNewTranslationTitle = \Title::newFromText(
 				$sNewTranslation
 			);
-			$oStatus = $oTranslation->addTranslation(
+			$status = $oTranslation->addTranslation(
 				$oNewTranslationTitle,
 				$this->getRequest()->getVal( 'mlm-newtranslation-lang', '' )
 			);
-			if( !$oStatus->isOK() ) {
+			if( !$status->isOK() ) {
 				$this->outputError(
-					$oStatus->getHTML(),
+					$status->getHTML(),
 					wfMessage( 'mlm-input-label-translationtitles', 1)->text()
 				);
 				return false;
 			}
 		}
 
-		$oStatus = $oTranslation->save();
-		if( !$oStatus->isOK() ) {
-			$this->outputError( $oStatus->getHTML() );
+		$status = $oTranslation->save();
+		if( !$status->isOK() ) {
+			$this->outputError( $status->getHTML() );
 		}
 		return true;
 
@@ -296,9 +296,9 @@ class MultiLanguageManager extends \SpecialPage {
 	protected function makeTitleContext( $subPage = '' ) {
 		if( !empty( $subPage ) ) {
 			$oTitle = \Title::newFromText( $subPage );
-			$oStatus = Helper::isValidTitle( $oTitle );
-			if( !$oStatus->isOK() ) {
-				$this->outputError( $oStatus->getHTML(), "'$subPage':" );
+			$status = Helper::isValidTitle( $oTitle );
+			if( !$status->isOK() ) {
+				$this->outputError( $status->getHTML(), "'$subPage':" );
 				return false;
 			}
 			$this->oTitle = $oTitle;

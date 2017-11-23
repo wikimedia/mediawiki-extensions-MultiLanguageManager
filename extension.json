@@ -47,6 +47,9 @@
 	"SpecialPages": {
 		"MultiLanguageManager": "MultiLanguageManager\\Specials\\MultiLanguageManager"
 	},
+	"APIModules": {
+		"mlm-tasks": "MultiLanguageManager\\Api\\Tasks"
+	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
 		"remoteExtPath": "MultiLanguageManager/resources"
@@ -55,6 +58,25 @@
 		"ext.mlm.styles": {
 			"styles": [
 				"ext.mlm.less"
+			]
+		},
+		"ext.mlm": {
+			"scripts": [
+				"ext.mlm.js"
+			],
+			"dependencies": [
+				"mediawiki.api",
+				"oojs",
+				"oojs-ui"
+			],
+			"messages": [
+				"mlm-input-label-sourcetitle",
+				"mlm-input-label-translationtitles",
+				"mlm-input-label-add",
+				"mlm-input-label-save",
+				"mlm-input-label-delete",
+				"mlm-input-label-cancel",
+				"mlm-contentaction-label"
 			]
 		}
 	},

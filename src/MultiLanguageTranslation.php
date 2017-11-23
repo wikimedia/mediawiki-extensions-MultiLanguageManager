@@ -186,10 +186,24 @@ class MultiLanguageTranslation extends DataProvider {
 			return \Status::newFatal( 'mlm-error-title-invalid' );
 		}
 		if( $oTranslation->isSourceTitle( $oTitle ) ) {
-			return \Status::newFatal( 'mlm-error-title-isalreadysource' );
+			return \Status::newFatal(
+				'mlm-error-title-isalreadysource',
+				$oTitle->getFullText()
+			);
 		}
-		if( $oTranslation->isTranslation( $oTitle ) ) {
-			return \Status::newFatal( 'mlm-error-title-isalreadytranslation' );
+		if( $this->isTranslation( $oTitle ) ) {
+			return \Status::newFatal(
+				'mlm-error-title-isalreadysource',
+				$oTitle->getFullText()
+			);
+		}
+		if( $oTranslation->getSourceTitle()
+			&& !$oTranslation->getSourceTitle()->equals( $this->getSourceTitle() )
+			&& $oTranslation->isTranslation( $oTitle ) ) {
+			return \Status::newFatal(
+				'mlm-error-title-isalreadysource',
+				$oTitle->getFullText()
+			);
 		}
 		if( $sLang == Helper::getSystemLanguageCode() ) {
 			return \Status::newFatal(
@@ -202,7 +216,8 @@ class MultiLanguageTranslation extends DataProvider {
 		);
 		if( !in_array( $sLang, $aLangs ) ) {
 			return \Status::newFatal(
-				wfMessage( "mlm-error-lang-alreadytraslated", $sLang )
+				"mlm-error-lang-alreadytraslated",
+				$sLang
 			);
 		}
 		$this->aTranslations[] = (object) [
@@ -223,7 +238,10 @@ class MultiLanguageTranslation extends DataProvider {
 			return $oStatus;
 		}
 		if( !$this->isTranslation( $oTitle ) ) {
-			return \Status::newFatal( 'mlm-error-title-isnottranslation' );
+			return \Status::newFatal(
+				'mlm-error-title-isnottranslation',
+				$oTitle->getFullText()
+			);
 		}
 		foreach( $this->aTranslations as $iKey => $oTranslation ) {
 			if( (int) $oTitle->getArticleID() !== $oTranslation->id ) {
@@ -245,7 +263,16 @@ class MultiLanguageTranslation extends DataProvider {
 			return $oStatus;
 		}
 		if( $this->getSourceTitle() instanceof \Title ) {
-			return \Status::newFatal( 'mlm-error-title-isalreadysource' );
+			if( $this->isSourceTitle( $oTitle ) ) {
+				return \Status::newFatal(
+					'mlm-error-title-isalreadysource',
+					$oTitle->getFullText()
+				);
+			}
+			return \Status::newFatal(
+				'mlm-error-title-isalreadytranslation',
+				$oTitle->getFullText()
+			);
 		}
 		$oTranslation = static::newFromTitle( $oTitle, true );
 		if( !$oTranslation ) {
@@ -253,10 +280,16 @@ class MultiLanguageTranslation extends DataProvider {
 			return \Status::newFatal( 'mlm-error-title-invalid' );
 		}
 		if( $oTranslation->isSourceTitle( $oTitle ) ) {
-			return \Status::newFatal( 'mlm-error-title-isalreadysource' );
+			return \Status::newFatal(
+				'mlm-error-title-isalreadysource',
+				$oTitle->getFullText()
+			);
 		}
 		if( $oTranslation->isTranslation( $oTitle ) ) {
-			return \Status::newFatal( 'mlm-error-title-isalreadytranslation' );
+			return \Status::newFatal(
+				'mlm-error-title-isalreadytranslation',
+				$oTitle->getFullText()
+			);
 		}
 
 		$this->oSourceTitle = $oTitle;

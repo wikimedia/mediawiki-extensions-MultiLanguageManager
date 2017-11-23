@@ -21,19 +21,31 @@ class Helper {
 			return \Status::newFatal( 'mlm-error-title-invalid' );
 		}
 		if( !$oTitle->exists() ) {
-			return \Status::newFatal( 'mlm-error-title-notexists' );
+			return \Status::newFatal(
+				'mlm-error-title-notexists',
+				$oTitle->getFullText()
+			);
 		}
 		if( $oTitle->isTalkPage() ) {
-			return \Status::newFatal( 'mlm-error-title-istalkpage' );
+			return \Status::newFatal(
+				'mlm-error-title-istalkpage',
+				$oTitle->getFullText()
+			);
 		}
 		if( !$oTitle->getNamespace() < 0 ) {
-			return \Status::newFatal( 'mlm-error-title-nsnotallowed' );
+			return \Status::newFatal(
+				'mlm-error-title-nsnotallowed',
+				$oTitle->getFullText()
+			);
 		}
 		$aNonTranslatableNs = static::getConfig()->get(
 			Config::NON_TRANSLATABLE_NAMESPACES
 		);
 		if( in_array( $oTitle->getNamespace(), $aNonTranslatableNs ) ) {
-			return \Status::newFatal( 'mlm-error-title-nsnotallowed' );
+			return \Status::newFatal(
+				'mlm-error-title-nsnotallowed',
+				$oTitle->getFullText()
+			);
 		}
 		return \Status::newGood( $oTitle );
 	}
@@ -63,7 +75,10 @@ class Helper {
 			static::getConfig()->get( Config::AVAILABLE_LANGUAGES )
 		);
 		if( !$bAvailableLang ) {
-			return \Status::newFatal( 'mlm-error-lang-notallowed' );
+			return \Status::newFatal(
+				'mlm-error-lang-notallowed',
+				$sLang
+			);
 		}
 		return \Status::newGood( $sLang );
 	}

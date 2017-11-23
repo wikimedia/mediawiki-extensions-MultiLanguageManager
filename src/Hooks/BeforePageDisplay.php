@@ -2,6 +2,9 @@
 
 namespace MultiLanguageManager\Hooks;
 
+use MultiLanguageManager\Helper;
+use MultiLanguageManager\MultiLanguageTranslation as Translation;
+
 class BeforePageDisplay {
 
 	/**
@@ -33,6 +36,57 @@ class BeforePageDisplay {
 	 */
 	public function process() {
 		$this->oOutputPage->addModuleStyles( 'ext.mlm.styles' );
+
+		if( !Helper::isValidTitle( $this->oSkin->getTitle() )->isOK() ) {
+			return true;
+		}
+		$this->oOutputPage->addModules( 'ext.mlm' );
+
+		$availableLanguages = Helper::getAvailableLanguageCodes();
+		$this->oOutputPage->addJsConfigVars(
+			'mlmLanguages',
+			$availableLanguages
+		);
+
+		$sysLang = Helper::getSystemLanguageCode();
+		$langFlags = [
+			$sysLang => Helper::getLangFlagUrl( $sysLang ),
+		];
+		foreach( $availableLanguages as $lang ) {
+			$langFlags[$lang] = Helper::getLangFlagUrl( $lang );
+		}
+		$this->oOutputPage->addJsConfigVars(
+			'mlmLanguageFlags',
+			$langFlags
+		);
+
+		$oTransations = Translation::newFromTitle( $this->oSkin->getTitle() );
+		if( !$oTransations || !$oTransations->getSourceTitle() instanceof \Title ) {
+			return true;
+		}
+
+		$this->oOutputPage->addJsConfigVars(
+			'mlmSourceTitle',
+			$oTransations->getSourceTitle()->getFullText()
+		);
+
+		$translations = [];
+		foreach( $oTransations->getTranslations() as $translation ) {
+			if( !$title = \Title::newFromID( $translation->id ) ) {
+				continue;
+			}
+			$translations[] = [
+				'text' => $title->getFullText(),
+				'lang' => $translation->lang,
+				'id' => $translation->id,
+			];
+		}
+
+		$this->oOutputPage->addJsConfigVars(
+			'mlmTranslations',
+			$translations
+		);
+
 		return true;
 	}
 }
