@@ -1,4 +1,10 @@
 {
+	"name": "mediawiki/multi-language-manager",
+	"type": "mediawiki-extension",
+	"description": "Provides linking articles as translations",
+	"require": {
+		"composer/installers": "~1.0"
+	},
 	"autoload": {
 		"psr-4": {
 			"MultiLanguageManager\\Tests\\": "tests/phpunit",
