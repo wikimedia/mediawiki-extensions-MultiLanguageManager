@@ -11,6 +11,7 @@
 	"mlm-error-title-isnottranslation": "الصفحة ليست ترجمة",
 	"mlm-error-lang-invalid": "لغة غير صالحة",
 	"mlm-input-label-sourcetitle": "صفحة المصدر",
+	"mlm-input-label-add": "أضف",
 	"mlm-input-label-save": "احفظ",
 	"mlm-contentaction-label": "إدارة الترجمات"
 }

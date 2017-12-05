@@ -5,10 +5,11 @@
 		]
 	},
 	"mlm-error-title-invalid": "Nome pagina non valido",
-	"mlm-error-title-notexists": "La pagina non esiste",
+	"mlm-error-title-notexists": "La pagina \"$1\" non esiste",
 	"mlm-error-lang-invalid": "Lingua non valida",
-	"mlm-error-lang-notallowed": "La lingua non è consentita per la traduzione",
-	"mlm-error-lang-alreadytraslated": "Esiste già una traduzione per la lingua '$1'",
+	"mlm-error-lang-notallowed": "La lingua \"$1\" non è consentita per la traduzione",
+	"mlm-error-lang-alreadytraslated": "Esiste già una traduzione per la lingua \"$1\"",
 	"mlm-input-label-save": "Salva",
-	"mlm-input-label-delete": "Cancella"
+	"mlm-input-label-delete": "Cancella",
+	"mlm-input-label-cancel": "Annulla"
 }
