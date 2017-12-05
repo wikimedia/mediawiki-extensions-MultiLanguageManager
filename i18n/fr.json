@@ -2,24 +2,31 @@
 	"@metadata": {
 		"authors": [
 			"Wladek92",
-			"Verdy p"
+			"Verdy p",
+			"Gomoko",
+			"KATRINE1992"
 		]
 	},
 	"multilanguagemanager": "Gestionnaire multilingue",
 	"mlm-desc": "Extension Mediawiki pour gérer plusieurs langues dans un MediaWiki.",
 	"mlm-error-title-invalid": "Nom de page non valide",
-	"mlm-error-title-notexists": "La page n’existe pas",
-	"mlm-error-title-istalkpage": "Les pages de discussion ne peuvent pas être traduites",
-	"mlm-error-title-nsnotallowed": "Espace de noms invalide pour la traduction",
-	"mlm-error-title-isalreadytranslation": "La page est déja une traduction",
-	"mlm-error-title-isalreadysource": "La page est déjà une page source",
-	"mlm-error-title-isnottranslation": "La page n’est pas une page traduite",
+	"mlm-error-title-notexists": "La page « $1 » n’existe pas",
+	"mlm-error-title-istalkpage": "« $1 ». Les pages de discussion ne peuvent pas être traduites",
+	"mlm-error-title-nsnotallowed": "« $1 ». Espace de noms non valide pour la traduction",
+	"mlm-error-title-isalreadytranslation": "La page « $1 » est déjà une traduction",
+	"mlm-error-title-isalreadysource": "La page « $1 » est déjà une page source",
+	"mlm-error-title-isnottranslation": "La page « $1 » n’est pas une page traduite",
 	"mlm-error-lang-invalid": "Langue non valide",
-	"mlm-error-lang-notallowed": "La langue n’est pas autorisée pour la traduction",
+	"mlm-error-lang-notallowed": "La langue « $1 » n’est pas autorisée pour la traduction",
 	"mlm-error-lang-alreadytraslated": "Il existe déjà une traduction pour la langue ‹$1›",
 	"mlm-input-label-sourcetitle": "Page source",
 	"mlm-input-label-translationtitles": "{{plural:$1|Page traduite|Pages traduites}}",
+	"mlm-input-label-add": "Ajouter",
 	"mlm-input-label-save": "Sauvegarder",
 	"mlm-input-label-delete": "Supprimer",
-	"mlm-contentaction-label": "Gérer les traductions"
+	"mlm-input-label-cancel": "Annuler",
+	"mlm-contentaction-label": "Gérer les traductions",
+	"apihelp-mlm-param-task": "La tache qui doit etre executee",
+	"apihelp-mlm-param-taskdata": "L'objet avec un code de fiche JSON avec des donnees arbitraires pour la tache",
+	"apihelp-mlm-param-format": "Le format du resultat"
 }

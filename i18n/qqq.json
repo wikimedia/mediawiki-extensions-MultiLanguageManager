@@ -3,7 +3,8 @@
 		"authors": [
 			"Patric Wirth <wirth@hallowelt.com>",
 			"Liuxinyu970226",
-			"Umherirrender"
+			"Umherirrender",
+			"Verdy p"
 		]
 	},
 	"multilanguagemanager": "Title of the special page",
@@ -14,7 +15,7 @@
 	"mlm-error-title-nsnotallowed": "Error message in case that a provided title is in a namespace that has no translation enabled\n*Paramter $1 - Full page name",
 	"mlm-error-title-isalreadytranslation": "Error message in case that a title already has a translation\n*Paramter $1 - Full page name",
 	"mlm-error-title-isalreadysource": "Error message in case that a title is already declared to be the source of a translation\n*Paramter $1 - Full page name",
-	"mlm-error-title-isnottranslation": "Error message in case that a title is no translation page\n*Paramter $1 - Full page name",
+	"mlm-error-title-isnottranslation": "Error message in case that a page title is not translated\n* Parameter $1 - Full page name",
 	"mlm-error-lang-invalid": "Error message in case that a invalid language code was provided",
 	"mlm-error-lang-notallowed": "Error message in case that a specific language code is not allowed by configuration\n*Paramter $1 - The language code",
 	"mlm-error-lang-alreadytraslated": "Error message in case that there is already a translation for a specific language code\n*Paramter $1 - The language code",

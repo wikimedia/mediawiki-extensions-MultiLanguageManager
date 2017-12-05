@@ -4,7 +4,7 @@
 			"Saraiki"
 		]
 	},
-	"mlm-error-title-notexists": "ایہ ورقہ موجود کائنی",
+	"mlm-error-title-notexists": "ورقہ\"$1\" موجود کائنی",
 	"mlm-error-lang-invalid": "غلط زبان",
 	"mlm-input-label-save": "بچاؤ",
 	"mlm-input-label-delete": "مٹاؤ"
