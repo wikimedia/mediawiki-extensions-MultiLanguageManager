@@ -4,6 +4,8 @@
 			"Liuxinyu970226"
 		]
 	},
+	"mlm-input-label-add": "新增",
 	"mlm-input-label-save": "儲存",
-	"mlm-input-label-delete": "刪除"
+	"mlm-input-label-delete": "刪除",
+	"mlm-input-label-cancel": "取消"
 }

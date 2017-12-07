@@ -8,7 +8,7 @@
 	"mlm-desc": "Додаток кој овозможува повеќе јазици на едно вики",
 	"mlm-error-title-invalid": "Неважечко име на страницата",
 	"mlm-error-title-notexists": "Страницата „$1“ не постои",
-	"mlm-error-title-istalkpage": "„$1“. Страниците за разговор не се преведуваат",
+	"mlm-error-title-istalkpage": "„$1“. Разговорните страници не се преведуваат",
 	"mlm-error-title-nsnotallowed": "„$1“. Неважечки именски простор за превод",
 	"mlm-error-title-isalreadytranslation": "Страницата „$1“ веќе е превод",
 	"mlm-error-title-isalreadysource": "Страницата „$1“ веќе е извор",

@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm"
+			"Elisardojm",
+			"Fitoschido"
 		]
 	},
 	"mlm-error-title-invalid": "Nome de páxina non válido",
-	"mlm-error-title-notexists": "A páxina non existe",
+	"mlm-error-title-notexists": "A páxina «$1» non existe",
 	"mlm-error-title-istalkpage": "As páxinas de conversa non se poden traducir.",
 	"mlm-input-label-sourcetitle": "Páxina de orixe",
 	"mlm-input-label-save": "Gardar",

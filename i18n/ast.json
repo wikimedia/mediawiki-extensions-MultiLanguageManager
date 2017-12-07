@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Xuacu"
+			"Xuacu",
+			"Fitoschido"
 		]
 	},
 	"multilanguagemanager": "Alministrador de múltiples llingües",
 	"mlm-desc": "Estensión de Mediawiki p'alministrar más d'una llingua n'una Mediawiki.",
 	"mlm-error-title-invalid": "Nome de páxina inválidu",
-	"mlm-error-title-notexists": "La páxina nun esiste",
+	"mlm-error-title-notexists": "La páxina «$1» nun esiste",
 	"mlm-error-title-istalkpage": "Les páxines d'alderique nun pueden traducise.",
 	"mlm-error-title-nsnotallowed": "Espaciu de nomes inválidu pa traducir",
 	"mlm-error-title-isalreadytranslation": "La páxina yá ye una traducción",
