@@ -12,7 +12,7 @@
 	"mlm-error-title-istalkpage": "«$1». Las páginas de discusión no se pueden traducir",
 	"mlm-error-title-nsnotallowed": "«$1». El espacio de nombres no es válido para realizar traducciones",
 	"mlm-error-title-isalreadytranslation": "La página «$1» ya es una traducción",
-	"mlm-error-title-isalreadysource": "La página ya es una fuente",
+	"mlm-error-title-isalreadysource": "La página «$1» ya es una fuente",
 	"mlm-error-title-isnottranslation": "La página «$1» no es una traducción",
 	"mlm-error-lang-invalid": "Idioma no válido",
 	"mlm-error-lang-notallowed": "No se permite el idioma «$1» para traducciones",
@@ -24,5 +24,6 @@
 	"mlm-input-label-cancel": "Cancelar",
 	"mlm-contentaction-label": "Gestionar traducciones",
 	"apihelp-mlm-param-task": "La tarea que debe ejecutarse",
+	"apihelp-mlm-param-taskdata": "Objeto JSON de cadena codificada con datos arbitrarios para la tarea",
 	"apihelp-mlm-param-format": "El formato del resultado"
 }

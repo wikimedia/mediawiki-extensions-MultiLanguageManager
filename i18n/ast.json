@@ -12,7 +12,7 @@
 	"mlm-error-title-istalkpage": "Les páxines d'alderique nun pueden traducise.",
 	"mlm-error-title-nsnotallowed": "Espaciu de nomes inválidu pa traducir",
 	"mlm-error-title-isalreadytranslation": "La páxina yá ye una traducción",
-	"mlm-error-title-isalreadysource": "La páxina yá ye una fonte",
+	"mlm-error-title-isalreadysource": "La páxina «$1» yá ye una fonte",
 	"mlm-error-title-isnottranslation": "La páxina nun ye una traducción",
 	"mlm-error-lang-invalid": "Llingua inválida.",
 	"mlm-error-lang-notallowed": "Nun se permite traducir la llingua",
