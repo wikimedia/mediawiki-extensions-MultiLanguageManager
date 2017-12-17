@@ -8,7 +8,7 @@
 	"mlm-desc": "Mediawiki Erweiderung fir méi sproochen an enger MediaWiki ze geréieren",
 	"mlm-error-title-invalid": "Numm vun der säit net valabel",
 	"mlm-error-title-notexists": "Säit \"$1\" gëtt et net",
-	"mlm-error-title-istalkpage": "Diskussiounssäite däerfen net iwwersat ginn",
+	"mlm-error-title-istalkpage": "\"$1\". Diskussiounssäite däerfen net iwwersat ginn",
 	"mlm-error-title-nsnotallowed": "\"$1\". Net valabelen Nummraum fir d'Iwwersetzung",
 	"mlm-error-title-isalreadytranslation": "D'Säit \"$1\" ass schonn eng Iwwersetzung",
 	"mlm-error-title-isalreadysource": "D'Säit \"$1\" ass schonn eng Quell",
