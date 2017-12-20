@@ -92,18 +92,24 @@ class Helper {
 		$aNew = array_filter(
 			$oNew->getTranslations(),
 			function( $e ) use ( $oOld ){
-				if( $oOld->isTranslation( \Title::newFromID( $e->id ) ) ) {
-					return false;
+				if( !$oOld->isTranslation( \Title::newFromID( $e->id ) ) ) {
+					return true;
 				}
-				return true;
+				if( !$oOld->isTranslatedLang( $e->lang ) ) {
+					return true;
+				}
+				return false;
 		});
 		$aDeleted = array_filter(
 			$oOld->getTranslations(),
 			function( $e ) use ( $oNew ){
-				if( $oNew->isTranslation( \Title::newFromID( $e->id ) ) ) {
-					return false;
+				if( !$oNew->isTranslation( \Title::newFromID( $e->id ) ) ) {
+					return true;
 				}
-				return true;
+				if( !$oNew->isTranslatedLang( $e->lang ) ) {
+					return true;
+				}
+				return false;
 		});
 
 		return [
