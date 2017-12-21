@@ -2,13 +2,16 @@
 	"@metadata": {
 		"authors": [
 			"Elisardojm",
-			"Fitoschido"
+			"Fitoschido",
+			"Athena in Wonderland"
 		]
 	},
 	"mlm-error-title-invalid": "Nome de páxina non válido",
 	"mlm-error-title-notexists": "A páxina «$1» non existe",
-	"mlm-error-title-istalkpage": "As páxinas de conversa non se poden traducir.",
+	"mlm-error-title-istalkpage": "\"$1\". As páxinas de conversa non se poden traducir.",
 	"mlm-input-label-sourcetitle": "Páxina de orixe",
+	"mlm-input-label-add": "Engadir",
 	"mlm-input-label-save": "Gardar",
-	"mlm-input-label-delete": "Borrar"
+	"mlm-input-label-delete": "Borrar",
+	"mlm-input-label-cancel": "Cancelar"
 }

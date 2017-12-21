@@ -4,7 +4,8 @@
 			"Wladek92",
 			"Verdy p",
 			"Gomoko",
-			"KATRINE1992"
+			"KATRINE1992",
+			"Ltrlg"
 		]
 	},
 	"multilanguagemanager": "Gestionnaire multilingue",
@@ -26,7 +27,7 @@
 	"mlm-input-label-delete": "Supprimer",
 	"mlm-input-label-cancel": "Annuler",
 	"mlm-contentaction-label": "Gérer les traductions",
-	"apihelp-mlm-param-task": "La tache qui doit etre executee",
-	"apihelp-mlm-param-taskdata": "L'objet avec un code de fiche JSON avec des donnees arbitraires pour la tache",
-	"apihelp-mlm-param-format": "Le format du resultat"
+	"apihelp-mlm-param-task": "La tâche qui doit être exécutée",
+	"apihelp-mlm-param-taskdata": "Objet encodé en JSON contenant des données arbitraires pour la tâche",
+	"apihelp-mlm-param-format": "Le format du résultat"
 }
