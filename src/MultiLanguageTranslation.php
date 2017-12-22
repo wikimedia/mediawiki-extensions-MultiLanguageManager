@@ -185,15 +185,9 @@ class MultiLanguageTranslation extends DataProvider {
 			//Something unexpected!
 			return \Status::newFatal( 'mlm-error-title-invalid' );
 		}
-		if( $oTranslation->isSourceTitle( $oTitle ) ) {
+		if( $this->isTranslation( $oTitle ) && !$this->isTranslatedLang( $sLang ) ) {
 			return \Status::newFatal(
-				'mlm-error-title-isalreadysource',
-				$oTitle->getFullText()
-			);
-		}
-		if( $this->isTranslation( $oTitle ) ) {
-			return \Status::newFatal(
-				'mlm-error-title-isalreadysource',
+				'mlm-error-lang-alreadytraslated',
 				$oTitle->getFullText()
 			);
 		}
