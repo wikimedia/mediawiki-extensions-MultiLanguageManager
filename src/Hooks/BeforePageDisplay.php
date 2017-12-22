@@ -45,7 +45,7 @@ class BeforePageDisplay {
 		$availableLanguages = Helper::getAvailableLanguageCodes();
 		$this->oOutputPage->addJsConfigVars(
 			'mlmLanguages',
-			$availableLanguages
+			array_values( $availableLanguages )
 		);
 
 		$sysLang = Helper::getSystemLanguageCode();

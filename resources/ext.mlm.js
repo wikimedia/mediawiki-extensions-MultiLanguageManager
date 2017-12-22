@@ -67,7 +67,7 @@
 		mw.mlm.dialog.prototype.initialize = function () {
 			mw.mlm.dialog.super.prototype.initialize.call( this );
 
-			this.panel = new OO.ui.PanelLayout( { padded: true, expanded: false } );
+			this.panel = new OO.ui.PanelLayout( { padded: true, expanded: false, id: 'mlm-manager' } );
 			this.content = new OO.ui.FieldsetLayout();
 			this.errorSection = new OO.ui.Layout();
 			this.errorSection.$element.css( 'color', 'red' );
