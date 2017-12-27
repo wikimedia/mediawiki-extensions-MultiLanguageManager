@@ -24,6 +24,9 @@
 	"ExtensionFunctions": [
 		"MultiLanguageManager\\Setup::init"
 	],
+	"AvailableRights": [
+		"language"
+	],
 	"GroupPermissions": {
 		"*": {
 			"language": false
