@@ -28,6 +28,6 @@
 	"mlm-input-label-cancel": "Annuler",
 	"mlm-contentaction-label": "Gérer les traductions",
 	"apihelp-mlm-param-task": "La tâche qui doit être exécutée",
-	"apihelp-mlm-param-taskdata": "Objet encodé en JSON contenant des données arbitraires pour la tâche",
+	"apihelp-mlm-param-taskdata": "Objet encodé en chaîne JSON contenant des données arbitraires pour la tâche",
 	"apihelp-mlm-param-format": "Le format du résultat"
 }
