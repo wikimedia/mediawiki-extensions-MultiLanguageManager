@@ -10,6 +10,9 @@
 	"descriptionmsg": "mlm-desc",
 	"license-name": "GPL-2.0",
 	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
 	"MessagesDirs": {
 		"MultiLanguageManager": [
 			"i18n"
@@ -101,6 +104,9 @@
 			"value": "MultiLanguageManager"
 		}
 	},
-	"load_composer_autoloader" : true,
+	"AutoloadNamespaces": {
+		"MultiLanguageManager\\Tests\\": "tests/phpunit/",
+		"MultiLanguageManager\\": "src/"
+	},
 	"manifest_version": 2
 }
