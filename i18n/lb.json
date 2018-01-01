@@ -18,7 +18,7 @@
 	"mlm-error-lang-alreadytraslated": "Et gëtt schonn eng Iwwersetzung fir d'Sprooch \"$1\"",
 	"mlm-input-label-sourcetitle": "Originalsäit",
 	"mlm-input-label-translationtitles": "Iwwersetzung {{PLURAL:$1|Säit|Säiten}}",
-	"mlm-input-label-add": "Derbäisetzen",
+	"mlm-input-label-add": "Dobäisetzen",
 	"mlm-input-label-save": "Späicheren",
 	"mlm-input-label-delete": "Läschen",
 	"mlm-input-label-cancel": "Ofbriechen",
