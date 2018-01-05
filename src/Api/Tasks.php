@@ -277,18 +277,15 @@ class Tasks extends \ApiBase {
 			'task' => array(
 				\ApiBase::PARAM_REQUIRED => true,
 				\ApiBase::PARAM_TYPE => 'string',
-				\ApiBase::PARAM_HELP_MSG => 'apihelp-mlm-param-task',
 			),
 			'taskData' => array(
 				\ApiBase::PARAM_TYPE => 'string',
 				\ApiBase::PARAM_REQUIRED => false,
 				\ApiBase::PARAM_DFLT => '{}',
-				\ApiBase::PARAM_HELP_MSG => 'apihelp-mlm-param-taskdata',
 			),
 			'format' => array(
 				\ApiBase::PARAM_DFLT => 'json',
 				\ApiBase::PARAM_TYPE => [ 'json', 'jsonfm' ],
-				\ApiBase::PARAM_HELP_MSG => 'apihelp-mlm-param-format',
 			)
 		];
 	}
