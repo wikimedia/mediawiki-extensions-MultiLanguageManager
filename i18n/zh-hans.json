@@ -23,7 +23,8 @@
 	"mlm-input-label-delete": "删除",
 	"mlm-input-label-cancel": "取消",
 	"mlm-contentaction-label": "管理翻译",
-	"apihelp-mlm-param-task": "应执行的任务",
-	"apihelp-mlm-param-taskdata": "JSON字符串编码的对象，带用于任务的任意数据",
-	"apihelp-mlm-param-format": "结果的格式"
+	"apihelp-mlm-tasks-summary": "管理翻译任务",
+	"apihelp-mlm-tasks-param-task": "应执行的任务",
+	"apihelp-mlm-tasks-param-taskData": "JSON字符串编码的对象，带用于任务的任意数据",
+	"apihelp-mlm-tasks-param-format": "结果的格式"
 }

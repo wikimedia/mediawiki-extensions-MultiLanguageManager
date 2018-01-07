@@ -23,7 +23,8 @@
 	"mlm-input-label-delete": "Löschen",
 	"mlm-input-label-cancel": "Abbrechen",
 	"mlm-contentaction-label": "Übersetzungen verwalten",
-	"apihelp-mlm-param-task": "Die Aufgabe, die ausgeführt werden soll.",
-	"apihelp-mlm-param-taskdata": "JSON-zeichenfolgekodiertes Objekt mit beliebigen Daten für die Aufgabe",
-	"apihelp-mlm-param-format": "Das Format des Ergebnisses"
+	"apihelp-mlm-tasks-summary": "Verwaltet Übersetzungsaufgaben",
+	"apihelp-mlm-tasks-param-task": "Die Aufgabe, die ausgeführt werden soll.",
+	"apihelp-mlm-tasks-param-taskData": "JSON-zeichenfolgekodiertes Objekt mit beliebigen Daten für die Aufgabe",
+	"apihelp-mlm-tasks-param-format": "Das Format des Ergebnisses"
 }

@@ -23,5 +23,6 @@
 	"mlm-input-label-delete": "Läschen",
 	"mlm-input-label-cancel": "Ofbriechen",
 	"mlm-contentaction-label": "Iwwersetzunge verwalten",
-	"apihelp-mlm-param-format": "De Format vum Resultat"
+	"apihelp-mlm-tasks-summary": "Iwwersetzungsaufgabe geréieren",
+	"apihelp-mlm-tasks-param-format": "De Format vum Resultat"
 }

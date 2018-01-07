@@ -23,7 +23,8 @@
 	"mlm-input-label-delete": "Избриши",
 	"mlm-input-label-cancel": "Откажи",
 	"mlm-contentaction-label": "Раковод. со преводи",
-	"apihelp-mlm-param-task": "Задачата што треба да се изврши",
-	"apihelp-mlm-param-taskdata": "JSON-низа кодирана во објект со произволни податоци за задачата",
-	"apihelp-mlm-param-format": "Формат на исходот"
+	"apihelp-mlm-tasks-summary": "Раководство со преводни задачи",
+	"apihelp-mlm-tasks-param-task": "Задачата што треба да се изврши",
+	"apihelp-mlm-tasks-param-taskData": "JSON-низа кодирана во објект со произволни податоци за задачата",
+	"apihelp-mlm-tasks-param-format": "Формат на исходот"
 }

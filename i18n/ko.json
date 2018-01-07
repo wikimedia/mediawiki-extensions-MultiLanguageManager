@@ -23,5 +23,5 @@
 	"mlm-input-label-delete": "삭제",
 	"mlm-input-label-cancel": "취소",
 	"mlm-contentaction-label": "번역 관리",
-	"apihelp-mlm-param-format": "결과 형식"
+	"apihelp-mlm-tasks-param-format": "결과 형식"
 }

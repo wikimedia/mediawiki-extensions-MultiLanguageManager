@@ -24,7 +24,7 @@
 	"mlm-input-label-delete": "Desaniciar",
 	"mlm-input-label-cancel": "Encaboxar",
 	"mlm-contentaction-label": "Alministrar traducciones",
-	"apihelp-mlm-param-task": "La xera que tien d'executase",
-	"apihelp-mlm-param-taskdata": "Oxetu codificáu JSON de cadena con datos cualesquiera pa la xera",
-	"apihelp-mlm-param-format": "El formatu de la resultancia"
+	"apihelp-mlm-tasks-param-task": "La xera que tien d'executase",
+	"apihelp-mlm-tasks-param-taskData": "Oxetu codificáu JSON de cadena con datos cualesquiera pa la xera",
+	"apihelp-mlm-tasks-param-format": "El formatu de la resultancia"
 }

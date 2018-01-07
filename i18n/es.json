@@ -23,7 +23,7 @@
 	"mlm-input-label-delete": "Borrar",
 	"mlm-input-label-cancel": "Cancelar",
 	"mlm-contentaction-label": "Gestionar traducciones",
-	"apihelp-mlm-param-task": "La tarea que debe ejecutarse",
-	"apihelp-mlm-param-taskdata": "Objeto JSON de cadena codificada con datos arbitrarios para la tarea",
-	"apihelp-mlm-param-format": "El formato del resultado"
+	"apihelp-mlm-tasks-param-task": "La tarea que debe ejecutarse",
+	"apihelp-mlm-tasks-param-taskData": "Objeto JSON de cadena codificada con datos arbitrarios para la tarea",
+	"apihelp-mlm-tasks-param-format": "El formato del resultado"
 }
