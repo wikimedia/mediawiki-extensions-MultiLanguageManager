@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira"
+		]
+	},
+	"multilanguagemanager": "Gerenciador de linguagem múltipla",
+	"mlm-desc": "Extensão Mediawiki para gerenciar vários idiomas em um MediaWiki.",
+	"mlm-error-title-invalid": "Nome de página inválido",
+	"mlm-error-title-notexists": "A página \"$1\" não existe",
+	"mlm-error-title-istalkpage": "\"$1\". As páginas de discussão não podem ser traduzidas",
+	"mlm-error-title-nsnotallowed": "\"$1\". O espaço nominal é inválido para tradução",
+	"mlm-error-title-isalreadytranslation": "A página \"$1\" já é uma tradução",
+	"mlm-error-title-isalreadysource": "A página \"$1\" já é uma fonte de traduções",
+	"mlm-error-title-isnottranslation": "A página \"$1\" não é uma tradução",
+	"mlm-error-lang-invalid": "Idioma inválido",
+	"mlm-error-lang-notallowed": "O idioma \"$1\" não é permitida para traduções",
+	"mlm-error-lang-alreadytraslated": "Já existe uma tradução para o idioma \"$1\"",
+	"mlm-input-label-sourcetitle": "Página fonte",
+	"mlm-input-label-translationtitles": "{{PLURAL:$1|Página|Páginas}} de tradução",
+	"mlm-input-label-add": "Adicionar",
+	"mlm-input-label-save": "Salvar",
+	"mlm-input-label-delete": "Deletar",
+	"mlm-input-label-cancel": "Cancelar",
+	"mlm-contentaction-label": "Gerenciar traduções",
+	"apihelp-mlm-tasks-summary": "Gerenciar tarefas de tradução",
+	"apihelp-mlm-tasks-param-task": "A tarefa que deve ser executada",
+	"apihelp-mlm-tasks-param-taskData": "Objeto codificado em texto JSON com dados arbitrários para a tarefa",
+	"apihelp-mlm-tasks-param-format": "O formato do resultado"
+}
