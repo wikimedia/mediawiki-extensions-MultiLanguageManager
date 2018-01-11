@@ -5,9 +5,9 @@
 		]
 	},
 	"mlm-error-title-invalid": "Orri izen baliogabea",
-	"mlm-error-title-notexists": "Orria ez da existitzen",
+	"mlm-error-title-notexists": "\"$1\" orria ez da existitzen",
 	"mlm-error-lang-invalid": "Hizkuntz baliogabea",
-	"mlm-error-lang-notallowed": "Hizkuntz hau itzulpenerako ezin da erabili",
+	"mlm-error-lang-notallowed": "\"$1\" hizkuntza itzulpenerako ezin da erabili",
 	"mlm-input-label-sourcetitle": "Iturriaren orria",
 	"mlm-input-label-save": "Gorde",
 	"mlm-input-label-delete": "Ezabatu",
