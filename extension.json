@@ -83,24 +83,14 @@
 			]
 		}
 	},
-	"config_prefix": "mg",
 	"config": {
-		"AvailableLanguages": {
-			"value": [ "en", "cn", "fr", "it", "nl", "de" ]
-		},
-		"Permission": {
-			"value": "language"
-		},
-		"LanguageTableName": {
-			"value": "page_language"
-		},
-		"TranslationTableName": {
-			"value": "page_translation"
-		},
-		"SpecialPageName": {
-			"value": "MultiLanguageManager"
-		}
+		"_prefix": "mg",
+		"AvailableLanguages": [ "en", "cn", "fr", "it", "nl", "de" ],
+		"Permission": "language",
+		"LanguageTableName": "page_language",
+		"TranslationTableName": "page_translation",
+		"SpecialPageName": "MultiLanguageManager"
 	},
 	"load_composer_autoloader" : true,
-	"manifest_version": 2
+	"manifest_version": 1
 }
