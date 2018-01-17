@@ -53,7 +53,7 @@
 		mw.mlm.dialog.static.actions = [{
 			action: 'save',
 			label: mw.message( 'mlm-input-label-save' ).plain(),
-			flags: [ 'primary', 'constructive' ]
+			flags: [ 'primary', 'progressive' ]
 		}, {
 			action: 'cancel',
 			label: mw.message( 'mlm-input-label-cancel' ).plain(),
@@ -136,7 +136,7 @@
 			});
 			this.translationAdd = new OO.ui.ButtonWidget( {
 				label: mw.message( 'mlm-input-label-add' ).plain(),
-				flags: [ 'primary', 'constructive' ]
+				flags: [ 'primary', 'progressive' ]
 			});
 
 			var me = this;
