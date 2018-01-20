@@ -29,6 +29,6 @@
 	"mlm-contentaction-label": "Label of a content action link that opens Special:MultiLanguageManager",
 	"apihelp-mlm-tasks-summary": "{{doc-apihelp-summary|mlm-tasks}}",
 	"apihelp-mlm-tasks-param-task": "{{doc-apihelp-param|mlm-tasks|task}}",
-	"apihelp-mlm-tasks-param-taskData": "{{doc-apihelp-param|mlm-tasks|taskdata}}",
+	"apihelp-mlm-tasks-param-taskData": "{{doc-apihelp-param|mlm-tasks|taskData}}",
 	"apihelp-mlm-tasks-param-format": "{{doc-apihelp-param|mlm-tasks|format}}"
 }
