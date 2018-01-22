@@ -53,7 +53,8 @@
 		mw.mlm.dialog.static.actions = [{
 			action: 'save',
 			label: mw.message( 'mlm-input-label-save' ).plain(),
-			flags: [ 'primary', 'constructive' ]
+			flags: [ 'primary', 'constructive' ],
+			disabled: true
 		}, {
 			action: 'cancel',
 			label: mw.message( 'mlm-input-label-cancel' ).plain(),
@@ -108,6 +109,7 @@
 				label: mw.message( 'mlm-input-label-sourcetitle' ).plain(),
 				disabled: mw.mlm.srcTitle === '' ? false : true
 			});
+			this.srcText.on( 'change', this.onSrcTextChange.bind( this ) );
 
 			this.srcSection = new OO.ui.HorizontalLayout( {
 				items: [
@@ -260,10 +262,44 @@
 			);
 		};
 
+		mw.mlm.dialog.prototype.onSrcTextChange = function( value ){
+			var me = this;
+
+			var api = new mw.Api();
+			api.postWithToken( 'csrf', {
+				action: 'mlm-tasks',
+				task: 'get',
+				format: 'json',
+				taskData: JSON.stringify( {
+					srcText: value
+				} )
+			})
+			.done( function( response, jqXHR ) {
+				if( !response.success ) {
+					return;
+				}
+
+				for( var i = 0; i < response.payload.length; i++ ) {
+					var translation = response.payload[i];
+					me.updateTranslations( {
+						'lang': translation.lang,
+						'text': translation.text
+					});
+				}
+
+				me.getActions().setAbilities( {
+					save: true
+				});
+			});
+		};
+
 		mw.mlm.dialog.prototype.onTranslationAdd = function(){
 			this.updateTranslations( {
 				'lang': this.translationLang.value,
 				'text': this.translationText.value
+			});
+			this.getActions().setAbilities( {
+				save: true
 			});
 		};
 
@@ -272,6 +308,9 @@
 				'lang': lang,
 				'text': ''
 			}, true);
+			this.getActions().setAbilities( {
+				save: true
+			});
 		};
 
 		mw.mlm.dialog.prototype.updateTranslations = function ( translation, removeOnly ) {

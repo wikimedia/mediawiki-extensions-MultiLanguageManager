@@ -22,6 +22,10 @@ class Tasks extends \ApiBase {
 				'read',
 				Helper::getConfig()->get( Config::PERMISSION )
 			],
+			'get' => [
+				'read',
+				Helper::getConfig()->get( Config::PERMISSION )
+			],
 		];
 	}
 
@@ -148,6 +152,37 @@ class Tasks extends \ApiBase {
 		return $result;
 	}
 
+	protected function task_get( $taskData, $params ) {
+		$result = $this->makeStandardReturn();
+		$sysLang = Helper::getSystemLanguageCode();
+		$result->message = [];
+		if( empty( $taskData->srcText ) ) {
+			$taskData->srcText = '';
+		}
+		$oSourceTitle = \Title::newFromText( $taskData->srcText );
+		$status = Helper::isValidTitle(
+			$oSourceTitle
+		);
+		if( !$status->isOK() ) {
+			$result->message[$sysLang] = $status->getHTML();
+			return $result;
+		}
+
+		$mlmTranslation = MultiLanguageTranslation::newFromTitle(
+			$oSourceTitle
+		);
+
+		$translations = $mlmTranslation->getTranslations();
+		foreach( $translations as &$translation ) {
+			$title = \Title::newFromID( $translation->id );
+			$translation->text = $title->getPrefixedText();
+		}
+
+		$result->success = 1;
+		$result->payload = $translations;
+		return $result;
+	}
+
 	public function execute() {
 		$params = $this->extractRequestParams();
 
@@ -226,7 +261,7 @@ class Tasks extends \ApiBase {
 		if( $paramName == 'taskData' ) {
 			$value = \FormatJson::decode($value);
 			if( empty($value) ) {
-				return new stdClass();
+				return new \stdClass();
 			}
 		}
 		return $value;
@@ -288,5 +323,9 @@ class Tasks extends \ApiBase {
 				\ApiBase::PARAM_TYPE => [ 'json', 'jsonfm' ],
 			)
 		];
+	}
+
+	public function needsToken() {
+		return 'csrf';
 	}
 }
