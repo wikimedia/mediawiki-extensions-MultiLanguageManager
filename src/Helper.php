@@ -157,7 +157,9 @@ class Helper {
 			}
 			return true;
 		};
-		return array_filter( $aLangs, $funcFilter );
+		$aFilteredLangs = array_filter( $aLangs, $funcFilter );
+
+		return array_unique( $aFilteredLangs );
 	}
 
 	/**
