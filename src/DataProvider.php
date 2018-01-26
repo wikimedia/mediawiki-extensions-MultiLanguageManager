@@ -65,22 +65,31 @@ abstract class DataProvider {
 	}
 
 	protected static function insertTranslations( $iSourceId, $aTranslations ) {
+		$oDbw = wfGetDB( DB_MASTER );
+		$sTranlationTable = Helper::getConfig()->get( Config::TRANSLATION_TABLE );
+		$sLanguageTable = Helper::getConfig()->get( Config::LANGUAGE_TABLE );
+
 		foreach( $aTranslations as $oTranslation ) {
-			$bRes = wfGetDB( DB_MASTER )->insert(
-				Helper::getConfig()->get( Config::TRANSLATION_TABLE ),
+			$oDbw->insert(
+				$sTranlationTable,
 				[
 					'source' => $iSourceId,
 					'translate' => $oTranslation->id
-				],
-				__METHOD__
+				]
 			);
-			$bRes = wfGetDB( DB_MASTER )->insert(
-				Helper::getConfig()->get( Config::LANGUAGE_TABLE ),
+
+			$oDbw->delete(
+				$sLanguageTable,
+				[
+					'page_id' => $oTranslation->id
+				]
+			);
+			$oDbw->insert(
+				$sLanguageTable,
 				[
 					'page_id' => $oTranslation->id,
 					'lang' => $oTranslation->lang
-				],
-				__METHOD__
+				]
 			);
 		}
 	}
