@@ -1,11 +1,31 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Kly"
 		]
 	},
+	"multilanguagemanager": "多語言管理",
+	"mlm-desc": "用來在一個 MediaWiki 上管理多個語言的 Mediawiki 擴充。",
+	"mlm-error-title-invalid": "無效的頁面名稱",
+	"mlm-error-title-notexists": "頁面「$1」不存在",
+	"mlm-error-title-istalkpage": "「$1」，對話頁不可被翻譯。",
+	"mlm-error-title-nsnotallowed": "「$1」，用於翻譯的無效命名空間。",
+	"mlm-error-title-isalreadytranslation": "頁面「$1」已是個翻譯",
+	"mlm-error-title-isalreadysource": "頁面「$1」已是來源",
+	"mlm-error-title-isnottranslation": "頁面「$1」並非翻譯",
+	"mlm-error-lang-invalid": "無效語言",
+	"mlm-error-lang-notallowed": "語言「$1」不允許用來翻譯",
+	"mlm-error-lang-alreadytraslated": "已有語言為「$1」的翻譯",
+	"mlm-input-label-sourcetitle": "來源頁面",
+	"mlm-input-label-translationtitles": "翻譯 {{PLURAL:$1| 個頁面| 個頁面}}",
 	"mlm-input-label-add": "新增",
 	"mlm-input-label-save": "儲存",
 	"mlm-input-label-delete": "刪除",
-	"mlm-input-label-cancel": "取消"
+	"mlm-input-label-cancel": "取消",
+	"mlm-contentaction-label": "管理翻譯",
+	"apihelp-mlm-tasks-summary": "管理翻譯任務",
+	"apihelp-mlm-tasks-param-task": "應被執行的任務",
+	"apihelp-mlm-tasks-param-taskData": "用於任務，帶有任意資料的 JSON 字串編碼物件",
+	"apihelp-mlm-tasks-param-format": "結果格式"
 }
