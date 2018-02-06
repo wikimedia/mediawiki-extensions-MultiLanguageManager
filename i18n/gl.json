@@ -9,6 +9,7 @@
 	"mlm-error-title-invalid": "Nome de páxina non válido",
 	"mlm-error-title-notexists": "A páxina «$1» non existe",
 	"mlm-error-title-istalkpage": "\"$1\". As páxinas de conversa non se poden traducir.",
+	"mlm-error-lang-invalid": "Lingua non válida.",
 	"mlm-input-label-sourcetitle": "Páxina de orixe",
 	"mlm-input-label-add": "Engadir",
 	"mlm-input-label-save": "Gardar",
