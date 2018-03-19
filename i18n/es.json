@@ -18,6 +18,7 @@
 	"mlm-error-lang-notallowed": "No se permite el idioma «$1» para traducciones",
 	"mlm-error-lang-alreadytraslated": "Ya existe una traducción al idioma «$1»",
 	"mlm-input-label-sourcetitle": "Página de origen",
+	"mlm-input-label-translationtitles": "{{plural:$1|Página|Páginas}} de traducción",
 	"mlm-input-label-add": "Añadir",
 	"mlm-input-label-save": "Guardar",
 	"mlm-input-label-delete": "Borrar",
