@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nikosgranturismogt"
+		]
+	},
+	"multilanguagemanager": "Διαχειριστής πολλαπλών γλωσσών",
+	"mlm-desc": "Επέκταση του MediaWiki για την διαχείρηση πολλαπλών γλωσσών σε ένα MediaWiki.",
+	"mlm-error-title-invalid": "Μη έγκυρο όνομα σελίδας",
+	"mlm-error-title-notexists": "Η σελίδα \"$1\" δεν υπάρχει",
+	"mlm-error-title-istalkpage": "\"$1\". Οι σελίδες συζήτησης δεν μπορούν να μεταφραστούν",
+	"mlm-error-title-nsnotallowed": "\"$1\". Μη έγκυρος ονοματοχώρος για μετάφραση",
+	"mlm-error-title-isalreadytranslation": "Η σελίδα \"$1\" είναι ήδη μια μετάφραση",
+	"mlm-error-title-isalreadysource": "Η σελίδα \"$1\" είναι ήδη μια πηγή",
+	"mlm-error-title-isnottranslation": "Η σελίδα \"$1\" δεν είναι μια μετάφραση",
+	"mlm-error-lang-invalid": "Μη έγκυρη γλώσσα",
+	"mlm-error-lang-notallowed": "Η γλώσσα \"$1\" δεν επιτρέπεται για μετάφραση",
+	"mlm-error-lang-alreadytraslated": "Υπάρχει ήδη μια μετάφραση για την γλώσσα \"$1\"",
+	"mlm-input-label-sourcetitle": "Σελίδα πηγής",
+	"mlm-input-label-translationtitles": "Μετάφραση {{plural:$1|σελίδα|σελίδων}}",
+	"mlm-input-label-add": "Προσθήκη",
+	"mlm-input-label-save": "Αποθήκευση",
+	"mlm-input-label-delete": "Διαγραφή",
+	"mlm-input-label-cancel": "Ακύρωση",
+	"mlm-contentaction-label": "Διαχείριση μεταφράσεων",
+	"apihelp-mlm-tasks-summary": "Διαχείριση εργασιών μετάφρασης",
+	"apihelp-mlm-tasks-param-task": "Η εργασία που θα εκτελεστεί",
+	"apihelp-mlm-tasks-param-taskData": "Κωδικοποιημένο αντικείμενο JSON με τυχαία δεδομένα για την εργασία",
+	"apihelp-mlm-tasks-param-format": "Η μορφή του αποτελέσματος"
+}
