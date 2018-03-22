@@ -14,7 +14,7 @@ abstract class DataProvider {
 		$aFields = [ 'source', 'translate' ];
 		$aConditions = [ "source = $iArticleId OR translate = $iArticleId" ];
 
-		$oRow = wfGetDB( DB_SLAVE )->selectRow(
+		$oRow = wfGetDB( DB_REPLICA )->selectRow(
 			$aTables,
 			$aFields,
 			$aConditions,
@@ -43,7 +43,7 @@ abstract class DataProvider {
 			'page_id = translate',
 		];
 
-		$oRes = wfGetDB( DB_SLAVE )->select(
+		$oRes = wfGetDB( DB_REPLICA )->select(
 			$aTables,
 			$aFields,
 			$aConditions,
@@ -116,7 +116,7 @@ abstract class DataProvider {
 	 * @return array
 	 */
 	public static function getAllSourceTitles() {
-		$oRes = wfGetDB( DB_SLAVE )->select(
+		$oRes = wfGetDB( DB_REPLICA )->select(
 			Helper::getConfig()->get( Config::TRANSLATION_TABLE ),
 			[ 'source' ],
 			[],
