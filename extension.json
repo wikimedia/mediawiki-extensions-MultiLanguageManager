@@ -42,7 +42,6 @@
 		}
 	},
 	"Hooks": {
-		"UnitTestsList": "MultiLanguageManager\\Setup::onUnitTestsList",
 		"LoadExtensionSchemaUpdates": "MultiLanguageManager\\Setup::onLoadExtensionSchemaUpdates",
 		"BeforePageDisplay": "MultiLanguageManager\\Setup::onBeforePageDisplay",
 		"SkinTemplateNavigation::Universal": "MultiLanguageManager\\Setup::onSkinTemplateNavigation_Universal",

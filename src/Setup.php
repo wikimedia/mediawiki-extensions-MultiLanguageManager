@@ -24,16 +24,6 @@ class Setup {
 	}
 
 	/**
-	 * Hook handler for hook 'UnitTestsList'
-	 * @param array $paths
-	 * @return boolean
-	 */
-	public static function onUnitTestsList( &$paths ) {
-		$paths[] = dirname( __DIR__ ).'/tests/phpunit';
-		return true;
-	}
-
-	/**
 	 * Hook handler for hook 'LoadExtensionSchemaUpdates'
 	 * @param \DatabaseUpdater $updater
 	 */
