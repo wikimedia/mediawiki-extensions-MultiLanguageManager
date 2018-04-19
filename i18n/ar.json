@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Sonic N800"
 		]
 	},
 	"multilanguagemanager": "مدير تعدد اللغات",
 	"mlm-error-title-invalid": "اسم الصفحة غير صالح",
-	"mlm-error-title-notexists": "الصفحة غير موجودة",
-	"mlm-error-title-isalreadysource": "الصفحة مصدر بالفعل",
-	"mlm-error-title-isnottranslation": "الصفحة ليست ترجمة",
+	"mlm-error-title-notexists": "الصفحة «$1» غير موجودة",
+	"mlm-error-title-isalreadysource": "الصفحة «$1» مصدر بالفعل",
+	"mlm-error-title-isnottranslation": "الصفحة «$1» ليست ترجمة",
 	"mlm-error-lang-invalid": "لغة غير صالحة",
 	"mlm-input-label-sourcetitle": "صفحة المصدر",
 	"mlm-input-label-add": "أضف",
