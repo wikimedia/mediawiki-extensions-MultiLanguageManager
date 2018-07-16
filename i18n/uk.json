@@ -1,21 +1,22 @@
 {
 	"@metadata": {
 		"authors": [
-			"Piramidion"
+			"Piramidion",
+			"Movses"
 		]
 	},
 	"multilanguagemanager": "Менеджер багатомовності",
 	"mlm-desc": "Розширення MediaWiki для управління багатомовністю в одній інсталяції MediaWiki.",
 	"mlm-error-title-invalid": "Недійсна назва сторінки",
-	"mlm-error-title-notexists": "Сторінка не існує",
-	"mlm-error-title-istalkpage": "Сторінки обговорення не можна перекладати",
-	"mlm-error-title-nsnotallowed": "Недійсний простір назв для перекладу",
-	"mlm-error-title-isalreadytranslation": "Сторінка вже являє собою переклад",
-	"mlm-error-title-isalreadysource": "Сторінка вже є джерелом",
-	"mlm-error-title-isnottranslation": "Сторінка не є перекладом",
+	"mlm-error-title-notexists": "Сторінка \"$1\" не існує",
+	"mlm-error-title-istalkpage": "\"$1\". Сторінки обговорення не можна перекладати",
+	"mlm-error-title-nsnotallowed": "\"$1\". Недійсний простір назв для перекладу",
+	"mlm-error-title-isalreadytranslation": "Сторінка \"$1\" вже являє собою переклад",
+	"mlm-error-title-isalreadysource": "Сторінка \"$1\" вже є джерелом",
+	"mlm-error-title-isnottranslation": "Сторінка \"$1\" не є перекладом",
 	"mlm-error-lang-invalid": "Недійсна мова",
-	"mlm-error-lang-notallowed": "Ця мова є неприйнятною для перекладу",
-	"mlm-error-lang-alreadytraslated": "Для мови «$1» вже існує переклад",
+	"mlm-error-lang-notallowed": "Мова \"$1\" є неприйнятною для перекладу",
+	"mlm-error-lang-alreadytraslated": "Для мови \"$1\" вже існує переклад",
 	"mlm-input-label-sourcetitle": "Вихідна сторінка",
 	"mlm-input-label-translationtitles": "{{PLURAL:$1|Сторінка|Сторінки}} перекладу",
 	"mlm-input-label-save": "Зберегти",
