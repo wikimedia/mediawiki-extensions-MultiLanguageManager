@@ -10,6 +10,7 @@
 	},
 	"multilanguagemanager": "Title of the special page",
 	"mlm-desc": "{{desc|name=MultiLanguageManager|url=https://www.mediawiki.org/wiki/Extension:MultiLanguageManager}}",
+	"action-language": "{{doc-action|language}}",
 	"mlm-error-title-invalid": "Error message in case that a invalid title was provided",
 	"mlm-error-title-notexists": "Error message in case that a provided title does not exist\n*Paramter $1 - Full page name",
 	"mlm-error-title-istalkpage": "Error message in case that a provided title is a talk page\n*Paramter $1 - Full page name",
@@ -27,9 +28,9 @@
 	"mlm-input-label-delete": "Label for a delete button\n{{Identical|Delete}}",
 	"mlm-input-label-cancel": "Label for a delete button\n{{Identical|Cancel}}",
 	"mlm-contentaction-label": "Label of a content action link that opens Special:MultiLanguageManager",
+	"right-language": "Grants access to use the user interface of the MultilanguageManager extension to add, edit and delete translations.\n{{doc-right|language}}",
 	"apihelp-mlm-tasks-summary": "{{doc-apihelp-summary|mlm-tasks}}",
 	"apihelp-mlm-tasks-param-task": "{{doc-apihelp-param|mlm-tasks|task}}",
 	"apihelp-mlm-tasks-param-taskData": "{{doc-apihelp-param|mlm-tasks|taskData}}",
-	"apihelp-mlm-tasks-param-format": "{{doc-apihelp-param|mlm-tasks|format}}",
-	"right-language": "Grants access to use the user interface of the MultilanguageManager extension to add, edit and delete translations.\n{{doc-right|language}}"
+	"apihelp-mlm-tasks-param-format": "{{doc-apihelp-param|mlm-tasks|format}}"
 }

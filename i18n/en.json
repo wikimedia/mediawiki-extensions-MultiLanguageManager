@@ -6,6 +6,7 @@
 	},
 	"multilanguagemanager": "Multi language manager",
 	"mlm-desc": "Mediawiki extension to manage multi language in one MediaWiki.",
+	"action-language": "add, edit and delete translations using the MultiLanguageManager inferface",
 	"mlm-error-title-invalid": "Invalid page name",
 	"mlm-error-title-notexists": "Page \"$1\" does not exist",
 	"mlm-error-title-istalkpage": "\"$1\". Talk pages can not be translated",
@@ -23,9 +24,9 @@
 	"mlm-input-label-delete": "Delete",
 	"mlm-input-label-cancel": "Cancel",
 	"mlm-contentaction-label": "Manage translations",
+	"right-language": "Add, edit and delete translations using the MultiLanguageManager interface",
 	"apihelp-mlm-tasks-summary": "Manage translation tasks",
 	"apihelp-mlm-tasks-param-task": "The task that should be executed",
 	"apihelp-mlm-tasks-param-taskData": "JSON string encoded object with arbitrary data for the task",
-	"apihelp-mlm-tasks-param-format": "The format of the result",
-	"right-language": "Add, edit and delete translations using the MultiLanguageManager interface."
+	"apihelp-mlm-tasks-param-format": "The format of the result"
 }
