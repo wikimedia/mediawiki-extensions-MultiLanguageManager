@@ -30,5 +30,6 @@
 	"apihelp-mlm-tasks-summary": "{{doc-apihelp-summary|mlm-tasks}}",
 	"apihelp-mlm-tasks-param-task": "{{doc-apihelp-param|mlm-tasks|task}}",
 	"apihelp-mlm-tasks-param-taskData": "{{doc-apihelp-param|mlm-tasks|taskData}}",
-	"apihelp-mlm-tasks-param-format": "{{doc-apihelp-param|mlm-tasks|format}}"
+	"apihelp-mlm-tasks-param-format": "{{doc-apihelp-param|mlm-tasks|format}}",
+	"right-language": "Grants access to use the user interface of the MultilanguageManager extension to add, edit and delete translations.\n{{doc-right|language}}"
 }

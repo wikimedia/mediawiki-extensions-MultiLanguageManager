@@ -26,5 +26,6 @@
 	"apihelp-mlm-tasks-summary": "Manage translation tasks",
 	"apihelp-mlm-tasks-param-task": "The task that should be executed",
 	"apihelp-mlm-tasks-param-taskData": "JSON string encoded object with arbitrary data for the task",
-	"apihelp-mlm-tasks-param-format": "The format of the result"
+	"apihelp-mlm-tasks-param-format": "The format of the result",
+	"right-language": "Add, edit and delete translations using the MultiLanguageManager interface."
 }
