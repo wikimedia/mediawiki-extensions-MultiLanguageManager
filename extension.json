@@ -81,7 +81,8 @@
 				"mlm-input-label-save",
 				"mlm-input-label-delete",
 				"mlm-input-label-cancel",
-				"mlm-contentaction-label"
+				"mlm-contentaction-label",
+				"allmessages-language"
 			]
 		}
 	},
