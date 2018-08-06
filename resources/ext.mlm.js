@@ -35,6 +35,14 @@
 			'mlmLanguageFlags',
 			{}
 		);
+		var css =  '';
+		for( var code in mw.mlm.languageFlags ) {
+			css += ' .oo-ui-icon-mlm-lang-flag-' + code + ' {\n\
+					background-image: url("' + mw.mlm.languageFlags[code] + '");\n\
+				}\n\
+			';
+		}
+		$( "<style type='text/css'>" + css + "</style>" ).appendTo( "head" );
 		var lang =  mw.config.get( 'wgContentLanguage' ).split('-');
 		mw.mlm.lang = lang[0];
 
@@ -80,10 +88,11 @@
 				if( mw.mlm.languages[i] === mw.mlm.lang ) {
 					continue;
 				}
-				options.push( {
+				options.push( new OO.ui.MenuOptionWidget( {
+					icon: "mlm-lang-flag-" + mw.mlm.languages[i],
 					data: mw.mlm.languages[i],
 					label: mw.mlm.languages[i]
-				});
+				}));
 			}
 
 			this.srcLang = new OO.ui.ButtonWidget( {disabled: true} );
@@ -124,10 +133,10 @@
 				this.updateTranslations( mw.mlm.translations[i] );
 			}
 
-			this.translationLang = new OO.ui.DropdownInputWidget( {
+			this.translationLang = new OO.ui.DropdownWidget( {
 				value: '',
-				options: options,
-				label: 'lang'
+				menu: { items: options },
+				label: mw.message( 'allmessages-language' ).plain()
 			});
 			this.translationText = new OO.ui.TextInputWidget( {
 				value: mw.mlm.srcTitle === '' ? mw.config.get( 'wgTitle' ) : '',
@@ -295,8 +304,8 @@
 
 		mw.mlm.dialog.prototype.onTranslationAdd = function(){
 			this.updateTranslations( {
-				'lang': this.translationLang.value,
-				'text': this.translationText.value
+				'lang': this.translationLang.getMenu().getSelectedItem().getData(),
+				'text': this.translationText.getValue()
 			});
 			this.getActions().setAbilities( {
 				save: true
