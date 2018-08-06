@@ -8,6 +8,7 @@
 	},
 	"multilanguagemanager": "Flerspråkshanterare",
 	"mlm-desc": "Mediawiki-tillägg för att hantera fler språk på en MediaWiki.",
+	"action-language": "lägg till, redigera och radera översättningar med gränssnittet MultiLanguageManager",
 	"mlm-error-title-invalid": "Ogiltigt sidnamn",
 	"mlm-error-title-notexists": "Sidan finns inte",
 	"mlm-error-title-istalkpage": "Diskussionssidor kan inte översättas",
@@ -22,5 +23,6 @@
 	"mlm-input-label-translationtitles": "{{plural:$1|Översättningssida|Översättningssidor}}",
 	"mlm-input-label-save": "Spara",
 	"mlm-input-label-delete": "Radera",
-	"mlm-contentaction-label": "Hantera översättningar"
+	"mlm-contentaction-label": "Hantera översättningar",
+	"right-language": "Lägg till, redigera och radera översättningar med gränssnittet MultiLanguageManager"
 }

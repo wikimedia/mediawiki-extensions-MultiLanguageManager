@@ -4,6 +4,7 @@
 			"Chrumps"
 		]
 	},
+	"action-language": "dodawania, edycji i usuwania tłumaczeń za pomocą interfejsu MultiLanguageManager",
 	"mlm-error-title-invalid": "Nieprawidłowa nazwa strony",
 	"mlm-error-title-notexists": "Strona „$1” nie istnieje",
 	"mlm-error-lang-invalid": "Nieprawidłowy język",
@@ -11,5 +12,6 @@
 	"mlm-input-label-add": "Dodaj",
 	"mlm-input-label-save": "Zapisz",
 	"mlm-input-label-delete": "Usuń",
-	"mlm-input-label-cancel": "Anuluj"
+	"mlm-input-label-cancel": "Anuluj",
+	"right-language": "Dodawaj, edytuj i usuwaj tłumaczenia za pomocą interfejsu MultiLanguageManager"
 }

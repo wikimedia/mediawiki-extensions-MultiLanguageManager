@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Macofe",
-			"Fitoschido"
+			"Fitoschido",
+			"MarcoAurelio"
 		]
 	},
 	"multilanguagemanager": "Gestor multiidioma",
 	"mlm-desc": "Extensión de Mediawiki para gestionar múltiples idiomas en una instancia de Mediawiki.",
+	"action-language": "añadir, editar y borrar traducciones usando la interfaz de MultiLanguageManager",
 	"mlm-error-title-invalid": "Nombre de página no válido",
 	"mlm-error-title-notexists": "La página «$1» no existe",
 	"mlm-error-title-istalkpage": "«$1». Las páginas de discusión no se pueden traducir",
@@ -24,6 +26,7 @@
 	"mlm-input-label-delete": "Borrar",
 	"mlm-input-label-cancel": "Cancelar",
 	"mlm-contentaction-label": "Gestionar traducciones",
+	"right-language": "Añadir, editar y borrar traducciones usando la interfaz de MultiLanguageManager",
 	"apihelp-mlm-tasks-summary": "Gestionar las tareas de traducción",
 	"apihelp-mlm-tasks-param-task": "La tarea que debe ejecutarse",
 	"apihelp-mlm-tasks-param-taskData": "Objeto JSON de cadena codificada con datos arbitrarios para la tarea",
