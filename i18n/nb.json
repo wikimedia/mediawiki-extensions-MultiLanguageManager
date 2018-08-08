@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"action-language": "legge til, redigere og slette oversettelser med grensesnittet MultiLanguageManager"
+}
