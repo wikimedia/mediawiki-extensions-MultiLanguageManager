@@ -6,6 +6,7 @@
 	},
 	"multilanguagemanager": "다중 언어 관리자",
 	"mlm-desc": "하나의 미디어위키에서 여러 언어를 관리하기 위한 미디어위키 확장 기능입니다.",
+	"action-language": "다중언어관리자 인터페이스를 사용하여 번역을 추가, 편집, 삭제합니다",
 	"mlm-error-title-invalid": "잘못된 문서 제목",
 	"mlm-error-title-notexists": "\"$1\" 문서가 존재하지 않습니다",
 	"mlm-error-title-istalkpage": "\"$1\". 토론 문서는 번역할 수 없습니다",
@@ -23,5 +24,6 @@
 	"mlm-input-label-delete": "삭제",
 	"mlm-input-label-cancel": "취소",
 	"mlm-contentaction-label": "번역 관리",
+	"right-language": "다중언어관리자 인터페이스를 사용하여 번역을 추가, 편집, 삭제합니다",
 	"apihelp-mlm-tasks-param-format": "결과 형식"
 }
