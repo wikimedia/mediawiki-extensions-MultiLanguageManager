@@ -214,20 +214,20 @@ class MultiLanguageManager extends \SpecialPage {
 		);
 		$sRows = '';
 		$bTitleInTranslations = false;
-		foreach( $this->oTranslation->getTranslations() as $oTanslation ) {
-			$oTitle = \Title::newFromID( $oTanslation->id );
+		foreach( $this->oTranslation->getTranslations() as $oTranslation ) {
+			$oTitle = \Title::newFromID( $oTranslation->id );
 			if( $oTitle->equals( $this->oTitle ) ) {
 				$bTitleInTranslations = true;
 			}
 			$sInput = \Html::element( 'input', [
-				'id' => "mlm-translation-$oTanslation->id",
+				'id' => "mlm-translation-$oTranslation->id",
 				'value' => $oTitle->getFullText(),
 				'readonly' => 'readonly',
 			]);
 			$sLang = \Xml::tags( 'select', [
-				'id' => "mlm-translation-lang-$oTanslation->id",
+				'id' => "mlm-translation-lang-$oTranslation->id",
 				'disabled' => 'disabled',
-			], \Xml::option( $oTanslation->lang, $oTanslation->lang ) );
+			], \Xml::option( $oTranslation->lang, $oTranslation->lang ) );
 			$sRows .= "$sInput$sLang<br />";
 		}
 
