@@ -22,13 +22,15 @@
 	"mlm-error-lang-alreadytraslated": "Error message in case that there is already a translation for a specific language code\n*Paramter $1 - The language code",
 	"mlm-input-label-sourcetitle": "Label for a textfield that allows specification of the source title",
 	"mlm-input-label-translationtitles": "Label of a section that lists translations of an article.\n*Paramter $1 - Number of available translations",
-	"mlm-input-label-add": "Label for a add button\n{{Identical|Add}}",
+	"mlm-input-label-add": "Label for a add button, that adds a translation\n{{Identical|Add translation}}",
 	"mlm-input-label-save": "Label for a save button\n{{Identical|Save}}",
-	"mlm-input-label-delete": "Label for a delete button\n{{Identical|Delete}}",
-	"mlm-input-label-cancel": "Label for a delete button\n{{Identical|Cancel}}",
+	"mlm-input-label-delete": "Label for a delete button, that deletes all translations.\n{{Identical|Delete all translations}}",
+	"mlm-input-label-cancel": "Label for a cancel button\n{{Identical|Cancel}}",
 	"mlm-contentaction-label": "Label of a content action link that opens Special:MultiLanguageManager",
 	"apihelp-mlm-tasks-summary": "{{doc-apihelp-summary|mlm-tasks}}",
 	"apihelp-mlm-tasks-param-task": "{{doc-apihelp-param|mlm-tasks|task}}",
 	"apihelp-mlm-tasks-param-taskData": "{{doc-apihelp-param|mlm-tasks|taskdata}}",
-	"apihelp-mlm-tasks-param-format": "{{doc-apihelp-param|mlm-tasks|format}}"
+	"apihelp-mlm-tasks-param-format": "{{doc-apihelp-param|mlm-tasks|format}}",
+	"mlm-input-label-sourcetitle-section": "Label for the source title section in the oojs ui dialog\nVery short sentence wich explains, that a translation for the in this section given source article can be defined.\ni.e.: \"Defines the translations of:\"",
+	"mlm-input-label-translationtitles-section": "Label for the translation titles section in the oojs ui dialog\nVery short sentence wich explains, that translations can be added in the selected language.\ni.e.: \"In the following Language:\""
 }

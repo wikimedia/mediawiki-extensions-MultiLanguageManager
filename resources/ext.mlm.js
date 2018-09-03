@@ -164,7 +164,13 @@
 
 			this.content.addItems([
 				this.errorSection,
+				new OO.ui.LabelWidget( {
+					label: mw.message( 'mlm-input-label-sourcetitle-section' ).plain()
+				}),
 				this.srcSection,
+				new OO.ui.LabelWidget( {
+					label: mw.message( 'mlm-input-label-translationtitles-section' ).plain()
+				}),
 				this.addSection,
 				this.translationsSection
 			]);

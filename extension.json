@@ -80,7 +80,9 @@
 				"mlm-input-label-delete",
 				"mlm-input-label-cancel",
 				"mlm-contentaction-label",
-				"allmessages-language"
+				"allmessages-language",
+				"mlm-input-label-sourcetitle-section",
+				"mlm-input-label-translationtitles-section"
 			]
 		}
 	},
