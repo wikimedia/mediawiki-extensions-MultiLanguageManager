@@ -138,6 +138,10 @@
 				menu: { items: options },
 				label: mw.message( 'allmessages-language' ).plain()
 			});
+			this.translationLang.menu.on( 'select', function( item ) {
+				this.setIcon( item.getIcon() );
+			}.bind( this.translationLang ) );
+
 			this.translationText = new OO.ui.TextInputWidget( {
 				value: mw.mlm.srcTitle === '' ? mw.config.get( 'wgTitle' ) : '',
 				label: mw.message(
