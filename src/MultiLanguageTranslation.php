@@ -191,13 +191,22 @@ class MultiLanguageTranslation extends DataProvider {
 				$oTitle->getFullText()
 			);
 		}
-		if( $oTranslation->getSourceTitle()
-			&& !$oTranslation->getSourceTitle()->equals( $this->getSourceTitle() )
-			&& $oTranslation->isTranslation( $oTitle ) ) {
-			return \Status::newFatal(
-				'mlm-error-title-isalreadysource',
-				$oTitle->getFullText()
-			);
+
+		if( $oTranslation->getSourceTitle() ) {
+			if( !$oTranslation->getSourceTitle()->equals( $this->getSourceTitle() ) ) {
+				if( $oTranslation->isTranslation( $oTitle ) ) {
+					return \Status::newFatal(
+						'mlm-error-title-isalreadytranslation',
+						$oTitle->getFullText()
+					);
+				}
+			}
+			if( $oTranslation->getSourceTitle()->equals( $oTitle ) ) {
+				return \Status::newFatal(
+					'mlm-error-title-isalreadysource',
+					$oTitle->getFullText()
+				);
+			}
 		}
 		if( $sLang == Helper::getSystemLanguageCode() ) {
 			return \Status::newFatal(
