@@ -19,11 +19,13 @@
 	"mlm-error-lang-alreadytraslated": "\"$1\" 언어의 번역이 이미 있습니다",
 	"mlm-input-label-sourcetitle": "원본 문서",
 	"mlm-input-label-translationtitles": "번역 {{plural:$1|문서}}",
-	"mlm-input-label-add": "추가",
+	"mlm-input-label-add": "번역 추가",
 	"mlm-input-label-save": "저장",
-	"mlm-input-label-delete": "삭제",
+	"mlm-input-label-delete": "모든 번역 삭제하기",
 	"mlm-input-label-cancel": "취소",
 	"mlm-contentaction-label": "번역 관리",
 	"right-language": "다중언어관리자 인터페이스를 사용하여 번역을 추가, 편집, 삭제합니다",
-	"apihelp-mlm-tasks-param-format": "결과 형식"
+	"apihelp-mlm-tasks-param-format": "결과 형식",
+	"mlm-input-label-sourcetitle-section": "다음의 번역 정의:",
+	"mlm-input-label-translationtitles-section": "다음의 언어로:"
 }

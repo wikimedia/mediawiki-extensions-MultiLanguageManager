@@ -21,8 +21,11 @@
 	"mlm-error-lang-alreadytraslated": "Det finns redan en översättning för språket '$1'",
 	"mlm-input-label-sourcetitle": "Källsida",
 	"mlm-input-label-translationtitles": "{{plural:$1|Översättningssida|Översättningssidor}}",
+	"mlm-input-label-add": "Lägg till översättning",
 	"mlm-input-label-save": "Spara",
-	"mlm-input-label-delete": "Radera",
+	"mlm-input-label-delete": "Radera alla översättningar",
 	"mlm-contentaction-label": "Hantera översättningar",
-	"right-language": "Lägg till, redigera och radera översättningar med gränssnittet MultiLanguageManager"
+	"right-language": "Lägg till, redigera och radera översättningar med gränssnittet MultiLanguageManager",
+	"mlm-input-label-sourcetitle-section": "Definierar översättningarna av:",
+	"mlm-input-label-translationtitles-section": "På följande språk:"
 }

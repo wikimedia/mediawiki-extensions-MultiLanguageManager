@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"夢蝶葬花"
 		]
 	},
 	"multilanguagemanager": "多语言管理器",
@@ -18,9 +19,9 @@
 	"mlm-error-lang-alreadytraslated": "已存在“$1”语言的翻译",
 	"mlm-input-label-sourcetitle": "来源页面",
 	"mlm-input-label-translationtitles": "翻译{{plural:$1|页面}}",
-	"mlm-input-label-add": "添加",
+	"mlm-input-label-add": "添加翻译",
 	"mlm-input-label-save": "保存",
-	"mlm-input-label-delete": "删除",
+	"mlm-input-label-delete": "删除翻译",
 	"mlm-input-label-cancel": "取消",
 	"mlm-contentaction-label": "管理翻译",
 	"apihelp-mlm-tasks-summary": "管理翻译任务",

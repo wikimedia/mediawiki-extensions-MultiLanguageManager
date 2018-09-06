@@ -20,14 +20,16 @@
 	"mlm-error-lang-alreadytraslated": "已有語言為「$1」的翻譯",
 	"mlm-input-label-sourcetitle": "來源頁面",
 	"mlm-input-label-translationtitles": "翻譯 {{PLURAL:$1| 個頁面| 個頁面}}",
-	"mlm-input-label-add": "新增",
+	"mlm-input-label-add": "新增翻譯",
 	"mlm-input-label-save": "儲存",
-	"mlm-input-label-delete": "刪除",
+	"mlm-input-label-delete": "刪除所有翻譯",
 	"mlm-input-label-cancel": "取消",
 	"mlm-contentaction-label": "管理翻譯",
 	"right-language": "使用 MultiLanguageManager 介面來添加、編輯，以及刪除翻譯",
 	"apihelp-mlm-tasks-summary": "管理翻譯任務",
 	"apihelp-mlm-tasks-param-task": "應被執行的任務",
 	"apihelp-mlm-tasks-param-taskData": "用於任務，帶有任意資料的 JSON 字串編碼物件",
-	"apihelp-mlm-tasks-param-format": "結果格式"
+	"apihelp-mlm-tasks-param-format": "結果格式",
+	"mlm-input-label-sourcetitle-section": "定義翻譯關於：",
+	"mlm-input-label-translationtitles-section": "在以下語言："
 }

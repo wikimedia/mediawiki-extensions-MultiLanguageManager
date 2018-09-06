@@ -19,14 +19,16 @@
 	"mlm-error-lang-alreadytraslated": "Es gibt bereits eine Übersetzung für die Sprache „$1“",
 	"mlm-input-label-sourcetitle": "Quellseite",
 	"mlm-input-label-translationtitles": "{{PLURAL:$1|Übersetzungsseite|Übersetzungsseiten}}",
-	"mlm-input-label-add": "Hinzufügen",
+	"mlm-input-label-add": "Übersetzung hinzufügen",
 	"mlm-input-label-save": "Speichern",
-	"mlm-input-label-delete": "Löschen",
+	"mlm-input-label-delete": "Alle Übersetzungen löschen",
 	"mlm-input-label-cancel": "Abbrechen",
 	"mlm-contentaction-label": "Übersetzungen verwalten",
 	"right-language": "Übersetzungen mit der MultiLanguageManager-Oberfläche hinzufügen, bearbeiten und löschen",
 	"apihelp-mlm-tasks-summary": "Verwaltet Übersetzungsaufgaben",
 	"apihelp-mlm-tasks-param-task": "Die Aufgabe, die ausgeführt werden soll.",
 	"apihelp-mlm-tasks-param-taskData": "JSON-zeichenfolgekodiertes Objekt mit beliebigen Daten für die Aufgabe",
-	"apihelp-mlm-tasks-param-format": "Das Format des Ergebnisses"
+	"apihelp-mlm-tasks-param-format": "Das Format des Ergebnisses",
+	"mlm-input-label-sourcetitle-section": "Die Übersetzungen definieren von:",
+	"mlm-input-label-translationtitles-section": "In der folgenden Sprache:"
 }

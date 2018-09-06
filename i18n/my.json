@@ -9,9 +9,10 @@
 	"mlm-error-lang-notallowed": "ဘာသာစကား \"$1\" ကို ဘာသာပြန်ရန် ခွင့်မပြုပါ",
 	"mlm-input-label-sourcetitle": "ရင်းမြစ် စာမျက်နှာ",
 	"mlm-input-label-translationtitles": "ဘာသာပြန် {{plural:$1|စာမျက်နှာ|စာမျက်နှာများ}}",
-	"mlm-input-label-add": "ပေါင်းထည့်ရန်",
+	"mlm-input-label-add": "ဘာသာပြန် ပေါင်းထည့်ရန်",
 	"mlm-input-label-save": "သိမ်းရန်",
-	"mlm-input-label-delete": "ဖျက်ရန်",
+	"mlm-input-label-delete": "ဘာသာပြန်အားလုံးကို ဖျက်ရန်",
 	"mlm-input-label-cancel": "မလုပ်တော့ပါ",
-	"mlm-contentaction-label": "ဘာသာပြန်များကို စီမံရန်"
+	"mlm-contentaction-label": "ဘာသာပြန်များကို စီမံရန်",
+	"mlm-input-label-translationtitles-section": "အောက်ပါဘာသာစကားထဲတွင်:"
 }

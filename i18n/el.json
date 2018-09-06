@@ -18,7 +18,7 @@
 	"mlm-error-lang-alreadytraslated": "Υπάρχει ήδη μια μετάφραση για την γλώσσα \"$1\"",
 	"mlm-input-label-sourcetitle": "Σελίδα πηγής",
 	"mlm-input-label-translationtitles": "Μετάφραση {{plural:$1|σελίδα|σελίδων}}",
-	"mlm-input-label-add": "Προσθήκη",
+	"mlm-input-label-add": "Προσθήκη μετάφρασης",
 	"mlm-input-label-save": "Αποθήκευση",
 	"mlm-input-label-delete": "Διαγραφή",
 	"mlm-input-label-cancel": "Ακύρωση",
@@ -26,5 +26,6 @@
 	"apihelp-mlm-tasks-summary": "Διαχείριση εργασιών μετάφρασης",
 	"apihelp-mlm-tasks-param-task": "Η εργασία που θα εκτελεστεί",
 	"apihelp-mlm-tasks-param-taskData": "Κωδικοποιημένο αντικείμενο JSON με τυχαία δεδομένα για την εργασία",
-	"apihelp-mlm-tasks-param-format": "Η μορφή του αποτελέσματος"
+	"apihelp-mlm-tasks-param-format": "Η μορφή του αποτελέσματος",
+	"mlm-input-label-sourcetitle-section": "Ορίζει τις μεταφράσεις του:"
 }

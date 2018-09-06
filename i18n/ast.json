@@ -20,14 +20,16 @@
 	"mlm-error-lang-alreadytraslated": "Yá hai una traducción pa la llingua «$1»",
 	"mlm-input-label-sourcetitle": "Páxina fonte",
 	"mlm-input-label-translationtitles": "{{plural:$1|páxina|páxines}} de traducción",
-	"mlm-input-label-add": "Amestar",
+	"mlm-input-label-add": "Amestar traducción",
 	"mlm-input-label-save": "Guardar",
-	"mlm-input-label-delete": "Desaniciar",
+	"mlm-input-label-delete": "Desaniciar toles traducciones",
 	"mlm-input-label-cancel": "Encaboxar",
 	"mlm-contentaction-label": "Alministrar traducciones",
 	"right-language": "Añadir, editar y desaniciar traducciones usando la interfaz MultiLanguageManager",
 	"apihelp-mlm-tasks-summary": "Alministrar les xeres de traducción",
 	"apihelp-mlm-tasks-param-task": "La xera que tien d'executase",
 	"apihelp-mlm-tasks-param-taskData": "Oxetu codificáu JSON de cadena con datos cualesquiera pa la xera",
-	"apihelp-mlm-tasks-param-format": "El formatu de la resultancia"
+	"apihelp-mlm-tasks-param-format": "El formatu de la resultancia",
+	"mlm-input-label-sourcetitle-section": "Define les traducciones de:",
+	"mlm-input-label-translationtitles-section": "Nel siguiente idioma:"
 }

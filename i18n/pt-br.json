@@ -19,14 +19,16 @@
 	"mlm-error-lang-alreadytraslated": "Já existe uma tradução para o idioma \"$1\"",
 	"mlm-input-label-sourcetitle": "Página fonte",
 	"mlm-input-label-translationtitles": "{{PLURAL:$1|Página|Páginas}} de tradução",
-	"mlm-input-label-add": "Adicionar",
+	"mlm-input-label-add": "Adicionar tradução",
 	"mlm-input-label-save": "Salvar",
-	"mlm-input-label-delete": "Deletar",
+	"mlm-input-label-delete": "Excluir todas as traduções",
 	"mlm-input-label-cancel": "Cancelar",
 	"mlm-contentaction-label": "Gerenciar traduções",
 	"right-language": "Acrescentar, editar e eliminar traduções usando a interface do gestor multi-linguístico",
 	"apihelp-mlm-tasks-summary": "Gerenciar tarefas de tradução",
 	"apihelp-mlm-tasks-param-task": "A tarefa que deve ser executada",
 	"apihelp-mlm-tasks-param-taskData": "Objeto codificado em texto JSON com dados arbitrários para a tarefa",
-	"apihelp-mlm-tasks-param-format": "O formato do resultado"
+	"apihelp-mlm-tasks-param-format": "O formato do resultado",
+	"mlm-input-label-sourcetitle-section": "Define as traduções de:",
+	"mlm-input-label-translationtitles-section": "Na seguinte idioma:"
 }
