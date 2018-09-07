@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"Sjoerddebruin"
 		]
 	},
 	"mlm-error-title-invalid": "Ongeldige paginanaam",
@@ -15,7 +16,8 @@
 	"mlm-error-lang-notallowed": "Naar deze taal kan niet worden vertaald",
 	"mlm-error-lang-alreadytraslated": "Er is al een vertaling voor de tall '$1'",
 	"mlm-input-label-sourcetitle": "Bronpagina",
+	"mlm-input-label-add": "Vertaling toevoegen",
 	"mlm-input-label-save": "Opslaan",
-	"mlm-input-label-delete": "Verwijderen",
+	"mlm-input-label-delete": "Alle vertalingen verwijderen",
 	"mlm-contentaction-label": "Vertalingen beheren"
 }

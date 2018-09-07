@@ -9,7 +9,9 @@
 	"mlm-error-lang-invalid": "Lingua non valida",
 	"mlm-error-lang-notallowed": "La lingua \"$1\" non è consentita per la traduzione",
 	"mlm-error-lang-alreadytraslated": "Esiste già una traduzione per la lingua \"$1\"",
+	"mlm-input-label-add": "Aggiungi traduzione",
 	"mlm-input-label-save": "Salva",
-	"mlm-input-label-delete": "Cancella",
-	"mlm-input-label-cancel": "Annulla"
+	"mlm-input-label-delete": "Cancella tutte le traduzioni",
+	"mlm-input-label-cancel": "Annulla",
+	"mlm-input-label-translationtitles-section": "Nella seguente lingua:"
 }

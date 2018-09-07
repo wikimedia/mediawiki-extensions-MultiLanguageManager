@@ -19,14 +19,16 @@
 	"mlm-error-lang-alreadytraslated": "Веќе има превод за јазикот „$1“",
 	"mlm-input-label-sourcetitle": "Изворна страница",
 	"mlm-input-label-translationtitles": "{{PLURAL:$1|Преводна страница|Преводни страници}}",
-	"mlm-input-label-add": "Додај",
+	"mlm-input-label-add": "Додај превод",
 	"mlm-input-label-save": "Зачувај",
-	"mlm-input-label-delete": "Избриши",
+	"mlm-input-label-delete": "Избриши ги сите преводи",
 	"mlm-input-label-cancel": "Откажи",
 	"mlm-contentaction-label": "Раковод. со преводи",
 	"right-language": "Додавање, уредување и бришење на преводи преку посредникот „Повеќејазичен раководител“",
 	"apihelp-mlm-tasks-summary": "Раководство со преводни задачи",
 	"apihelp-mlm-tasks-param-task": "Задачата што треба да се изврши",
 	"apihelp-mlm-tasks-param-taskData": "JSON-низа кодирана во објект со произволни податоци за задачата",
-	"apihelp-mlm-tasks-param-format": "Формат на исходот"
+	"apihelp-mlm-tasks-param-format": "Формат на исходот",
+	"mlm-input-label-sourcetitle-section": "Ги определува преводите на:",
+	"mlm-input-label-translationtitles-section": "На следниов јазик:"
 }
