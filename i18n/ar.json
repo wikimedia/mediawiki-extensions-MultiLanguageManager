@@ -21,14 +21,16 @@
 	"mlm-error-lang-alreadytraslated": "هناك بالفعل ترجمة للغة \"$1\"",
 	"mlm-input-label-sourcetitle": "صفحة المصدر",
 	"mlm-input-label-translationtitles": "{{plural:$1|صفحة||صفحات}} ترجمة",
-	"mlm-input-label-add": "أضف",
+	"mlm-input-label-add": "إضافة ترجمة",
 	"mlm-input-label-save": "احفظ",
-	"mlm-input-label-delete": "حذف",
+	"mlm-input-label-delete": "حذف كل الترجمات",
 	"mlm-input-label-cancel": "إلغاء",
 	"mlm-contentaction-label": "إدارة الترجمات",
 	"right-language": "إضافة وتحرير وحذف الترجمات باستخدام واجهة مدير تعدد اللغات",
 	"apihelp-mlm-tasks-summary": "إدارة مهام الترجمة",
 	"apihelp-mlm-tasks-param-task": "المهمة التي يجب تنفيذها",
 	"apihelp-mlm-tasks-param-taskData": "كائن سلسلة JSON مشفر ببيانات عشوائية للمهمة",
-	"apihelp-mlm-tasks-param-format": "تنسيق النتيجة"
+	"apihelp-mlm-tasks-param-format": "تنسيق النتيجة",
+	"mlm-input-label-sourcetitle-section": "يحدد ترجمات:",
+	"mlm-input-label-translationtitles-section": "باللغة التالية:"
 }
