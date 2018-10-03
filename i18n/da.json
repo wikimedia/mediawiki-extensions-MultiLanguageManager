@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"mlm-error-title-invalid": "Ugyldigt sidenavn.",
+	"mlm-error-title-notexists": "Siden \"$1\" findes ikke",
+	"mlm-error-title-isalreadytranslation": "Siden \"$1\" er allerede en oversættelse",
+	"mlm-error-title-isnottranslation": "Siden \"$1\" er ikke en oversættelse",
+	"mlm-error-lang-invalid": "Ugyldigt sprog",
+	"mlm-input-label-add": "Tilføj oversættelse",
+	"mlm-input-label-save": "Gem",
+	"mlm-input-label-delete": "Slet alle oversættelser",
+	"mlm-input-label-cancel": "Annullér",
+	"mlm-input-label-translationtitles-section": "På følgende sprog:"
+}
