@@ -7,6 +7,7 @@
 	},
 	"multilanguagemanager": "Менеджер багатомовності",
 	"mlm-desc": "Розширення MediaWiki для управління багатомовністю в одній інсталяції MediaWiki.",
+	"action-language": "додавання, редагування та вилучення перекладів через інтерфейс MultiLanguageManager",
 	"mlm-error-title-invalid": "Недійсна назва сторінки",
 	"mlm-error-title-notexists": "Сторінка \"$1\" не існує",
 	"mlm-error-title-istalkpage": "\"$1\". Сторінки обговорення не можна перекладати",
@@ -19,7 +20,16 @@
 	"mlm-error-lang-alreadytraslated": "Для мови \"$1\" вже існує переклад",
 	"mlm-input-label-sourcetitle": "Вихідна сторінка",
 	"mlm-input-label-translationtitles": "{{PLURAL:$1|Сторінка|Сторінки}} перекладу",
+	"mlm-input-label-add": "Додати переклад",
 	"mlm-input-label-save": "Зберегти",
-	"mlm-input-label-delete": "Вилучити",
-	"mlm-contentaction-label": "Керувати перекладами"
+	"mlm-input-label-delete": "Вилучити всі переклади",
+	"mlm-input-label-cancel": "Скасувати",
+	"mlm-contentaction-label": "Керувати перекладами",
+	"right-language": "додавання, редагування та вилучення перекладів через інтерфейс MultiLanguageManager",
+	"apihelp-mlm-tasks-summary": "Керувати завданнями перекладу",
+	"apihelp-mlm-tasks-param-task": "Завдання, яке слід виконати",
+	"apihelp-mlm-tasks-param-taskData": "Об'єкт, закодований як рядок JSON, із допоміжними даними для завдання",
+	"apihelp-mlm-tasks-param-format": "Формат результату",
+	"mlm-input-label-sourcetitle-section": "Визначає переклади:",
+	"mlm-input-label-translationtitles-section": "Такою мовою:"
 }
