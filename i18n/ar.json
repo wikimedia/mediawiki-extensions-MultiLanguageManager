@@ -3,7 +3,8 @@
 		"authors": [
 			"محمد أحمد عبد الفتاح",
 			"Sonic N800",
-			"ديفيد"
+			"ديفيد",
+			"Meno25"
 		]
 	},
 	"multilanguagemanager": "مدير تعدد اللغات",
@@ -22,7 +23,7 @@
 	"mlm-input-label-sourcetitle": "صفحة المصدر",
 	"mlm-input-label-translationtitles": "{{plural:$1|صفحة||صفحات}} ترجمة",
 	"mlm-input-label-add": "إضافة ترجمة",
-	"mlm-input-label-save": "احفظ",
+	"mlm-input-label-save": "حفظ",
 	"mlm-input-label-delete": "حذف كل الترجمات",
 	"mlm-input-label-cancel": "إلغاء",
 	"mlm-contentaction-label": "إدارة الترجمات",
