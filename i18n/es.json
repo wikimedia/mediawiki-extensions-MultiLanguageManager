@@ -3,7 +3,8 @@
 		"authors": [
 			"Macofe",
 			"Fitoschido",
-			"MarcoAurelio"
+			"MarcoAurelio",
+			"Carlosmg.dg"
 		]
 	},
 	"multilanguagemanager": "Gestor multiidioma",
@@ -21,7 +22,7 @@
 	"mlm-error-lang-alreadytraslated": "Ya existe una traducción al idioma «$1»",
 	"mlm-input-label-sourcetitle": "Página de origen",
 	"mlm-input-label-translationtitles": "{{plural:$1|Página|Páginas}} de traducción",
-	"mlm-input-label-add": "Añadir",
+	"mlm-input-label-add": "Añade traducción",
 	"mlm-input-label-save": "Guardar",
 	"mlm-input-label-delete": "Borrar",
 	"mlm-input-label-cancel": "Cancelar",
