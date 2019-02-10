@@ -6,5 +6,6 @@
 	},
 	"mlm-error-title-notexists": "La pàgina «$1» no existeix",
 	"mlm-error-title-isalreadysource": "La pàgina «$1» ja és una font",
+	"mlm-input-label-add": "Afegeix una traducció",
 	"apihelp-mlm-tasks-param-format": "El format del resultat"
 }
