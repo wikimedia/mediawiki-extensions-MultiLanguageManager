@@ -9,15 +9,17 @@
 	"mlm-error-title-notexists": "Pagina bestaat niet",
 	"mlm-error-title-istalkpage": "Overlegpagina's kunnen niet worden vertaald",
 	"mlm-error-title-nsnotallowed": "Ongeldige naamruimte voor vertaling",
-	"mlm-error-title-isalreadytranslation": "De pagina is al een vertaling",
-	"mlm-error-title-isalreadysource": "Dit is al een bronpagina",
-	"mlm-error-title-isnottranslation": "De pagina is niet een vertaling",
+	"mlm-error-title-isalreadytranslation": "Pagina \"$1\" is al een vertaling",
+	"mlm-error-title-isalreadysource": "Pagina \"$1\" is al een bronpagina",
+	"mlm-error-title-isnottranslation": "Pagina \"$1\" is niet een vertaling",
 	"mlm-error-lang-invalid": "Ongeldige taal",
-	"mlm-error-lang-notallowed": "Naar deze taal kan niet worden vertaald",
-	"mlm-error-lang-alreadytraslated": "Er is al een vertaling voor de tall '$1'",
+	"mlm-error-lang-notallowed": "Er mag niet naar de taal \"$1\" vertaald worden",
+	"mlm-error-lang-alreadytraslated": "Er is al een vertaling voor de taal \"$1\"",
 	"mlm-input-label-sourcetitle": "Bronpagina",
 	"mlm-input-label-add": "Vertaling toevoegen",
 	"mlm-input-label-save": "Opslaan",
 	"mlm-input-label-delete": "Alle vertalingen verwijderen",
-	"mlm-contentaction-label": "Vertalingen beheren"
+	"mlm-input-label-cancel": "Annuleren",
+	"mlm-contentaction-label": "Vertalingen beheren",
+	"mlm-input-label-translationtitles-section": "In de volgende taal:"
 }
