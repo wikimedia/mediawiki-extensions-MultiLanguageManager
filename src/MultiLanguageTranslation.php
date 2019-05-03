@@ -326,7 +326,8 @@ class MultiLanguageTranslation extends DataProvider {
 	 */
 	public function save() {
 		if( empty( $this->getTranslations() ) ) {
-			return \Status::newFatal( 'No Translations' );
+			//if no translations left, delete translation set
+			return \Status::newGood( $this->delete() );
 		}
 		if( !$this->getSourceTitle() instanceof \Title ) {
 			return \Status::newFatal( 'No Source' );
