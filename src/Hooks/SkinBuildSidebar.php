@@ -62,7 +62,9 @@ class SkinBuildSidebar {
 		)];
 		foreach( $oTransations->getTranslations() as $oTranslation ) {
 			$oTitle = \Title::newFromId( $oTranslation->id );
-			$aLinks[] = $this->makeLink( $oTranslation->lang, $oTitle );
+			if( $oTitle ){
+				$aLinks[] = $this->makeLink( $oTranslation->lang, $oTitle );
+			}
 		}
 		$this->aSidebar = array_merge(
 			[ 'MLM' => $aLinks ],
