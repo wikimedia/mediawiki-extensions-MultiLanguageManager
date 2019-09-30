@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Silvonen"
+		]
+	},
+	"mlm-input-label-add": "Lisää käännös",
+	"mlm-input-label-save": "Tallenna",
+	"mlm-input-label-delete": "Poista kaikki käännökset"
+}
