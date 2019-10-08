@@ -4,6 +4,7 @@
 			"StanProg"
 		]
 	},
+	"mlm-input-label-add": "Добавяне на превод",
 	"mlm-input-label-delete": "Изтриване на всички преводи",
 	"mlm-input-label-cancel": "Отказ"
 }
