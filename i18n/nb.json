@@ -4,5 +4,31 @@
 			"Jon Harald Søby"
 		]
 	},
-	"action-language": "legge til, redigere og slette oversettelser med grensesnittet MultiLanguageManager"
+	"multilanguagemanager": "Flerspråksbehandler",
+	"mlm-desc": "MediaWiki-utvidelse for å behandle flere språk på én MediaWiki.",
+	"action-language": "legge til, redigere og slette oversettelser med grensesnittet MultiLanguageManager",
+	"mlm-error-title-invalid": "Ugyldig sidenavn",
+	"mlm-error-title-notexists": "Siden «$1» finnes ikke",
+	"mlm-error-title-istalkpage": "«$1». Diskusjonssider kan ikke oversettes",
+	"mlm-error-title-nsnotallowed": "«$1». Ugyldig navnerom for oversettelse",
+	"mlm-error-title-isalreadytranslation": "Siden «$1» er allerede en oversettelse",
+	"mlm-error-title-isalreadysource": "Siden «$1» er allerede en kilde",
+	"mlm-error-title-isnottranslation": "Siden «$1» er ikke en oversettelse",
+	"mlm-error-lang-invalid": "Ugyldig språk",
+	"mlm-error-lang-notallowed": "Språket «$1» er ikke tillatt for oversettelser",
+	"mlm-error-lang-alreadytraslated": "En oversettelse til «$1» finnes allerede.",
+	"mlm-input-label-sourcetitle": "Kildeside",
+	"mlm-input-label-translationtitles": "{{PLURAL:$1|Oversettelsesside|Oversettelsessider}}",
+	"mlm-input-label-add": "Legg til oversettelse",
+	"mlm-input-label-save": "Lagre",
+	"mlm-input-label-delete": "Slett alle oversettelser",
+	"mlm-input-label-cancel": "Avbryt",
+	"mlm-contentaction-label": "Behandle oversettelser",
+	"right-language": "Legg til, rediger og slett oversettelser med grensesnittet MultiLanguageManager",
+	"apihelp-mlm-tasks-summary": "Behandle oversettelsesoppgaver",
+	"apihelp-mlm-tasks-param-task": "Oppgaven som skal utføres",
+	"apihelp-mlm-tasks-param-taskData": "JSON-strengkodet objekt med vilkårlige data for oppgaven",
+	"apihelp-mlm-tasks-param-format": "Resultatets format",
+	"mlm-input-label-sourcetitle-section": "Definerer oversettelsene av:",
+	"mlm-input-label-translationtitles-section": "På følgende språk:"
 }
