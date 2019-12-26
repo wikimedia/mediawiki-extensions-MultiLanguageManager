@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"multilanguagemanager": "Çoklu dil yöneticisi",
+	"mlm-desc": "Bir MediaWiki'de çoklu dili yönetmek için Mediawiki uzantısı.",
+	"action-language": "MultiLanguageManager arayüzünü kullanarak çeviri ekle, düzenle ve sil",
+	"mlm-error-title-invalid": "Geçersiz sayfa adı",
+	"mlm-error-title-notexists": "\"$1\" sayfası mevcut değil",
+	"mlm-error-title-istalkpage": "\"$1\". Tartışma sayfaları çevrilemez",
+	"mlm-error-title-nsnotallowed": "\"$1\". Çeviri için geçersiz ad alanı",
+	"mlm-error-title-isalreadytranslation": "\"$1\" sayfası zaten bir çeviri",
+	"mlm-error-title-isalreadysource": "\"$1\" sayfası zaten bir kaynak",
+	"mlm-error-title-isnottranslation": "\"$1\" sayfası bir çeviri değil",
+	"mlm-error-lang-invalid": "Geçersiz dil",
+	"mlm-error-lang-notallowed": "Çeviri için \"$1\" diline izin verilmiyor",
+	"mlm-error-lang-alreadytraslated": "\"$1\" dili için bir çeviri zaten var",
+	"mlm-input-label-sourcetitle": "Kaynak sayfası",
+	"mlm-input-label-translationtitles": "Çeviri {{PLURAL:$1|sayfası|sayfası}}",
+	"mlm-input-label-add": "Çeviri ekle",
+	"mlm-input-label-save": "Kaydet",
+	"mlm-input-label-delete": "Tüm çevirileri sil",
+	"mlm-input-label-cancel": "İptal",
+	"mlm-contentaction-label": "Çevirileri yönet",
+	"right-language": "MultiLanguageManager arayüzünü kullanarak çeviri ekleyin, düzenleyin ve silin",
+	"apihelp-mlm-tasks-summary": "Çeviri görevlerini yönetin",
+	"apihelp-mlm-tasks-param-task": "Yürütülmesi gereken görev",
+	"apihelp-mlm-tasks-param-taskData": "Görev için rastgele veriler içeren JSON dizesi kodlanmış nesne",
+	"apihelp-mlm-tasks-param-format": "Sonucun biçimi",
+	"mlm-input-label-sourcetitle-section": "Çevirilerini tanımlar:",
+	"mlm-input-label-translationtitles-section": "Aşağıdaki dilde:"
+}
