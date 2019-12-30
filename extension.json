@@ -107,8 +107,10 @@
 		}
 	},
 	"AutoloadNamespaces": {
-		"MultiLanguageManager\\Tests\\": "tests/phpunit/",
 		"MultiLanguageManager\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"MultiLanguageManager\\Tests\\": "tests/phpunit/"
 	},
 	"manifest_version": 2
 }
