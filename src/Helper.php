@@ -122,9 +122,15 @@ class Helper {
 	 * @return \SpecialPage | null
 	 */
 	public static function getSpecialPage() {
-		return \SpecialPageFactory::getPage(
-			static::getConfig()->get( Config::SPECIAL_PAGE_NAME )
-		);
+		$pageName = static::getConfig()->get( Config::SPECIAL_PAGE_NAME );
+		if ( class_exists( 'MediaWiki\Special\SpecialPageFactory' ) ) {
+			// MW 1.32+
+			return \MediaWiki\MediaWikiServices::getInstance()
+				->getSpecialPageFactory()
+				->getPage( $pageName );
+		} else {
+			return \SpecialPageFactory::getPage( $pageName );
+		}
 	}
 
 	/**
