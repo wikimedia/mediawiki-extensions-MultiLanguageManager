@@ -2,6 +2,7 @@
 
 namespace MultiLanguageManager\Hooks;
 
+use MediaWiki\MediaWikiServices;
 use MultiLanguageManager\Helper;
 use MultiLanguageManager\Config;
 
@@ -45,8 +46,22 @@ class SkinTemplateContentActions {
 
 		$oConfig = Helper::getConfig();
 		$sPermission = $oConfig->get( Config::PERMISSION );
-		if( !$oTitle->userCan( $sPermission ) ) {
-			return true;
+
+		if ( class_exists( 'MediaWiki\Permissions\PermissionManager' ) ) {
+			// MW 1.33+
+			if ( !MediaWikiServices::getInstance()->getPermissionManager()
+				->userCan(
+					$sPermission,
+					$this->oSkinTemplate->getUser(),
+					$oTitle
+				)
+			) {
+				return true;
+			}
+		} else {
+			if( !$oTitle->userCan( $sPermission ) ) {
+				return true;
+			}
 		}
 
 		$oSpecial = Helper::getSpecialPage();
