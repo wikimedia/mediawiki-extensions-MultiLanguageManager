@@ -25,7 +25,7 @@
 	"mlm-input-label-delete": "Вилучити всі переклади",
 	"mlm-input-label-cancel": "Скасувати",
 	"mlm-contentaction-label": "Керувати перекладами",
-	"right-language": "додавання, редагування та вилучення перекладів через інтерфейс MultiLanguageManager",
+	"right-language": "Додавання, редагування та вилучення перекладів через інтерфейс MultiLanguageManager",
 	"apihelp-mlm-tasks-summary": "Керувати завданнями перекладу",
 	"apihelp-mlm-tasks-param-task": "Завдання, яке слід виконати",
 	"apihelp-mlm-tasks-param-taskData": "Об'єкт, закодований як рядок JSON, із допоміжними даними для завдання",
