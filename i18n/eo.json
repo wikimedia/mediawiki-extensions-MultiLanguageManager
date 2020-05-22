@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"Robin van der Vliet"
 		]
 	},
-	"mlm-error-title-notexists": "La paĝo „$1” ne ekzistas"
+	"mlm-error-title-notexists": "La paĝo „$1” ne ekzistas",
+	"mlm-input-label-cancel": "Nuligi"
 }
