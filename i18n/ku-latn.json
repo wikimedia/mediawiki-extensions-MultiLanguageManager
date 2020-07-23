@@ -3,14 +3,15 @@
 		"authors": [
 			"Bikarhêner",
 			"Cûndûllah el-Kurdî",
-			"Ghybu"
+			"Ghybu",
+			"Guherto"
 		]
 	},
 	"mlm-error-title-notexists": "Rûpela \"$1\" tine ye",
-	"mlm-error-lang-notallowed": "Ev ziman nayê wergerandin",
+	"mlm-error-lang-notallowed": "Zimanê \"$1\" ji bonî wergerandinê ne destûrdayî ye",
 	"mlm-error-lang-alreadytraslated": "Jixwe wergerek ji bo \"$1\" heye",
 	"mlm-input-label-sourcetitle": "Rûpela çavkanî",
 	"mlm-input-label-save": "Tomar bike",
-	"mlm-input-label-delete": "Jê bibe",
+	"mlm-input-label-delete": "Hemû wergeran jê bibe",
 	"mlm-input-label-cancel": "Betal bike"
 }
