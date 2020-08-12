@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Aftabuzzaman",
+			"YahyA",
 			"আফতাবুজ্জামান"
 		]
 	},
@@ -19,9 +20,9 @@
 	"mlm-error-lang-alreadytraslated": "'$1' ভাষার জন্য ইতিমধ্যে একটি অনুবাদ আছে",
 	"mlm-input-label-sourcetitle": "উৎস পাতা",
 	"mlm-input-label-translationtitles": "অনুবাদের {{plural:$1|পাতা|পাতাগুলি}}",
-	"mlm-input-label-add": "যোগ করুন",
+	"mlm-input-label-add": "অনুবাদ যোগ করুন",
 	"mlm-input-label-save": "সংরক্ষণ",
-	"mlm-input-label-delete": "অপসারণ",
+	"mlm-input-label-delete": "সকল অনুবাদ মুছুন",
 	"mlm-input-label-cancel": "বাতিল",
 	"mlm-contentaction-label": "অনুবাদ পরিচালনা করুন"
 }
