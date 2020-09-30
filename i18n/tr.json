@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"MuratTheTurkish"
 		]
 	},
 	"multilanguagemanager": "Çoklu dil yöneticisi",
@@ -18,7 +19,7 @@
 	"mlm-error-lang-notallowed": "Çeviri için \"$1\" diline izin verilmiyor",
 	"mlm-error-lang-alreadytraslated": "\"$1\" dili için bir çeviri zaten var",
 	"mlm-input-label-sourcetitle": "Kaynak sayfası",
-	"mlm-input-label-translationtitles": "Çeviri {{PLURAL:$1|sayfası|sayfası}}",
+	"mlm-input-label-translationtitles": "Çeviri {{plural:$1|sayfası|sayfaları}}",
 	"mlm-input-label-add": "Çeviri ekle",
 	"mlm-input-label-save": "Kaydet",
 	"mlm-input-label-delete": "Tüm çevirileri sil",
