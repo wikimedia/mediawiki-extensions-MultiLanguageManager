@@ -9,11 +9,11 @@ use MultiLanguageManager\MultiLanguageTranslation as Translation;
 
 class MultiLanguageManager extends \SpecialPage {
 	/**
-	 * @var \Title | null
+	 * @var \Title|null
 	 */
 	protected $oTitle = null;
 	/**
-	 * @var Translation | null
+	 * @var Translation|null
 	 */
 	protected $oTranslation = null;
 

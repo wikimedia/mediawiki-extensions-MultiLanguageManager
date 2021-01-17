@@ -119,7 +119,7 @@ class Helper {
 	}
 
 	/**
-	 * @return \SpecialPage | null
+	 * @return \SpecialPage|null
 	 */
 	public static function getSpecialPage() {
 		$pageName = static::getConfig()->get( Config::SPECIAL_PAGE_NAME );
