@@ -11,7 +11,7 @@ class MultiLanguageTranslation extends DataProvider {
 
 	/**
 	 * Source title
-	 * @var Title | null
+	 * @var Title|null
 	 */
 	protected $oSourceTitle = null;
 
@@ -70,7 +70,7 @@ class MultiLanguageTranslation extends DataProvider {
 	/**
 	 * Returns the instance from cache
 	 * TODO: Real caching
-	 * @return \MultiLanguageManager\MultiLanguageTranslation | null
+	 * @return \MultiLanguageManager\MultiLanguageTranslation|null
 	 */
 	protected static function fromCache( \Title $oTitle ) {
 		if( isset( static::$aInstances[ (int) $oTitle->getArticleID() ] ) ) {
@@ -106,7 +106,7 @@ class MultiLanguageTranslation extends DataProvider {
 
 	/**
 	 * Returns the source \Title or null if not set
-	 * @return \Title | null
+	 * @return \Title|null
 	 */
 	public function getSourceTitle() {
 		return $this->oSourceTitle;
@@ -139,7 +139,7 @@ class MultiLanguageTranslation extends DataProvider {
 	/**
 	 * Returns translation to given language code or false, when not set
 	 * @param string $sLang
-	 * @return \stdClass | boolean
+	 * @return \stdClass|boolean
 	 */
 	public function getTranslationFromLang( $sLang ) {
 		$oStatus = Helper::getValidLanguage( $sLang );
