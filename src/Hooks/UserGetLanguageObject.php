@@ -33,7 +33,7 @@ class UserGetLanguageObject {
 	 * @return boolean
 	 */
 	public function process() {
-		if( $this->oUser->isLoggedIn() ) {
+		if( $this->oUser->isRegistered() ) {
 			return true;
 		}
 		$oTitle = \RequestContext::getMain()->getTitle();
