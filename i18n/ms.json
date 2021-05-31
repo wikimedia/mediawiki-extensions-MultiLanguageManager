@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Anakmalaysia"
+		]
+	},
+	"mlm-error-lang-invalid": "Bahasa tidak sah",
+	"mlm-error-lang-alreadytraslated": "Sudah terdapat terjemahan untuk bahasa \"$1\"",
+	"mlm-input-label-translationtitles-section": "Dalam bahasa yang berikut:"
+}
