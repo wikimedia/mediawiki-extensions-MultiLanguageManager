@@ -65,7 +65,7 @@ abstract class DataProvider {
 	}
 
 	protected static function insertTranslations( $iSourceId, $aTranslations ) {
-		$oDbw = wfGetDB( DB_MASTER );
+		$oDbw = wfGetDB( DB_PRIMARY );
 		$sTranlationTable = Helper::getConfig()->get( Config::TRANSLATION_TABLE );
 		$sLanguageTable = Helper::getConfig()->get( Config::LANGUAGE_TABLE );
 
@@ -99,12 +99,12 @@ abstract class DataProvider {
 		foreach( $aTranslations as $oTranslation ) {
 			$aIds[] = $oTranslation->id;
 		}
-		$bRes = wfGetDB( DB_MASTER )->delete(
+		$bRes = wfGetDB( DB_PRIMARY )->delete(
 			Helper::getConfig()->get( Config::TRANSLATION_TABLE ),
 			[ 'translate' => $aIds ],
 			__METHOD__
 		);
-		$bRes = wfGetDB( DB_MASTER )->delete(
+		$bRes = wfGetDB( DB_PRIMARY )->delete(
 			Helper::getConfig()->get( Config::LANGUAGE_TABLE ),
 			[ 'page_id' => $aIds ],
 			__METHOD__
