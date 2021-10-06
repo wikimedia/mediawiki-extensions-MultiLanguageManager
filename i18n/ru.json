@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Okras",
 			"Vlad5250"
 		]
 	},
 	"action-language": "добавление, правка и удаление переводов в интерфейсе MultiLanguageManager",
 	"mlm-input-label-add": "Добавить перевод",
 	"mlm-input-label-delete": "Удалить все переводы",
+	"mlm-input-label-cancel": "Отмена",
 	"right-language": "добавление, правка и удаление переводов в интерфейсе MultiLanguageManager"
 }
