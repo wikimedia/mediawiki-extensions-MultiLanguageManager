@@ -3,6 +3,7 @@
 		"authors": [
 			"A Chinese Wikipedian",
 			"Liuxinyu970226",
+			"Xiplus",
 			"夢蝶葬花"
 		]
 	},
@@ -11,7 +12,7 @@
 	"mlm-error-title-invalid": "无效的页面名称",
 	"mlm-error-title-notexists": "页面“$1”不存在",
 	"mlm-error-title-istalkpage": "“$1”。讨论页不能翻译",
-	"mlm-error-title-nsnotallowed": "“$1”。用于翻译的名字空间无效",
+	"mlm-error-title-nsnotallowed": "“$1”。用于翻译的命名空间无效",
 	"mlm-error-title-isalreadytranslation": "页面“$1”已经是翻译",
 	"mlm-error-title-isalreadysource": "页面“$1”已经是来源",
 	"mlm-error-title-isnottranslation": "页面“$1”并非翻译",
