@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jeeputer"
+		]
+	},
+	"mlm-error-lang-invalid": "زبان نامعتبر",
+	"mlm-input-label-sourcetitle": "صفحه مبدأ",
+	"mlm-input-label-add": "افزودن ترجمه",
+	"mlm-input-label-save": "ذخیره",
+	"mlm-input-label-delete": "حذف تمام ترجمه‌ها",
+	"mlm-input-label-cancel": "لغو",
+	"mlm-contentaction-label": "مدیریت ترجمه‌ها",
+	"apihelp-mlm-tasks-summary": "مدیریت وظایف ترجمه",
+	"apihelp-mlm-tasks-param-format": "قالب نتیجه"
+}

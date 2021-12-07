@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"mlm-error-title-invalid": "Nomu pàggina nun vàlidu",
+	"mlm-error-title-notexists": "La pàggina \"$1\" nun esisti",
+	"mlm-error-lang-invalid": "Lingua nun vàlida.",
+	"mlm-input-label-sourcetitle": "Pàggina surgenti",
+	"mlm-input-label-add": "Agghiunci traduzzioni",
+	"mlm-input-label-save": "Sarva",
+	"mlm-input-label-delete": "Cancella tutti li traduzzioni",
+	"mlm-input-label-cancel": "Annulla"
+}
