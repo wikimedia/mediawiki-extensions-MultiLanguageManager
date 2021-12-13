@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nikosgranturismogt"
+			"Nikosgranturismogt",
+			"Giannaras99",
+			"NikosLikomitros"
 		]
 	},
 	"multilanguagemanager": "Διαχειριστής πολλαπλών γλωσσών",
@@ -20,7 +22,7 @@
 	"mlm-input-label-translationtitles": "Μετάφραση {{plural:$1|σελίδα|σελίδων}}",
 	"mlm-input-label-add": "Προσθήκη μετάφρασης",
 	"mlm-input-label-save": "Αποθήκευση",
-	"mlm-input-label-delete": "Διαγραφή",
+	"mlm-input-label-delete": "Διαγραφή όλων των μεταφράσεων",
 	"mlm-input-label-cancel": "Ακύρωση",
 	"mlm-contentaction-label": "Διαχείριση μεταφράσεων",
 	"apihelp-mlm-tasks-summary": "Διαχείριση εργασιών μετάφρασης",
