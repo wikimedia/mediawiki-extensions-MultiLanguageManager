@@ -2,6 +2,7 @@
 
 namespace MultiLanguageManager\Api;
 
+use MediaWiki\MediaWikiServices;
 use MultiLanguageManager\Helper;
 use MultiLanguageManager\Config;
 use MultiLanguageManager\MultiLanguageTranslation;
@@ -202,11 +203,10 @@ class Tasks extends \ApiBase {
 					'permissiondenied'
 				);
 			}
-			if( wfReadOnly() ) {
-				global $wgReadOnly;
+			if( MediaWikiServices::getInstance()->getReadOnlyMode()->isReadOnly() ) {
 				$result->message = wfMessage(
 					'bs-readonly',
-					$wgReadOnly
+					MediaWikiServices::getInstance()->getReadOnlyMode()->getReason()
 				)->plain();
 			}
 			else {
