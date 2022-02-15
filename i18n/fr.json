@@ -26,7 +26,7 @@
 	"mlm-input-label-sourcetitle": "Page source",
 	"mlm-input-label-translationtitles": "{{plural:$1|Page traduite|Pages traduites}}",
 	"mlm-input-label-add": "Ajouter une traduction",
-	"mlm-input-label-save": "Sauvegarder",
+	"mlm-input-label-save": "Enregistrer",
 	"mlm-input-label-delete": "Supprimer toutes les traductions",
 	"mlm-input-label-cancel": "Annuler",
 	"mlm-contentaction-label": "Gérer les traductions",
