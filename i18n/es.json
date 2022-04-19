@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Carlosmg.dg",
+			"DiegoAmbrocio",
 			"Fitoschido",
 			"Macofe",
 			"MarcoAurelio"
@@ -31,5 +32,7 @@
 	"apihelp-mlm-tasks-summary": "Gestionar las tareas de traducción",
 	"apihelp-mlm-tasks-param-task": "La tarea que debe ejecutarse",
 	"apihelp-mlm-tasks-param-taskData": "Objeto JSON de cadena codificada con datos arbitrarios para la tarea",
-	"apihelp-mlm-tasks-param-format": "El formato del resultado"
+	"apihelp-mlm-tasks-param-format": "El formato del resultado",
+	"mlm-input-label-sourcetitle-section": "Define las traducciones de:",
+	"mlm-input-label-translationtitles-section": "En el siguiente idioma:"
 }
