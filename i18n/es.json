@@ -9,7 +9,7 @@
 		]
 	},
 	"multilanguagemanager": "Gestor multiidioma",
-	"mlm-desc": "Extensión de Mediawiki para gestionar múltiples idiomas en una instancia de Mediawiki.",
+	"mlm-desc": "Extensión de MediaWiki para gestionar múltiples idiomas en una instancia de MediaWiki.",
 	"action-language": "añadir, editar y borrar traducciones usando la interfaz de MultiLanguageManager",
 	"mlm-error-title-invalid": "Nombre de página no válido",
 	"mlm-error-title-notexists": "La página «$1» no existe",
