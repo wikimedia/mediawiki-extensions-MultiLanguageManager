@@ -7,7 +7,7 @@
 		]
 	},
 	"multilanguagemanager": "Flerspråkshanterare",
-	"mlm-desc": "Mediawiki-tillägg för att hantera fler språk på en MediaWiki.",
+	"mlm-desc": "MediaWiki-tillägg för att hantera fler språk på en MediaWiki.",
 	"action-language": "lägg till, redigera och radera översättningar med gränssnittet MultiLanguageManager",
 	"mlm-error-title-invalid": "Ogiltigt sidnamn",
 	"mlm-error-title-notexists": "Sidan \"$1\" finns inte",

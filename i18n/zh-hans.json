@@ -8,7 +8,7 @@
 		]
 	},
 	"multilanguagemanager": "多语言管理器",
-	"mlm-desc": "管理一个MediaWiki网站中多种语言的Mediawiki扩展。",
+	"mlm-desc": "管理一个MediaWiki网站中多种语言的MediaWiki扩展。",
 	"mlm-error-title-invalid": "无效的页面名称",
 	"mlm-error-title-notexists": "页面“$1”不存在",
 	"mlm-error-title-istalkpage": "“$1”。讨论页不能翻译",

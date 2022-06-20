@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad"
 		]
 	},
 	"multilanguagemanager": "Gerenciador de linguagem múltipla",
-	"mlm-desc": "Extensão Mediawiki para gerenciar vários idiomas em um MediaWiki.",
+	"mlm-desc": "Extensão MediaWiki para gerenciar vários idiomas em um MediaWiki.",
 	"action-language": "acrescentar, editar e eliminar traduções usando a interface do gerenciador multi-linguístico",
 	"mlm-error-title-invalid": "Nome de página inválido",
 	"mlm-error-title-notexists": "A página \"$1\" não existe",
