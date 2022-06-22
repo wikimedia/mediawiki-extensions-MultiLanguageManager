@@ -6,7 +6,7 @@
 		]
 	},
 	"multilanguagemanager": "Alministrador de múltiples llingües",
-	"mlm-desc": "Estensión de Mediawiki p'alministrar más d'una llingua n'una Mediawiki.",
+	"mlm-desc": "Estensión de MediaWiki p'alministrar más d'una llingua n'una MediaWiki.",
 	"action-language": "añadir, editar y desaniciar traducciones usando la interfaz MultiLanguageManager",
 	"mlm-error-title-invalid": "Nome de páxina inválidu",
 	"mlm-error-title-notexists": "La páxina «$1» nun esiste",
