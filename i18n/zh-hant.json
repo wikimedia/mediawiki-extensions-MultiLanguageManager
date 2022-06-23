@@ -6,7 +6,7 @@
 		]
 	},
 	"multilanguagemanager": "多語言管理",
-	"mlm-desc": "用來在一個 MediaWiki 上管理多個語言的 Mediawiki 擴充。",
+	"mlm-desc": "用來在一個 MediaWiki 上管理多個語言的 MediaWiki 擴充。",
 	"action-language": "使用 MultiLanguageManager 介面來添加、編輯，以及刪除翻譯",
 	"mlm-error-title-invalid": "無效的頁面名稱",
 	"mlm-error-title-notexists": "頁面「$1」不存在",

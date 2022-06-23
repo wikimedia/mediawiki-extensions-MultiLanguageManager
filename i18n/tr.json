@@ -6,7 +6,7 @@
 		]
 	},
 	"multilanguagemanager": "Çoklu dil yöneticisi",
-	"mlm-desc": "Bir MediaWiki'de çoklu dili yönetmek için Mediawiki uzantısı.",
+	"mlm-desc": "Bir MediaWiki'de çoklu dili yönetmek için MediaWiki uzantısı.",
 	"action-language": "MultiLanguageManager arayüzünü kullanarak çeviri ekle, düzenle ve sil",
 	"mlm-error-title-invalid": "Geçersiz sayfa adı",
 	"mlm-error-title-notexists": "\"$1\" sayfası mevcut değil",
