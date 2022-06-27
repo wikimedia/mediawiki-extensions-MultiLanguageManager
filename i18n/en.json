@@ -5,7 +5,7 @@
 		]
 	},
 	"multilanguagemanager": "Multi language manager",
-	"mlm-desc": "Mediawiki extension to manage multi language in one MediaWiki.",
+	"mlm-desc": "MediaWiki extension to manage multi language in one MediaWiki.",
 	"action-language": "add, edit and delete translations using the MultiLanguageManager inferface",
 	"mlm-error-title-invalid": "Invalid page name",
 	"mlm-error-title-notexists": "Page \"$1\" does not exist",
