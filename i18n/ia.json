@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"multilanguagemanager": "Gestor multilingue",
+	"action-language": "adder, modificar e deler traductiones usante le interfacie MultiLanguageManager",
+	"mlm-error-title-invalid": "Nomine de pagina non valide",
+	"mlm-error-title-notexists": "Le pagina \"$1\" non existe",
+	"mlm-error-title-istalkpage": "\"$1\". Paginas de discussion non pote esser traducite",
+	"mlm-error-title-nsnotallowed": "\"$1\". Spatio de nomines non valide pro traduction",
+	"mlm-error-title-isalreadytranslation": "Le pagina \"$1\" es ja un traduction",
+	"mlm-error-title-isalreadysource": "Le pagina \"$1\" es ja un fonte",
+	"mlm-error-title-isnottranslation": "Le pagina \"$1\" non es un traduction",
+	"mlm-error-lang-invalid": "Lingua non valide",
+	"mlm-error-lang-notallowed": "Le lingua \"$1\" non es permittite pro traduction",
+	"mlm-error-lang-alreadytraslated": "Existe ja un traduction pro le lingua \"$1\"",
+	"mlm-input-label-sourcetitle": "Pagina de origine",
+	"mlm-input-label-translationtitles": "Pagina{{plural:$1||s}} de traduction",
+	"mlm-input-label-add": "Adder traduction",
+	"mlm-input-label-save": "Salveguardar",
+	"mlm-input-label-delete": "Deler tote le traductiones",
+	"mlm-input-label-cancel": "Cancellar",
+	"mlm-contentaction-label": "Gerer traductiones",
+	"right-language": "Adder, modificar e deler traductiones usante le interfacie MultiLanguageManager",
+	"apihelp-mlm-tasks-summary": "Gerer cargas de traduction",
+	"apihelp-mlm-tasks-param-task": "Le carga que debe esser exequite",
+	"apihelp-mlm-tasks-param-taskData": "Objecto codificate in texto JSON con datos arbitrari pro le carga",
+	"apihelp-mlm-tasks-param-format": "Le formato del resultato",
+	"mlm-input-label-sourcetitle-section": "Defini le traductiones de:",
+	"mlm-input-label-translationtitles-section": "In le sequente lingua:"
+}
