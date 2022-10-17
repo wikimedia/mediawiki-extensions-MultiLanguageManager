@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Ex-Diktator"
 		]
 	},
+	"mlm-input-label-save": "שמירה",
 	"mlm-input-label-cancel": "ביטול"
 }
