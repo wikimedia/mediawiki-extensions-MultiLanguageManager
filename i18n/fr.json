@@ -36,5 +36,5 @@
 	"apihelp-mlm-tasks-param-taskData": "Objet encodé en chaîne JSON contenant des données arbitraires pour la tâche",
 	"apihelp-mlm-tasks-param-format": "Le format du résultat",
 	"mlm-input-label-sourcetitle-section": "Définit les traductions de :",
-	"mlm-input-label-translationtitles-section": "Dans la langue suivante :"
+	"mlm-input-label-translationtitles-section": "Dans la langue suivante :"
 }
