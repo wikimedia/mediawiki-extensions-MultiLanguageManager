@@ -2,8 +2,8 @@
 	"name": "MultiLanguageManager",
 	"version": "1.29",
 	"author": [
-		"Robert Vogel <vogel@hallowel.com>",
-		"Patric Wirth <wirth.hallowelt.com>",
+		"Robert Vogel <vogel@hallowelt.com>",
+		"Patric Wirth <wirth@hallowelt.com>",
 		"Marc Despland"
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:MultiLanguageManager",
