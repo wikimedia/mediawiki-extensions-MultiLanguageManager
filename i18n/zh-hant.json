@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Kly",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"捍粵者"
 		]
 	},
 	"multilanguagemanager": "多語言管理",
@@ -27,7 +28,7 @@
 	"mlm-contentaction-label": "管理翻譯",
 	"right-language": "使用 MultiLanguageManager 介面來添加、編輯，以及刪除翻譯",
 	"apihelp-mlm-tasks-summary": "管理翻譯任務",
-	"apihelp-mlm-tasks-param-task": "應被執行的任務",
+	"apihelp-mlm-tasks-param-task": "應執行的任務",
 	"apihelp-mlm-tasks-param-taskData": "用於任務，帶有任意資料的 JSON 字串編碼物件",
 	"apihelp-mlm-tasks-param-format": "結果格式",
 	"mlm-input-label-sourcetitle-section": "定義翻譯關於：",
