@@ -190,7 +190,8 @@ class Helper {
 	 * @return string
 	 */
 	public static function getLanguageName( $sLang ) {
-		return \Language::fetchLanguageName( $sLang );
+		return \MediaWiki\MediaWikiServices::getInstance()->getLanguageNameUtils()
+			->getLanguageName( $sLang );
 	}
 
 	/**
