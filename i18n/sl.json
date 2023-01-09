@@ -4,8 +4,30 @@
 			"Eleassar"
 		]
 	},
+	"multilanguagemanager": "Večjezični upravitelj",
+	"action-language": "dodajanje, urejanje in brisanje prevodov z vmesnikom MultiLanguageManager",
+	"mlm-error-title-invalid": "Neveljavno ime strani",
+	"mlm-error-title-notexists": "Stran »$1« ne obstaja",
+	"mlm-error-title-istalkpage": "»$1«. Pogovornih strani ni mogoče prevesti.",
+	"mlm-error-title-nsnotallowed": "»$1«. Neveljaven imenski prostor za prevod",
+	"mlm-error-title-isalreadytranslation": "Stran »$1« je že prevod",
+	"mlm-error-title-isalreadysource": "Stran »$1« je že vir",
+	"mlm-error-title-isnottranslation": "Stran »$1« ni prevod",
+	"mlm-error-lang-invalid": "Neveljaven jezik",
+	"mlm-error-lang-notallowed": "Jezik »$1« ni dovoljen za prevod",
+	"mlm-error-lang-alreadytraslated": "Prevod za jezik »$1« že obstaja",
+	"mlm-input-label-sourcetitle": "Izvorna stran",
+	"mlm-input-label-translationtitles": "Prevod {{plural:$1|strani}}",
 	"mlm-input-label-add": "Dodaj prevod",
 	"mlm-input-label-save": "Shrani",
 	"mlm-input-label-delete": "Izbriši vse prevode",
-	"mlm-input-label-cancel": "Prekliči"
+	"mlm-input-label-cancel": "Prekliči",
+	"mlm-contentaction-label": "Upravljanje prevodov",
+	"right-language": "Dodajajte, urejajte in brišite prevode z vmesnikom MultiLanguageManager",
+	"apihelp-mlm-tasks-summary": "Upravlja prevajalska opravila",
+	"apihelp-mlm-tasks-param-task": "Opravilo, ki ga je treba izvesti",
+	"apihelp-mlm-tasks-param-taskData": "Objekt, kodiran z nizom JSON, s poljubnimi podatki za opravilo",
+	"apihelp-mlm-tasks-param-format": "Format rezultata",
+	"mlm-input-label-sourcetitle-section": "Določa prevode:",
+	"mlm-input-label-translationtitles-section": "V naslednjem jeziku:"
 }
