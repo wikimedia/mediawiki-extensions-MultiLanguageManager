@@ -2,6 +2,12 @@
 	"root": true,
 	"extends": [
 		"wikimedia/client-es5",
+		"wikimedia/jquery",
 		"wikimedia/mediawiki"
-	]
+	],
+	"rules": {
+		"block-scoped-var": "off",
+		"no-redeclare": "off",
+		"no-unused-vars": "off"
+	}
 }
