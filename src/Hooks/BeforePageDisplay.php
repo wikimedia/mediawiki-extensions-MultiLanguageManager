@@ -8,20 +8,16 @@ use MultiLanguageManager\MultiLanguageTranslation as Translation;
 class BeforePageDisplay {
 
 	/**
-	 *
 	 * @var \OutputPage
 	 */
 	protected $oOutputPage = null;
 
-
 	/**
-	 *
 	 * @var \Skin
 	 */
 	protected $oSkin = null;
 
 	/**
-	 *
 	 * @param \OutputPage $outputPage
 	 * @param \Skin $sk
 	 */
@@ -31,13 +27,12 @@ class BeforePageDisplay {
 	}
 
 	/**
-	 *
-	 * @return boolean
+	 * @return bool
 	 */
 	public function process() {
 		$this->oOutputPage->addModuleStyles( 'ext.mlm.styles' );
 
-		if( !Helper::isValidTitle( $this->oSkin->getTitle() )->isOK() ) {
+		if ( !Helper::isValidTitle( $this->oSkin->getTitle() )->isOK() ) {
 			return true;
 		}
 		$this->oOutputPage->addModules( 'ext.mlm' );
@@ -52,7 +47,7 @@ class BeforePageDisplay {
 		$langFlags = [
 			$sysLang => Helper::getLangFlagUrl( $sysLang ),
 		];
-		foreach( $availableLanguages as $lang ) {
+		foreach ( $availableLanguages as $lang ) {
 			$langFlags[$lang] = Helper::getLangFlagUrl( $lang );
 		}
 		$this->oOutputPage->addJsConfigVars(
@@ -61,7 +56,7 @@ class BeforePageDisplay {
 		);
 
 		$oTransations = Translation::newFromTitle( $this->oSkin->getTitle() );
-		if( !$oTransations || !$oTransations->getSourceTitle() instanceof \Title ) {
+		if ( !$oTransations || !$oTransations->getSourceTitle() instanceof \Title ) {
 			return true;
 		}
 
@@ -71,8 +66,8 @@ class BeforePageDisplay {
 		);
 
 		$translations = [];
-		foreach( $oTransations->getTranslations() as $translation ) {
-			if( !$title = \Title::newFromID( $translation->id ) ) {
+		foreach ( $oTransations->getTranslations() as $translation ) {
+			if ( !$title = \Title::newFromID( $translation->id ) ) {
 				continue;
 			}
 			$translations[] = [

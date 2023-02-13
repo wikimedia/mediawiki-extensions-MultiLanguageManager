@@ -21,9 +21,9 @@ class SkinBuildSidebar {
 
 	/**
 	 * @param \Skin $skin
-	 * @param array $sidebar
+	 * @param array &$sidebar
 	 */
-	public function __construct( $skin, &$sidebar  ) {
+	public function __construct( $skin, &$sidebar ) {
 		$this->oSkin = $skin;
 		$this->aSidebar = &$sidebar;
 	}
@@ -34,7 +34,7 @@ class SkinBuildSidebar {
 			'text'  => $sLang,
 			'href'  => $oTitle->getLocalURL(),
 			'title' => Helper::getLanguageName( $sLang ),
-			'style' => 'background-image: url("'.$sLangFlagUrl.'");',
+			'style' => 'background-image: url("' . $sLangFlagUrl . '");',
 			'class' => 'mlm-flag',
 			'id'    => "n-mlm-$sLang",
 		];
@@ -42,27 +42,27 @@ class SkinBuildSidebar {
 
 	/**
 	 *
-	 * @return boolean
+	 * @return bool
 	 */
 	public function process() {
 		$oStatus = Helper::isValidTitle(
 			$this->oSkin->getTitle()
 		);
-		if( !$oStatus->isOK() ) {
+		if ( !$oStatus->isOK() ) {
 			return true;
 		}
 		$oTransations = Translation::newFromTitle( $this->oSkin->getTitle() );
-		if( !$oTransations->getSourceTitle() instanceof \Title ) {
+		if ( !$oTransations->getSourceTitle() instanceof \Title ) {
 			return true;
 		}
 
 		$aLinks = [ $this->makeLink(
 			Helper::getSystemLanguageCode(),
 			$oTransations->getSourceTitle()
-		)];
-		foreach( $oTransations->getTranslations() as $oTranslation ) {
+		) ];
+		foreach ( $oTransations->getTranslations() as $oTranslation ) {
 			$oTitle = \Title::newFromId( $oTranslation->id );
-			if( $oTitle ){
+			if ( $oTitle ) {
 				$aLinks[] = $this->makeLink( $oTranslation->lang, $oTitle );
 			}
 		}

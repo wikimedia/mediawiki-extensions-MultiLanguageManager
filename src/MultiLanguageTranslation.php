@@ -22,11 +22,11 @@ class MultiLanguageTranslation extends DataProvider {
 	protected $aTranslations = [];
 
 	/**
-	 * @param integer $iSourceId
+	 * @param int $iSourceId
 	 * @param array $aTranslations
 	 */
 	protected function __construct( $iSourceId = 0, array $aTranslations = [] ) {
-		if( $iSourceId > 0 ) {
+		if ( $iSourceId > 0 ) {
 			$this->oSourceTitle = \Title::newFromID( $iSourceId );
 		}
 		$this->aTranslations = $aTranslations;
@@ -39,29 +39,29 @@ class MultiLanguageTranslation extends DataProvider {
 	 * @return \MultiLanguageManager\MultiLanguageTranslation
 	 */
 	protected static function appendCache( MultiLanguageTranslation $oInstance ) {
-		if( !$oInstance->getSourceTitle() instanceof \Title ) {
+		if ( !$oInstance->getSourceTitle() instanceof \Title ) {
 			return $oInstance;
 		}
 		static::$aInstances[
-			(int) $oInstance->getSourceTitle()->getArticleID()
+			(int)$oInstance->getSourceTitle()->getArticleID()
 		] = $oInstance;
 		return $oInstance;
 	}
 
 	/**
 	 * @param \Title $oTitle
-	 * @param boolean $bNoCache
+	 * @param bool $bNoCache
 	 * @return \MultiLanguageManager\MultiLanguageTranslation
 	 */
 	public static function newFromTitle( \Title $oTitle, $bNoCache = false ) {
 		$oStatus = Helper::isValidTitle( $oTitle );
-		if( !$oStatus->isOk() ) {
+		if ( !$oStatus->isOk() ) {
 			return null;
 		}
-		if( !$bNoCache && $oInstance = static::fromCache( $oTitle ) ) {
+		if ( !$bNoCache && $oInstance = static::fromCache( $oTitle ) ) {
 			return $oInstance;
 		}
-		if( $bNoCache ) {
+		if ( $bNoCache ) {
 			return static::fromDB( $oTitle );
 		}
 		return static::appendCache( static::fromDB( $oTitle ) );
@@ -70,14 +70,15 @@ class MultiLanguageTranslation extends DataProvider {
 	/**
 	 * Returns the instance from cache
 	 * TODO: Real caching
+	 * @param \Title $oTitle
 	 * @return \MultiLanguageManager\MultiLanguageTranslation|null
 	 */
 	protected static function fromCache( \Title $oTitle ) {
-		if( isset( static::$aInstances[ (int) $oTitle->getArticleID() ] ) ) {
-			static::$aInstances[ (int) $oTitle->getArticleID() ];
+		if ( isset( static::$aInstances[ (int)$oTitle->getArticleID() ] ) ) {
+			static::$aInstances[ (int)$oTitle->getArticleID() ];
 		}
-		foreach( static::$aInstances as $iID => $oInstance ) {
-			if( !$oInstance->isTranslation( $oTitle ) ) {
+		foreach ( static::$aInstances as $iID => $oInstance ) {
+			if ( !$oInstance->isTranslation( $oTitle ) ) {
 				continue;
 			}
 			return $oInstance;
@@ -95,10 +96,10 @@ class MultiLanguageTranslation extends DataProvider {
 	/**
 	 * Checks if given \Title is the source \Title
 	 * @param \Title $oTitle
-	 * @return boolean
+	 * @return bool
 	 */
 	public function isSourceTitle( \Title $oTitle ) {
-		if( !$this->getSourceTitle() instanceof \Title ) {
+		if ( !$this->getSourceTitle() instanceof \Title ) {
 			return false;
 		}
 		return $this->getSourceTitle()->equals( $oTitle );
@@ -115,11 +116,11 @@ class MultiLanguageTranslation extends DataProvider {
 	/**
 	 * Checks if the given \Title is a translation
 	 * @param \Title $oTitle
-	 * @return boolean
+	 * @return bool
 	 */
 	public function isTranslation( \Title $oTitle ) {
-		foreach( $this->getTranslations() as $oTranslation ) {
-			if( (int) $oTitle->getArticleID() !== $oTranslation->id ) {
+		foreach ( $this->getTranslations() as $oTranslation ) {
+			if ( (int)$oTitle->getArticleID() !== $oTranslation->id ) {
 				continue;
 			}
 			return true;
@@ -130,25 +131,26 @@ class MultiLanguageTranslation extends DataProvider {
 	/**
 	 * Checks if given language code is in translations
 	 * @param string $sLang
-	 * @return boolean
+	 * @return bool
 	 */
 	public function isTranslatedLang( $sLang ) {
+		// phpcs:ignore MediaWiki.Usage.AssignmentInReturn.AssignmentInReturn
 		return $oTranslate = $this->getTranslationFromLang( $sLang );
 	}
 
 	/**
 	 * Returns translation to given language code or false, when not set
 	 * @param string $sLang
-	 * @return \stdClass|boolean
+	 * @return \stdClass|bool
 	 */
 	public function getTranslationFromLang( $sLang ) {
 		$oStatus = Helper::getValidLanguage( $sLang );
-		if( !$oStatus->isOk() ) {
+		if ( !$oStatus->isOk() ) {
 			return false;
 		}
 		$sLang = $oStatus->getValue();
-		foreach( $this->getTranslations() as $oTranslation ) {
-			if( $oTranslation->lang != $sLang ) {
+		foreach ( $this->getTranslations() as $oTranslation ) {
+			if ( $oTranslation->lang != $sLang ) {
 				continue;
 			}
 			return $oTranslation;
@@ -172,43 +174,43 @@ class MultiLanguageTranslation extends DataProvider {
 	 */
 	public function addTranslation( \Title $oTitle, $sLang ) {
 		$oStatus = Helper::getValidLanguage( $sLang );
-		if( !$oStatus->isOK() ) {
+		if ( !$oStatus->isOK() ) {
 			return $oStatus;
 		}
 		$sLang = $oStatus->getValue();
 		$oStatus = Helper::isValidTitle( $oTitle );
-		if( !$oStatus->isOk() ) {
+		if ( !$oStatus->isOk() ) {
 			return $oStatus;
 		}
 		$oTranslation = static::newFromTitle( $oTitle, true );
-		if( !$oTranslation ) {
-			//Something unexpected!
+		if ( !$oTranslation ) {
+			// Something unexpected!
 			return \Status::newFatal( 'mlm-error-title-invalid' );
 		}
-		if( $this->isTranslation( $oTitle ) && !$this->isTranslatedLang( $sLang ) ) {
+		if ( $this->isTranslation( $oTitle ) && !$this->isTranslatedLang( $sLang ) ) {
 			return \Status::newFatal(
 				'mlm-error-lang-alreadytraslated',
 				$oTitle->getFullText()
 			);
 		}
 
-		if( $oTranslation->getSourceTitle() ) {
-			if( !$oTranslation->getSourceTitle()->equals( $this->getSourceTitle() ) ) {
-				if( $oTranslation->isTranslation( $oTitle ) ) {
+		if ( $oTranslation->getSourceTitle() ) {
+			if ( !$oTranslation->getSourceTitle()->equals( $this->getSourceTitle() ) ) {
+				if ( $oTranslation->isTranslation( $oTitle ) ) {
 					return \Status::newFatal(
 						'mlm-error-title-isalreadytranslation',
 						$oTitle->getFullText()
 					);
 				}
 			}
-			if( $oTranslation->getSourceTitle()->equals( $oTitle ) ) {
+			if ( $oTranslation->getSourceTitle()->equals( $oTitle ) ) {
 				return \Status::newFatal(
 					'mlm-error-title-isalreadysource',
 					$oTitle->getFullText()
 				);
 			}
 		}
-		if( $sLang == Helper::getSystemLanguageCode() ) {
+		if ( $sLang == Helper::getSystemLanguageCode() ) {
 			return \Status::newFatal(
 				"mlm-error-lang-notallowed"
 			);
@@ -217,14 +219,14 @@ class MultiLanguageTranslation extends DataProvider {
 		$aLangs = \MultiLanguageManager\Helper::getAvailableLanguageCodes(
 			$this
 		);
-		if( !in_array( $sLang, $aLangs ) ) {
+		if ( !in_array( $sLang, $aLangs ) ) {
 			return \Status::newFatal(
 				"mlm-error-lang-alreadytraslated",
 				$sLang
 			);
 		}
-		$this->aTranslations[] = (object) [
-			'id' => (int) $oTitle->getArticleID(),
+		$this->aTranslations[] = (object)[
+			'id' => (int)$oTitle->getArticleID(),
 			'lang' => $sLang,
 		];
 		return \Status::newGood( $this );
@@ -237,17 +239,17 @@ class MultiLanguageTranslation extends DataProvider {
 	 */
 	public function removeTranslation( \Title $oTitle ) {
 		$oStatus = Helper::isValidTitle( $oTitle );
-		if( !$oStatus->isOk() ) {
+		if ( !$oStatus->isOk() ) {
 			return $oStatus;
 		}
-		if( !$this->isTranslation( $oTitle ) ) {
+		if ( !$this->isTranslation( $oTitle ) ) {
 			return \Status::newFatal(
 				'mlm-error-title-isnottranslation',
 				$oTitle->getFullText()
 			);
 		}
-		foreach( $this->aTranslations as $iKey => $oTranslation ) {
-			if( (int) $oTitle->getArticleID() !== $oTranslation->id ) {
+		foreach ( $this->aTranslations as $iKey => $oTranslation ) {
+			if ( (int)$oTitle->getArticleID() !== $oTranslation->id ) {
 				continue;
 			}
 			unset( $this->aTranslations[$iKey] );
@@ -262,11 +264,11 @@ class MultiLanguageTranslation extends DataProvider {
 	 */
 	public function setSourceTitle( \Title $oTitle ) {
 		$oStatus = Helper::isValidTitle( $oTitle );
-		if( !$oStatus->isOk() ) {
+		if ( !$oStatus->isOk() ) {
 			return $oStatus;
 		}
-		if( $this->getSourceTitle() instanceof \Title ) {
-			if( $this->isSourceTitle( $oTitle ) ) {
+		if ( $this->getSourceTitle() instanceof \Title ) {
+			if ( $this->isSourceTitle( $oTitle ) ) {
 				return \Status::newFatal(
 					'mlm-error-title-isalreadysource',
 					$oTitle->getFullText()
@@ -278,17 +280,17 @@ class MultiLanguageTranslation extends DataProvider {
 			);
 		}
 		$oTranslation = static::newFromTitle( $oTitle, true );
-		if( !$oTranslation ) {
-			//Something unexpected!
+		if ( !$oTranslation ) {
+			// Something unexpected!
 			return \Status::newFatal( 'mlm-error-title-invalid' );
 		}
-		if( $oTranslation->isSourceTitle( $oTitle ) ) {
+		if ( $oTranslation->isSourceTitle( $oTitle ) ) {
 			return \Status::newFatal(
 				'mlm-error-title-isalreadysource',
 				$oTitle->getFullText()
 			);
 		}
-		if( $oTranslation->isTranslation( $oTitle ) ) {
+		if ( $oTranslation->isTranslation( $oTitle ) ) {
 			return \Status::newFatal(
 				'mlm-error-title-isalreadytranslation',
 				$oTitle->getFullText()
@@ -305,17 +307,17 @@ class MultiLanguageTranslation extends DataProvider {
 	 * @return \MultiLanguageManager\MultiLanguageTranslation
 	 */
 	public function invalidate() {
-		if( !$this->getSourceTitle() instanceof \Title ) {
+		if ( !$this->getSourceTitle() instanceof \Title ) {
 			return $this;
 		}
 		$bExists = isset(
-			static::$aInstances[ (int) $this->getSourceTitle()->getArticleID()]
+			static::$aInstances[ (int)$this->getSourceTitle()->getArticleID()]
 		);
-		if( !$bExists ) {
+		if ( !$bExists ) {
 			return $this;
 		}
 		unset(
-			static::$aInstances[ (int) $this->getSourceTitle()->getArticleID()]
+			static::$aInstances[ (int)$this->getSourceTitle()->getArticleID()]
 		);
 		return $this;
 	}
@@ -325,30 +327,30 @@ class MultiLanguageTranslation extends DataProvider {
 	 * @return \Status
 	 */
 	public function save() {
-		if( empty( $this->getTranslations() ) ) {
-			//if no translations left, delete translation set
+		if ( empty( $this->getTranslations() ) ) {
+			// if no translations left, delete translation set
 			return \Status::newGood( $this->delete() );
 		}
-		if( !$this->getSourceTitle() instanceof \Title ) {
+		if ( !$this->getSourceTitle() instanceof \Title ) {
 			return \Status::newFatal( 'No Source' );
 		}
 
 		$oOldInstance = static::makefromDB( $this->getSourceTitle() );
-		//never existed
-		if( !$oOldInstance->getSourceTitle() instanceof \Title ) {
+		// never existed
+		if ( !$oOldInstance->getSourceTitle() instanceof \Title ) {
 			static::insertTranslations(
-				(int) $this->getSourceTitle()->getArticleID(),
+				(int)$this->getSourceTitle()->getArticleID(),
 				$this->getTranslations()
 			);
 		} else {
 			$aDiff = Helper::diffTranslations( $oOldInstance, $this );
-			if( !empty( $aDiff['new'] ) ) {
+			if ( !empty( $aDiff['new'] ) ) {
 				static::insertTranslations(
-					(int) $this->getSourceTitle()->getArticleID(),
+					(int)$this->getSourceTitle()->getArticleID(),
 					$aDiff['new']
 				);
 			}
-			if( !empty( $aDiff['deleted'] ) ) {
+			if ( !empty( $aDiff['deleted'] ) ) {
 				static::deleteTranslations( $aDiff['deleted'] );
 			}
 		}
@@ -360,13 +362,14 @@ class MultiLanguageTranslation extends DataProvider {
 	 * @return \Status
 	 */
 	public function delete() {
-		if( !$this->getSourceTitle() instanceof \Title ) {
+		if ( !$this->getSourceTitle() instanceof \Title ) {
 			return \Status::newFatal( 'No Source' );
 		}
 		$oOldInstance = static::makefromDB( $this->getSourceTitle() );
-		//never existed
-		if( !$oOldInstance->getSourceTitle() instanceof \Title ) {
-			return \Status::newFatal( 'Never existed' ); //TODO: Msg
+		// never existed
+		if ( !$oOldInstance->getSourceTitle() instanceof \Title ) {
+			// TODO: Msg
+			return \Status::newFatal( 'Never existed' );
 		}
 		static::deleteTranslations( $oOldInstance->getTranslations() );
 		return \Status::newGood( $this->invalidate() );

@@ -21,7 +21,7 @@ class UserGetLanguageObject {
 
 	/**
 	 * @param \User $user
-	 * @param string $code
+	 * @param string &$code
 	 */
 	public function __construct( $user, &$code ) {
 		$this->oUser = $user;
@@ -30,30 +30,30 @@ class UserGetLanguageObject {
 
 	/**
 	 *
-	 * @return boolean
+	 * @return bool
 	 */
 	public function process() {
-		if( $this->oUser->isRegistered() ) {
+		if ( $this->oUser->isRegistered() ) {
 			return true;
 		}
 		$oTitle = \RequestContext::getMain()->getTitle();
 		$oStatus = Helper::isValidTitle( $oTitle );
-		if( !$oStatus->isOK() ) {
+		if ( !$oStatus->isOK() ) {
 			return true;
 		}
 		$oTranslations = Translation::newFromTitle( $oTitle );
-		if( !$oTranslations ) {
+		if ( !$oTranslations ) {
 			return true;
 		}
-		if( !$oTranslations->getSourceTitle() instanceof \Title ) {
+		if ( !$oTranslations->getSourceTitle() instanceof \Title ) {
 			return true;
 		}
-		if( $oTranslations->isSourceTitle( $oTitle ) ) {
+		if ( $oTranslations->isSourceTitle( $oTitle ) ) {
 			$this->sCode = Helper::getSystemLanguageCode();
 			return true;
 		}
-		foreach( $oTranslations->getTranslations() as $oTranslation ) {
-			if( (int) $oTitle->getArticleID() !== $oTranslation->id ) {
+		foreach ( $oTranslations->getTranslations() as $oTranslation ) {
+			if ( (int)$oTitle->getArticleID() !== $oTranslation->id ) {
 				continue;
 			}
 			$sLang = Helper::getUserLanguageCode( $oTranslation->lang );

@@ -13,26 +13,26 @@ class Helper {
 	}
 
 	/**
-	 * @param \Title $oTitle
+	 * @param \Title|null $oTitle
 	 * @return \Status
 	 */
 	public static function isValidTitle( \Title $oTitle = null ) {
-		if( !$oTitle ) {
+		if ( !$oTitle ) {
 			return \Status::newFatal( 'mlm-error-title-invalid' );
 		}
-		if( !$oTitle->exists() ) {
+		if ( !$oTitle->exists() ) {
 			return \Status::newFatal(
 				'mlm-error-title-notexists',
 				$oTitle->getFullText()
 			);
 		}
-		if( $oTitle->isTalkPage() ) {
+		if ( $oTitle->isTalkPage() ) {
 			return \Status::newFatal(
 				'mlm-error-title-istalkpage',
 				$oTitle->getFullText()
 			);
 		}
-		if( !$oTitle->getNamespace() < 0 ) {
+		if ( !$oTitle->getNamespace() < 0 ) {
 			return \Status::newFatal(
 				'mlm-error-title-nsnotallowed',
 				$oTitle->getFullText()
@@ -41,7 +41,7 @@ class Helper {
 		$aNonTranslatableNs = static::getConfig()->get(
 			Config::NON_TRANSLATABLE_NAMESPACES
 		);
-		if( in_array( $oTitle->getNamespace(), $aNonTranslatableNs ) ) {
+		if ( in_array( $oTitle->getNamespace(), $aNonTranslatableNs ) ) {
 			return \Status::newFatal(
 				'mlm-error-title-nsnotallowed',
 				$oTitle->getFullText()
@@ -67,14 +67,14 @@ class Helper {
 	 */
 	public static function getValidLanguage( $sLang ) {
 		list( $sLang ) = explode( '-', $sLang );
-		if( empty( $sLang ) ) {
+		if ( empty( $sLang ) ) {
 			return \Status::newFatal( 'mlm-error-lang-invalid' );
 		}
 		$bAvailableLang = in_array(
 			$sLang,
 			static::getConfig()->get( Config::AVAILABLE_LANGUAGES )
 		);
-		if( !$bAvailableLang ) {
+		if ( !$bAvailableLang ) {
 			return \Status::newFatal(
 				'mlm-error-lang-notallowed',
 				$sLang
@@ -91,26 +91,26 @@ class Helper {
 	public static function diffTranslations( MultiLanguageTranslation $oOld, MultiLanguageTranslation $oNew ) {
 		$aNew = array_filter(
 			$oNew->getTranslations(),
-			function( $e ) use ( $oOld ){
-				if( !$oOld->isTranslation( \Title::newFromID( $e->id ) ) ) {
+			static function ( $e ) use ( $oOld ){
+				if ( !$oOld->isTranslation( \Title::newFromID( $e->id ) ) ) {
 					return true;
 				}
-				if( !$oOld->isTranslatedLang( $e->lang ) ) {
+				if ( !$oOld->isTranslatedLang( $e->lang ) ) {
 					return true;
 				}
 				return false;
-		});
+			} );
 		$aDeleted = array_filter(
 			$oOld->getTranslations(),
-			function( $e ) use ( $oNew ){
-				if( !$oNew->isTranslation( \Title::newFromID( $e->id ) ) ) {
+			static function ( $e ) use ( $oNew ){
+				if ( !$oNew->isTranslation( \Title::newFromID( $e->id ) ) ) {
 					return true;
 				}
-				if( !$oNew->isTranslatedLang( $e->lang ) ) {
+				if ( !$oNew->isTranslatedLang( $e->lang ) ) {
 					return true;
 				}
 				return false;
-		});
+			} );
 
 		return [
 			'new' => $aNew,
@@ -132,28 +132,31 @@ class Helper {
 	 * Returns the available languagecodes filtert by used languages in
 	 * MultiLanguageTranslation, when given. Set $bNoSysLang to false if the
 	 * system language should not get removed
-	 * @param \MultiLanguageManager\MultiLanguageTranslation $oTranslation
-	 * @param boolean $bNoSysLang
+	 * @param \MultiLanguageManager\MultiLanguageTranslation|null $oTranslation
+	 * @param bool $bNoSysLang
 	 * @return array
 	 */
-	public static function getAvailableLanguageCodes( \MultiLanguageManager\MultiLanguageTranslation $oTranslation = null, $bNoSysLang = true ) {
+	public static function getAvailableLanguageCodes(
+		\MultiLanguageManager\MultiLanguageTranslation $oTranslation = null,
+		$bNoSysLang = true
+	) {
 		$sSystemLang = static::getSystemLanguageCode();
 		$aLangs = static::getConfig()->get(
 			Config::AVAILABLE_LANGUAGES
 		);
 
-		$funcFilter = function( $e ) use(
+		$funcFilter = static function ( $e ) use(
 			$oTranslation,
 			$sSystemLang,
 			$bNoSysLang
 		) {
-			if( $bNoSysLang && $e == $sSystemLang ) {
+			if ( $bNoSysLang && $e == $sSystemLang ) {
 				return false;
 			}
-			if( !$oTranslation ) {
+			if ( !$oTranslation ) {
 				return true;
 			}
-			if( $oTranslation->isTranslatedLang( $e ) ) {
+			if ( $oTranslation->isTranslatedLang( $e ) ) {
 				return false;
 			}
 			return true;
@@ -172,16 +175,15 @@ class Helper {
 		$oGlobals = \MediaWiki\MediaWikiServices::getInstance()
 			->getMainConfig();
 		$sLang = strtoupper( $sLang );
-		if( $sLang == 'EN' ) {
+		if ( $sLang == 'EN' ) {
 			$sLang = 'GB';
 		}
-		//TODO: descibe, problem with language code != language flag
+		// TODO: descibe, problem with language code != language flag
 		\Hooks::run( 'MultiLanguageManagerGetLangFlagUrlCorrection', [
 			&$sLang
-		]);
+		] );
 		$sScriptPath = $oGlobals->get( "ScriptPath" );
-		return
-			"$sScriptPath/extensions/MultiLanguageManager/resources/images/$sLang.png";
+		return "$sScriptPath/extensions/MultiLanguageManager/resources/images/$sLang.png";
 	}
 
 	/**
@@ -201,11 +203,11 @@ class Helper {
 	 * @return string
 	 */
 	public static function getUserLanguageCode( $sLang ) {
-		//TODO: descibe, problem with language code != language flag
+		// TODO: descibe, problem with language code != language flag
 		\Hooks::run( 'MultiLanguageManagerUserLanguageCodeCorrection', [
 			&$sLang
-		]);
-		if( !static::getLanguageName( $sLang ) ) {
+		] );
+		if ( !static::getLanguageName( $sLang ) ) {
 			return static::getSystemLanguageCode();
 		}
 		return $sLang;

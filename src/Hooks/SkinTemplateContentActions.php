@@ -3,8 +3,8 @@
 namespace MultiLanguageManager\Hooks;
 
 use MediaWiki\MediaWikiServices;
-use MultiLanguageManager\Helper;
 use MultiLanguageManager\Config;
+use MultiLanguageManager\Helper;
 
 class SkinTemplateContentActions {
 
@@ -22,7 +22,7 @@ class SkinTemplateContentActions {
 
 	/**
 	 * @param \SkinTemplate $skinTemplate
-	 * @param array $content_navigation
+	 * @param array &$content_navigation
 	 */
 	public function __construct( $skinTemplate, &$content_navigation ) {
 		$this->oSkinTemplate = $skinTemplate;
@@ -31,16 +31,16 @@ class SkinTemplateContentActions {
 
 	/**
 	 *
-	 * @return boolean
+	 * @return bool
 	 */
 	public function process() {
-		if( !isset( $this->aContentNavigation['actions'] ) ) {
+		if ( !isset( $this->aContentNavigation['actions'] ) ) {
 			return true;
 		}
 
 		$oTitle = $this->oSkinTemplate->getTitle();
 		$oStatus = Helper::isValidTitle( $oTitle );
-		if( !$oStatus->isOK() ) {
+		if ( !$oStatus->isOK() ) {
 			return true;
 		}
 
@@ -59,7 +59,7 @@ class SkinTemplateContentActions {
 				return true;
 			}
 		} else {
-			if( !$oTitle->userCan( $sPermission ) ) {
+			if ( !$oTitle->userCan( $sPermission ) ) {
 				return true;
 			}
 		}

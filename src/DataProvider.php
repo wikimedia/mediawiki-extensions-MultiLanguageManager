@@ -9,7 +9,7 @@ abstract class DataProvider {
 	 * @return \MultiLanguageManager\MultiLanguageTranslation
 	 */
 	protected static function fromDB( \Title $oTitle ) {
-		$iArticleId = (int) $oTitle->getArticleID();
+		$iArticleId = (int)$oTitle->getArticleID();
 		$aTables = [ Helper::getConfig()->get( Config::TRANSLATION_TABLE ) ];
 		$aFields = [ 'source', 'translate' ];
 		$aConditions = [ "source = $iArticleId OR translate = $iArticleId" ];
@@ -20,7 +20,7 @@ abstract class DataProvider {
 			$aConditions,
 			__METHOD__
 		);
-		if( !$oRow ) {
+		if ( !$oRow ) {
 			return new static();
 		}
 
@@ -39,7 +39,7 @@ abstract class DataProvider {
 		];
 		$aFields = [ 'source', 'translate', 'lang' ];
 		$aConditions = [
-			'source' => (int) $oSourceTitle->getArticleID(),
+			'source' => (int)$oSourceTitle->getArticleID(),
 			'page_id = translate',
 		];
 
@@ -51,10 +51,10 @@ abstract class DataProvider {
 		);
 		$aTranslations = [];
 		$iSourceId = 0;
-		foreach( $oRes as $oRow ) {
-			$iSourceId = (int) $oRow->source;
-			$aTranslations[] = (object) [
-				'id' => (int) $oRow->translate,
+		foreach ( $oRes as $oRow ) {
+			$iSourceId = (int)$oRow->source;
+			$aTranslations[] = (object)[
+				'id' => (int)$oRow->translate,
 				'lang' => $oRow->lang
 			];
 		}
@@ -69,7 +69,7 @@ abstract class DataProvider {
 		$sTranlationTable = Helper::getConfig()->get( Config::TRANSLATION_TABLE );
 		$sLanguageTable = Helper::getConfig()->get( Config::LANGUAGE_TABLE );
 
-		foreach( $aTranslations as $oTranslation ) {
+		foreach ( $aTranslations as $oTranslation ) {
 			$oDbw->insert(
 				$sTranlationTable,
 				[
@@ -96,7 +96,7 @@ abstract class DataProvider {
 
 	protected static function deleteTranslations( $aTranslations ) {
 		$aIds = [];
-		foreach( $aTranslations as $oTranslation ) {
+		foreach ( $aTranslations as $oTranslation ) {
 			$aIds[] = $oTranslation->id;
 		}
 		$bRes = wfGetDB( DB_PRIMARY )->delete(
@@ -124,7 +124,7 @@ abstract class DataProvider {
 			[ 'DISTINCT' ]
 		);
 		$aReturn = [];
-		foreach( $oRes as $oRow ) {
+		foreach ( $oRes as $oRow ) {
 			$aReturn[] = \Title::newFromID( $oRow->source );
 		}
 		return $aReturn;

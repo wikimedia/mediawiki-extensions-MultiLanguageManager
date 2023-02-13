@@ -41,9 +41,9 @@ class Setup {
 
 	/**
 	 * Hook handler for hook 'BeforePageDisplay'
-	 * @param \OutputPage $outputPage
-	 * @param \Skin $sk
-	 * @return boolean
+	 * @param \OutputPage &$outputPage
+	 * @param \Skin &$sk
+	 * @return bool
 	 */
 	public static function onBeforePageDisplay( &$outputPage, &$sk ) {
 		$handler = new Hooks\BeforePageDisplay( $outputPage, $sk );
@@ -52,9 +52,9 @@ class Setup {
 
 	/**
 	 * Hook handler for hook 'SkinTemplateNavigation_Universal'
-	 * @param \SkinTemplate $skinTemplate
-	 * @param array $content_navigation
-	 * @return boolean
+	 * @param \SkinTemplate &$skinTemplate
+	 * @param array &$content_navigation
+	 * @return bool
 	 */
 	public static function onSkinTemplateNavigation_Universal( &$skinTemplate, &$content_navigation ) {
 		$handler = new Hooks\SkinTemplateContentActions(
@@ -66,13 +66,13 @@ class Setup {
 
 	/**
 	 * Hook handler for hook 'ArticleDeleteComplete'
-	 * @param \WikiPage $wikiPageBeforeDelete
-	 * @param \User $user
-	 * @param string $reason
-	 * @param string $error
-	 * @return boolean
+	 * @param \WikiPage &$article
+	 * @param \User &$user
+	 * @param string &$reason
+	 * @param string &$error
+	 * @return bool
 	 */
-	public static function onArticleDelete( \WikiPage &$article, \User &$user, &$reason, &$error ) {
+	public static function onArticleDelete( \WikiPage &$article, \User &$user, string &$reason, string &$error ) {
 		$handler = new Hooks\ArticleDelete(
 			$article,
 			$user,
@@ -86,8 +86,8 @@ class Setup {
 	/**
 	 * Hook handler for hook 'SkinBuildSidebar'
 	 * @param Skin $skin
-	 * @param array $sidebar
-	 * @return boolean
+	 * @param array &$sidebar
+	 * @return bool
 	 */
 	public static function onSkinBuildSidebar( $skin, &$sidebar ) {
 		$handler = new Hooks\SkinBuildSidebar(
@@ -101,8 +101,8 @@ class Setup {
 	/**
 	 * Hook handler for hook 'UserGetLanguageObject'
 	 * @param \User $user
-	 * @param string $code
-	 * @return boolean
+	 * @param string &$code
+	 * @return bool
 	 */
 	public static function onUserGetLanguageObject( $user, &$code ) {
 		$handler = new Hooks\UserGetLanguageObject(
