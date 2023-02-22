@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kimberli Mäkäräinen (WMNO)",
 			"Yupik"
 		]
 	},
 	"mlm-input-label-add": "Lasit jorgalusa",
-	"mlm-input-label-save": "Vurke"
+	"mlm-input-label-save": "Vurke",
+	"mlm-input-label-cancel": "Šluhtte"
 }
