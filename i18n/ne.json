@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"बडा काजी",
 			"सरोज कुमार ढकाल"
 		]
 	},
 	"mlm-error-title-notexists": "पृष्ठ अस्तित्वमा छैन ।",
-	"mlm-input-label-save": "संग्रह गर्नुहोस्",
+	"mlm-input-label-save": "सङ्ग्रह गर्नुहोस्",
 	"mlm-input-label-delete": "मेटाउने"
 }
