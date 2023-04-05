@@ -29,6 +29,7 @@
 	"right-language": "Lägg till, redigera och radera översättningar med gränssnittet MultiLanguageManager",
 	"apihelp-mlm-tasks-summary": "Hantera översättningsuppgifter",
 	"apihelp-mlm-tasks-param-task": "Uppgiften som bör utföras",
+	"apihelp-mlm-tasks-param-taskData": "\nJSON-strängkodat objekt med godtycklig data för uppgiften",
 	"apihelp-mlm-tasks-param-format": "Formatet för resultatet",
 	"mlm-input-label-sourcetitle-section": "Definierar översättningarna av:",
 	"mlm-input-label-translationtitles-section": "På följande språk:"
