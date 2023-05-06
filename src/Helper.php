@@ -179,9 +179,8 @@ class Helper {
 			$sLang = 'GB';
 		}
 		// TODO: descibe, problem with language code != language flag
-		\Hooks::run( 'MultiLanguageManagerGetLangFlagUrlCorrection', [
-			&$sLang
-		] );
+		\MediaWiki\MediaWikiServices::getInstance()->getHookContainer()
+			->run( 'MultiLanguageManagerGetLangFlagUrlCorrection', [ &$sLang ] );
 		$sScriptPath = $oGlobals->get( "ScriptPath" );
 		return "$sScriptPath/extensions/MultiLanguageManager/resources/images/$sLang.png";
 	}
@@ -204,9 +203,8 @@ class Helper {
 	 */
 	public static function getUserLanguageCode( $sLang ) {
 		// TODO: descibe, problem with language code != language flag
-		\Hooks::run( 'MultiLanguageManagerUserLanguageCodeCorrection', [
-			&$sLang
-		] );
+		\MediaWiki\MediaWikiServices::getInstance()->getHookContainer()
+			->run( 'MultiLanguageManagerUserLanguageCodeCorrection', [ &$sLang ] );
 		if ( !static::getLanguageName( $sLang ) ) {
 			return static::getSystemLanguageCode();
 		}
