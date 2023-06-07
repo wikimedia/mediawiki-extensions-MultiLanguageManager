@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yupik"
+			"Yupik",
+			"Seipinne"
 		]
 	},
+	"mlm-error-lang-invalid": "Feilâlâš kielâ",
 	"mlm-input-label-add": "Lasseet jurgâlus",
 	"mlm-input-label-save": "Vuorkkii",
 	"mlm-input-label-cancel": "Jooskâ"
