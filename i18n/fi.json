@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Pyscowicz",
 			"Silvonen"
 		]
 	},
 	"mlm-input-label-add": "Lisää käännös",
 	"mlm-input-label-save": "Tallenna",
-	"mlm-input-label-delete": "Poista kaikki käännökset"
+	"mlm-input-label-delete": "Poista kaikki käännökset",
+	"mlm-input-label-cancel": "Peruuta"
 }
