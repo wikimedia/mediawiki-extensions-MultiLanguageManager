@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"multilanguagemanager": "Kelių kalbų tvarkyklė",
+	"mlm-desc": "„MediaWiki“ plėtinys, skirtas valdyti kelias kalbas vienoje „MediaWiki“.",
+	"action-language": "pridėti, redaguoti ir ištrinti vertimus naudodami „MultiLanguageManager“ sąsają",
+	"mlm-error-title-invalid": "Neteisingas puslapio pavadinimas",
+	"mlm-error-title-notexists": "Puslapis „$1“ neegzistuoja",
+	"mlm-error-title-istalkpage": "„$1“. Aptarimo puslapiai negali būti išversti",
+	"mlm-error-title-nsnotallowed": "„$1“. Netinkama vardų sritis vertimui",
+	"mlm-error-title-isalreadytranslation": "Puslapis „$1“ jau yra vertimas",
+	"mlm-error-title-isalreadysource": "Puslapis „$1“ jau yra šaltinis",
+	"mlm-error-title-isnottranslation": "Puslapis „$1“ nėra vertimas",
+	"mlm-error-lang-invalid": "Neteisinga kalba",
+	"mlm-error-lang-notallowed": "Kalba „$1“ neleistina vertimui",
+	"mlm-error-lang-alreadytraslated": "Jau yra vertimas „$1“ kalba",
+	"mlm-input-label-sourcetitle": "Šaltinio puslapis",
+	"mlm-input-label-translationtitles": "Vertimo {{plural:$1|puslapis|puslapiai}}",
+	"mlm-input-label-add": "Pridėti vertimą",
+	"mlm-input-label-save": "Išsaugoti",
+	"mlm-input-label-delete": "Ištrinti visus vertimus",
+	"mlm-input-label-cancel": "Atšaukti",
+	"mlm-contentaction-label": "Tvarkyti vertimus",
+	"right-language": "Pridėti, redaguoti ir ištrinti vertimus naudodami „MultiLanguageManager“ sąsają",
+	"apihelp-mlm-tasks-summary": "Tvarkyti vertimo užduotis",
+	"apihelp-mlm-tasks-param-task": "Užduotis, kuri turėtų būti vykdoma",
+	"apihelp-mlm-tasks-param-format": "Rezultato formatas",
+	"mlm-input-label-sourcetitle-section": "Apibrėžia vertimą:",
+	"mlm-input-label-translationtitles-section": "Šia kalba:"
+}
