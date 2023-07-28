@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Liuxinyu970226",
 			"Patric Wirth <wirth@hallowelt.com>",
 			"Raymond",
@@ -33,6 +34,6 @@
 	"apihelp-mlm-tasks-param-task": "{{doc-apihelp-param|mlm-tasks|task}}",
 	"apihelp-mlm-tasks-param-taskData": "{{doc-apihelp-param|mlm-tasks|taskData}}",
 	"apihelp-mlm-tasks-param-format": "{{doc-apihelp-param|mlm-tasks|format}}",
-	"mlm-input-label-sourcetitle-section": "Label for the source title section in the OOUI dialog\nVery short sentence wich explains, that a translation for the in this section given source article can be defined.\ni.e.: \"Defines the translations of:\"",
-	"mlm-input-label-translationtitles-section": "Label for the translation titles section in the OOUI dialog\nVery short sentence wich explains, that translations can be added in the selected language.\ni.e.: \"In the following Language:\""
+	"mlm-input-label-sourcetitle-section": "Label for the source title section in the OOUI dialog. A very short sentence that explains that a translation can be defined for the source article given in this section.",
+	"mlm-input-label-translationtitles-section": "Label for the translation titles section in the OOUI dialog. A very short sentence that explains that translations can be added in the selected language."
 }
