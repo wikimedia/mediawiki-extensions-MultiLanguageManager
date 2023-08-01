@@ -2,9 +2,34 @@
 	"@metadata": {
 		"authors": [
 			"Ex-Diktator",
-			"Amire80"
+			"Amire80",
+			"YaronSh"
 		]
 	},
+	"multilanguagemanager": "מנהל שפות מרובות",
+	"mlm-desc": "הרחבת מדיה־ויקי לניהול שפות מרובות באתר מדיה־ויקי אחד.",
+	"mlm-error-title-invalid": "שם דף בלתי־תקין",
+	"mlm-error-title-notexists": "הדף \"$1\" אינו קיים",
+	"mlm-error-title-istalkpage": "\"$1\". לא ניתן לתרגם דפי שיחה",
+	"mlm-error-title-nsnotallowed": "\"$1\". מרחב שמות בלתי־תקין לתרגום",
+	"mlm-error-title-isalreadytranslation": "הדף \"$1\" הוא כבר תרגום",
+	"mlm-error-title-isalreadysource": "הדף \"$1\" הוא כבר מקור",
+	"mlm-error-title-isnottranslation": "הדף \"$1\" אינו תרגום",
+	"mlm-error-lang-invalid": "שפה בלתי־תקינה",
+	"mlm-error-lang-notallowed": "השפה \"$1\" אינה מותרת לתרגום",
+	"mlm-error-lang-alreadytraslated": "כבר יש תרגום לשפה \"$1\"",
+	"mlm-input-label-sourcetitle": "דף המקור",
+	"mlm-input-label-translationtitles": "{{PLURAL:$1|דף|דפי}} תרגום",
+	"mlm-input-label-add": "הוספת תרגום",
 	"mlm-input-label-save": "שמירה",
-	"mlm-input-label-cancel": "ביטול"
+	"mlm-input-label-delete": "מחיקת כל התרגומים",
+	"mlm-input-label-cancel": "ביטול",
+	"mlm-contentaction-label": "ניהול תרגומים",
+	"right-language": "הוספה, עריכה ומחיקה של תרגומים באמצעות ההרחבה MultiLanguageManager",
+	"apihelp-mlm-tasks-summary": "ניהול משימות תרגום",
+	"apihelp-mlm-tasks-param-task": "המשימה שאמורה להתבצע",
+	"apihelp-mlm-tasks-param-taskData": "מחרוזת JSON מקודדת עם נתונים שרירותיים עבור המשימה",
+	"apihelp-mlm-tasks-param-format": "תסדיר התוצאה.",
+	"mlm-input-label-sourcetitle-section": "הגדרת התרגומים של:",
+	"mlm-input-label-translationtitles-section": "בשפה הבאה:"
 }
