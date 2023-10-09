@@ -3,7 +3,8 @@
 		"authors": [
 			"Kly",
 			"Liuxinyu970226",
-			"捍粵者"
+			"捍粵者",
+			"Winston Sung"
 		]
 	},
 	"multilanguagemanager": "多語言管理",
@@ -21,7 +22,7 @@
 	"mlm-error-lang-alreadytraslated": "已有語言為「$1」的翻譯",
 	"mlm-input-label-sourcetitle": "來源頁面",
 	"mlm-input-label-translationtitles": "翻譯 {{PLURAL:$1| 個頁面| 個頁面}}",
-	"mlm-input-label-add": "新增翻譯",
+	"mlm-input-label-add": "新增譯文",
 	"mlm-input-label-save": "儲存",
 	"mlm-input-label-delete": "刪除所有翻譯",
 	"mlm-input-label-cancel": "取消",
