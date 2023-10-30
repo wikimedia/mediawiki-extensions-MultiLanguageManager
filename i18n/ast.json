@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"Xuacu"
+			"Xuacu",
+			"YoaR"
 		]
 	},
 	"multilanguagemanager": "Alministrador de múltiples llingües",
@@ -23,7 +24,7 @@
 	"mlm-input-label-add": "Amestar traducción",
 	"mlm-input-label-save": "Guardar",
 	"mlm-input-label-delete": "Desaniciar toles traducciones",
-	"mlm-input-label-cancel": "Encaboxar",
+	"mlm-input-label-cancel": "Zarrar",
 	"mlm-contentaction-label": "Alministrar traducciones",
 	"right-language": "Añadir, editar y desaniciar traducciones usando la interfaz MultiLanguageManager",
 	"apihelp-mlm-tasks-summary": "Alministrar les xeres de traducción",
