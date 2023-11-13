@@ -2,9 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
+			"McDutchie",
 			"Sjoerddebruin"
 		]
 	},
+	"multilanguagemanager": "Beheer meerdere talen",
+	"mlm-desc": "MediaWiki-uitbreiding om meerdere talen in één MediaWiki te hanteren.",
+	"action-language": "vertalingen toe te voegen, te bewerken en te verwijderen met behulp van de MultiLanguageManager-interface",
 	"mlm-error-title-invalid": "Ongeldige paginanaam",
 	"mlm-error-title-notexists": "Pagina \"$1\" bestaat niet",
 	"mlm-error-title-istalkpage": "$1\". Overlegpagina's kunnen niet worden vertaald",
@@ -16,10 +20,17 @@
 	"mlm-error-lang-notallowed": "Er mag niet naar de taal \"$1\" vertaald worden",
 	"mlm-error-lang-alreadytraslated": "Er is al een vertaling voor de taal \"$1\"",
 	"mlm-input-label-sourcetitle": "Bronpagina",
+	"mlm-input-label-translationtitles": "Vertalingspagina{{plural:$1||’s}}",
 	"mlm-input-label-add": "Vertaling toevoegen",
 	"mlm-input-label-save": "Opslaan",
 	"mlm-input-label-delete": "Alle vertalingen verwijderen",
 	"mlm-input-label-cancel": "Annuleren",
 	"mlm-contentaction-label": "Vertalingen beheren",
+	"right-language": "Vertalingen toevoegen, bewerken en verwijderen met behulp van de MultiLanguageManager-interface",
+	"apihelp-mlm-tasks-summary": "Vertaaltaken beheren",
+	"apihelp-mlm-tasks-param-task": "De uit te voeren taak",
+	"apihelp-mlm-tasks-param-taskData": "Object, gecodeerd als JSON-tekenreeks, met willekeurige gegevens voor de taak",
+	"apihelp-mlm-tasks-param-format": "Het formaat van het resultaat",
+	"mlm-input-label-sourcetitle-section": "Definieert de vertalingen van:",
 	"mlm-input-label-translationtitles-section": "In de volgende taal:"
 }
