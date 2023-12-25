@@ -4,7 +4,8 @@
 			"Aftabuzzaman",
 			"আফতাবুজ্জামান",
 			"YahyA",
-			"Yahya"
+			"Yahya",
+			"Aishik Rehman"
 		]
 	},
 	"multilanguagemanager": "বহু ভাষা পরিচালক",
@@ -15,7 +16,7 @@
 	"mlm-error-title-nsnotallowed": "\"$1\"। অনুবাদের জন্য অকার্যকর নামস্থান",
 	"mlm-error-title-isalreadytranslation": "\"$1\" পৃষ্ঠাটি ইতিমধ্যে একটি অনুবাদ",
 	"mlm-error-title-isalreadysource": "\"$1\" পৃষ্ঠাটি ইতিমধ্যে একটি উৎস",
-	"mlm-error-title-isnottranslation": "\"$1\" পৃষ্ঠাটি কোন অনুবাদ নয়",
+	"mlm-error-title-isnottranslation": "\"$1\" পৃষ্ঠাটি কোনো অনুবাদ নয়",
 	"mlm-error-lang-invalid": "ভাষা বৈধ নয়",
 	"mlm-error-lang-notallowed": "ভাষা \"$1\" অনুবাদের জন্য অনুমোদিত নয়",
 	"mlm-error-lang-alreadytraslated": "'$1' ভাষার জন্য ইতিমধ্যে একটি অনুবাদ আছে",
