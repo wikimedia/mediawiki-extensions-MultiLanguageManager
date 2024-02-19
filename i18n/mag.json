@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"ऐक्टिवेटेड्"
+		]
+	},
+	"mlm-error-title-invalid": "अमान्य पन्नानाम",
+	"mlm-error-title-notexists": "पन्ना \"$1\" बिद्यमान न हे ।",
+	"mlm-error-lang-invalid": "अमान्य भाषा",
+	"mlm-input-label-sourcetitle": "स्रोत पन्ना",
+	"mlm-input-label-add": "अनुवाद जोड़ी",
+	"mlm-input-label-save": "सहेजी",
+	"mlm-input-label-delete": "सब अनुवाद हटावी",
+	"mlm-input-label-cancel": "निरस्त करी"
+}
