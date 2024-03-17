@@ -57,7 +57,7 @@ class Helper {
 	public static function getSystemLanguageCode() {
 		$oGlobals = \MediaWiki\MediaWikiServices::getInstance()
 			->getMainConfig();
-		list( $sLang ) = explode( '-', $oGlobals->get( 'LanguageCode' ) );
+		[ $sLang ] = explode( '-', $oGlobals->get( 'LanguageCode' ) );
 		return $sLang;
 	}
 
@@ -66,7 +66,7 @@ class Helper {
 	 * @return Status
 	 */
 	public static function getValidLanguage( $sLang ) {
-		list( $sLang ) = explode( '-', $sLang );
+		[ $sLang ] = explode( '-', $sLang );
 		if ( empty( $sLang ) ) {
 			return \Status::newFatal( 'mlm-error-lang-invalid' );
 		}
