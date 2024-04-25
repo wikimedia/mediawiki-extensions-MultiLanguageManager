@@ -4,11 +4,13 @@
 			"A Chinese Wikipedian",
 			"Liuxinyu970226",
 			"Xiplus",
-			"夢蝶葬花"
+			"夢蝶葬花",
+			"沈澄心"
 		]
 	},
 	"multilanguagemanager": "多语言管理器",
 	"mlm-desc": "管理一个MediaWiki网站中多种语言的MediaWiki扩展。",
+	"action-language": "使用MultiLanguageManager界面添加、编辑和删除翻译",
 	"mlm-error-title-invalid": "无效的页面名称",
 	"mlm-error-title-notexists": "页面“$1”不存在",
 	"mlm-error-title-istalkpage": "“$1”。讨论页不能翻译",
@@ -26,9 +28,11 @@
 	"mlm-input-label-delete": "删除翻译",
 	"mlm-input-label-cancel": "取消",
 	"mlm-contentaction-label": "管理翻译",
+	"right-language": "使用MultiLanguageManager界面添加、编辑和删除翻译",
 	"apihelp-mlm-tasks-summary": "管理翻译任务",
 	"apihelp-mlm-tasks-param-task": "应执行的任务",
 	"apihelp-mlm-tasks-param-taskData": "JSON字符串编码的对象，带用于任务的任意数据",
 	"apihelp-mlm-tasks-param-format": "结果的格式",
+	"mlm-input-label-sourcetitle-section": "定义以下内容的翻译：",
 	"mlm-input-label-translationtitles-section": "在关注的语言里："
 }
