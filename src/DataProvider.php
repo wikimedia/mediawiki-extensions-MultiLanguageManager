@@ -2,6 +2,8 @@
 
 namespace MultiLanguageManager;
 
+use MediaWiki\MediaWikiServices;
+
 abstract class DataProvider {
 	/**
 	 * Load a MultiLanguageTranslation from the database
@@ -14,7 +16,7 @@ abstract class DataProvider {
 		$aFields = [ 'source', 'translate' ];
 		$aConditions = [ "source = $iArticleId OR translate = $iArticleId" ];
 
-		$oRow = wfGetDB( DB_REPLICA )->selectRow(
+		$oRow = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA )->selectRow(
 			$aTables,
 			$aFields,
 			$aConditions,
@@ -43,7 +45,7 @@ abstract class DataProvider {
 			'page_id = translate',
 		];
 
-		$oRes = wfGetDB( DB_REPLICA )->select(
+		$oRes = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA )->select(
 			$aTables,
 			$aFields,
 			$aConditions,
@@ -65,7 +67,7 @@ abstract class DataProvider {
 	}
 
 	protected static function insertTranslations( $iSourceId, $aTranslations ) {
-		$oDbw = wfGetDB( DB_PRIMARY );
+		$oDbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$sTranlationTable = Helper::getConfig()->get( Config::TRANSLATION_TABLE );
 		$sLanguageTable = Helper::getConfig()->get( Config::LANGUAGE_TABLE );
 
@@ -99,12 +101,12 @@ abstract class DataProvider {
 		foreach ( $aTranslations as $oTranslation ) {
 			$aIds[] = $oTranslation->id;
 		}
-		$bRes = wfGetDB( DB_PRIMARY )->delete(
+		$bRes = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY )->delete(
 			Helper::getConfig()->get( Config::TRANSLATION_TABLE ),
 			[ 'translate' => $aIds ],
 			__METHOD__
 		);
-		$bRes = wfGetDB( DB_PRIMARY )->delete(
+		$bRes = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY )->delete(
 			Helper::getConfig()->get( Config::LANGUAGE_TABLE ),
 			[ 'page_id' => $aIds ],
 			__METHOD__
@@ -116,7 +118,7 @@ abstract class DataProvider {
 	 * @return array
 	 */
 	public static function getAllSourceTitles() {
-		$oRes = wfGetDB( DB_REPLICA )->select(
+		$oRes = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA )->select(
 			Helper::getConfig()->get( Config::TRANSLATION_TABLE ),
 			[ 'source' ],
 			[],
