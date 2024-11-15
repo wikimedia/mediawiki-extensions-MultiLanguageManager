@@ -16,7 +16,7 @@ class Helper {
 	 * @param \Title|null $oTitle
 	 * @return \Status
 	 */
-	public static function isValidTitle( \Title $oTitle = null ) {
+	public static function isValidTitle( ?\Title $oTitle = null ) {
 		if ( !$oTitle ) {
 			return \Status::newFatal( 'mlm-error-title-invalid' );
 		}
@@ -137,7 +137,7 @@ class Helper {
 	 * @return array
 	 */
 	public static function getAvailableLanguageCodes(
-		\MultiLanguageManager\MultiLanguageTranslation $oTranslation = null,
+		?\MultiLanguageManager\MultiLanguageTranslation $oTranslation = null,
 		$bNoSysLang = true
 	) {
 		$sSystemLang = static::getSystemLanguageCode();
