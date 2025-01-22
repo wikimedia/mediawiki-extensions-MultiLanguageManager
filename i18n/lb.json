@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Les Meloures",
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"multilanguagemanager": "Méisproocheg Gestioun",
@@ -14,7 +15,7 @@
 	"mlm-error-title-isalreadytranslation": "D'Säit \"$1\" ass schonn eng Iwwersetzung",
 	"mlm-error-title-isalreadysource": "D'Säit \"$1\" ass schonn eng Quell",
 	"mlm-error-title-isnottranslation": "D'Säit \"$1\" ass keng Iwwersetzung",
-	"mlm-error-lang-invalid": "Net valabel Sprooch",
+	"mlm-error-lang-invalid": "Ongülteg Sprooch",
 	"mlm-error-lang-notallowed": "D'Sprooch \"$1\" ass net virgesi fir z'iwwersetzen",
 	"mlm-error-lang-alreadytraslated": "Et gëtt schonn eng Iwwersetzung fir d'Sprooch \"$1\"",
 	"mlm-input-label-sourcetitle": "Originalsäit",
