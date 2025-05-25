@@ -1,10 +1,10 @@
 ( function () {
 	mw.mlm = mw.mlm || {};
-	$( document ).on( 'click', '#ca-mlm', function ( e ) {
+	$( document ).on( 'click', '#ca-mlm', ( e ) => {
 		if ( !mw.mlm.dialog ) {
 			return;
 		}
-		var windowManager = new OO.ui.WindowManager( {
+		const windowManager = new OO.ui.WindowManager( {
 			factory: mw.mlm.factory
 		} );
 		// eslint-disable-next-line no-jquery/no-global-selector
@@ -15,7 +15,7 @@
 		return false;
 	} );
 
-	mw.loader.using( 'oojs-ui', function () {
+	mw.loader.using( 'oojs-ui', () => {
 
 		mw.mlm.factory = new OO.Factory();
 
@@ -35,15 +35,15 @@
 			'mlmLanguageFlags',
 			{}
 		);
-		var css = '';
-		for ( var code in mw.mlm.languageFlags ) {
+		let css = '';
+		for ( const code in mw.mlm.languageFlags ) {
 			css += ' .oo-ui-icon-mlm-lang-flag-' + code + ' {\n\
 					background-image: url("' + mw.mlm.languageFlags[ code ] + '");\n\
 				}\n\
 			';
 		}
 		$( "<style type='text/css'>" + css + '</style>' ).appendTo( 'head' );
-		var lang = mw.config.get( 'wgContentLanguage' ).split( '-' );
+		const lang = mw.config.get( 'wgContentLanguage' ).split( '-' );
 		mw.mlm.lang = lang[ 0 ];
 
 		mw.mlm.dialog = function ( config ) {
@@ -84,7 +84,7 @@
 			this.errorSection.$element.css( 'font-weight', 'bold' );
 			this.errorSection.$element.css( 'text-align', 'center' );
 
-			var options = [];
+			const options = [];
 			for ( var i = 0; i < mw.mlm.languages.length; i++ ) {
 				if ( mw.mlm.languages[ i ] === mw.mlm.lang ) {
 					continue;
@@ -155,7 +155,7 @@
 				flags: [ 'primary', 'progressive' ]
 			} );
 
-			var me = this;
+			const me = this;
 			this.translationAdd.on( 'click', me.onTranslationAdd.bind( this ) );
 
 			this.addSection = new OO.ui.FieldsetLayout( {
@@ -184,7 +184,7 @@
 		};
 
 		mw.mlm.dialog.prototype.save = function () {
-			var api = new mw.Api();
+			const api = new mw.Api();
 			return api.postWithToken( 'csrf', {
 				action: 'mlm-tasks',
 				task: 'save',
@@ -194,7 +194,7 @@
 		};
 
 		mw.mlm.dialog.prototype.delete = function () {
-			var api = new mw.Api();
+			const api = new mw.Api();
 			return api.postWithToken( 'csrf', {
 				action: 'mlm-tasks',
 				task: 'delete',
@@ -204,12 +204,12 @@
 		};
 
 		mw.mlm.dialog.prototype.getData = function () {
-			var data = {};
+			const data = {};
 
 			data.srcText = this.srcText.value;
 			data.translations = {};
-			for ( var i in this.translations ) {
-				var translation = this.translations[ i ];
+			for ( const i in this.translations ) {
+				const translation = this.translations[ i ];
 				data.translations[ i ] = {
 					lang: i,
 					text: translation.input.value
@@ -220,18 +220,16 @@
 
 		mw.mlm.dialog.prototype.getActionProcess = function ( action ) {
 			return mw.mlm.dialog.super.prototype.getActionProcess.call( this, action )
+				.next( () => 1000, this )
 				.next( function () {
-					return 1000;
-				}, this )
-				.next( function () {
-					var closing;
+					let closing;
 					if ( action === 'save' ) {
 						if ( this.broken ) {
 							this.broken = false;
 							return new OO.ui.Error( 'Server did not respond' );
 						}
 						var me = this;
-						return me.save().done( function ( data ) {
+						return me.save().done( ( data ) => {
 						// success is just emtyed out somewhere for no reason
 							if ( data.message.length === 0 ) {
 								closing = me.close( { action: action } );
@@ -245,7 +243,7 @@
 						return closing;
 					} else if ( action === 'delete' ) {
 						var me = this;
-						return this.delete().done( function ( data ) {
+						return this.delete().done( ( data ) => {
 						// success is just emtyed out somewhere for no reason
 							if ( data.message.length === 0 ) {
 								closing = me.close( { action: action } );
@@ -268,8 +266,8 @@
 		mw.mlm.dialog.prototype.showRequestErrors = function ( errors ) {
 			var errors = errors || {};
 
-			var error = '';
-			for ( var i in errors ) {
+			let error = '';
+			for ( const i in errors ) {
 				error += errors[ i ] + '<br />';
 			}
 
@@ -283,9 +281,9 @@
 		};
 
 		mw.mlm.dialog.prototype.onSrcTextChange = function ( value ) {
-			var me = this;
+			const me = this;
 
-			var api = new mw.Api();
+			const api = new mw.Api();
 			api.postWithToken( 'csrf', {
 				action: 'mlm-tasks',
 				task: 'get',
@@ -294,13 +292,13 @@
 					srcText: value
 				} )
 			} )
-				.done( function ( response, jqXHR ) {
+				.done( ( response, jqXHR ) => {
 					if ( !response.success ) {
 						return;
 					}
 
-					for ( var i = 0; i < response.payload.length; i++ ) {
-						var translation = response.payload[ i ];
+					for ( let i = 0; i < response.payload.length; i++ ) {
+						const translation = response.payload[ i ];
 						me.updateTranslations( {
 							lang: translation.lang,
 							text: translation.text
@@ -391,7 +389,7 @@
 				'flex'
 			);
 
-			var me = this;
+			const me = this;
 			this.translations[ translation.lang ].delete.on(
 				'click',
 				me.onTranslationDelete.bind( this ),
