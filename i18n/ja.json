@@ -3,7 +3,8 @@
 		"authors": [
 			"LaMagiaaa",
 			"Otokoume",
-			"Suchichi02"
+			"Suchichi02",
+			"Shirayuki"
 		]
 	},
 	"multilanguagemanager": "多言語マネージャー",
@@ -12,12 +13,12 @@
 	"mlm-error-title-notexists": "ページ「$1」が存在しません",
 	"mlm-error-title-istalkpage": "「 $1 」。トークページは翻訳できません",
 	"mlm-error-title-nsnotallowed": "「 $1 」。翻訳には無効な名前空間です",
-	"mlm-error-title-isalreadytranslation": "ページ「$1」はすでに翻訳です",
-	"mlm-error-title-isalreadysource": "ページ「$1」はすでにソースです",
+	"mlm-error-title-isalreadytranslation": "ページ「$1」は既に翻訳です",
+	"mlm-error-title-isalreadysource": "ページ「$1」は既に翻訳元です",
 	"mlm-error-title-isnottranslation": "ページ「$1」は翻訳ではありません",
 	"mlm-error-lang-invalid": "言語名が無効です",
 	"mlm-error-lang-notallowed": "言語「$1」は翻訳にできません",
-	"mlm-error-lang-alreadytraslated": "言語「$1」にはすでに翻訳があります",
+	"mlm-error-lang-alreadytraslated": "言語「$1」には既に翻訳があります",
 	"mlm-input-label-sourcetitle": "ソースページ",
 	"mlm-input-label-translationtitles": "翻訳{{PLURAL:$1|ページ}}",
 	"mlm-input-label-add": "翻訳を追加",
