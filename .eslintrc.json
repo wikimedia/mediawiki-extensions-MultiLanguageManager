@@ -1,13 +1,15 @@
 {
 	"root": true,
 	"extends": [
-		"wikimedia/client-es5",
+		"wikimedia/client",
 		"wikimedia/jquery",
 		"wikimedia/mediawiki"
 	],
 	"rules": {
 		"block-scoped-var": "off",
 		"no-redeclare": "off",
-		"no-unused-vars": "off"
+		"no-unused-vars": "off",
+		"no-var": "warn",
+		"no-jquery/no-done-fail": "warn"
 	}
 }
