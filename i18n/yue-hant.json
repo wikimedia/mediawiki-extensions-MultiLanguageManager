@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"JeffreyKim"
+		]
+	},
+	"action-language": "使用多語言管理員介面新增、編輯同刪除翻譯",
+	"mlm-input-label-add": "加入翻譯",
+	"right-language": "使用多語言管理員介面新增、編輯同刪除翻譯"
+}
