@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"JeffreyKim"
+			"JeffreyKim",
+			"Yueman"
 		]
 	},
 	"mlm-input-label-add": "加入翻譯",
+	"mlm-input-label-cancel": "取消",
 	"right-language": "使用多語言管理員介面新增、編輯同刪除翻譯"
 }
