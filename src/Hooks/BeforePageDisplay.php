@@ -2,6 +2,7 @@
 
 namespace MultiLanguageManager\Hooks;
 
+use MediaWiki\Title\Title;
 use MultiLanguageManager\Helper;
 use MultiLanguageManager\MultiLanguageTranslation as Translation;
 
@@ -56,7 +57,7 @@ class BeforePageDisplay {
 		);
 
 		$oTransations = Translation::newFromTitle( $this->oSkin->getTitle() );
-		if ( !$oTransations || !$oTransations->getSourceTitle() instanceof \Title ) {
+		if ( !$oTransations || !$oTransations->getSourceTitle() instanceof Title ) {
 			return true;
 		}
 
@@ -67,7 +68,7 @@ class BeforePageDisplay {
 
 		$translations = [];
 		foreach ( $oTransations->getTranslations() as $translation ) {
-			if ( !$title = \Title::newFromID( $translation->id ) ) {
+			if ( !$title = Title::newFromID( $translation->id ) ) {
 				continue;
 			}
 			$translations[] = [

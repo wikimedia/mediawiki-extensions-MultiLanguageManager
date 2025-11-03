@@ -3,14 +3,15 @@
 namespace MultiLanguageManager;
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 
 abstract class DataProvider {
 	/**
 	 * Load a MultiLanguageTranslation from the database
-	 * @param \Title $oTitle
+	 * @param Title $oTitle
 	 * @return \MultiLanguageManager\MultiLanguageTranslation
 	 */
-	protected static function fromDB( \Title $oTitle ) {
+	protected static function fromDB( Title $oTitle ) {
 		$iArticleId = (int)$oTitle->getArticleID();
 		$aTables = [ Helper::getConfig()->get( Config::TRANSLATION_TABLE ) ];
 		$aFields = [ 'source', 'translate' ];
@@ -26,15 +27,15 @@ abstract class DataProvider {
 			return new static();
 		}
 
-		return static::makefromDB( \Title::newFromID( (int)$oRow->source ) );
+		return static::makefromDB( Title::newFromID( (int)$oRow->source ) );
 	}
 
 	/**
 	 * Load a MultiLanguageTranslation from the database form a source title
-	 * @param \Title $oSourceTitle
+	 * @param Title $oSourceTitle
 	 * @return \MultiLanguageManager\MultiLanguageTranslation
 	 */
-	protected static function makefromDB( \Title $oSourceTitle ) {
+	protected static function makefromDB( Title $oSourceTitle ) {
 		$aTables = [
 			Helper::getConfig()->get( Config::TRANSLATION_TABLE ),
 			Helper::getConfig()->get( Config::LANGUAGE_TABLE )
@@ -127,7 +128,7 @@ abstract class DataProvider {
 		);
 		$aReturn = [];
 		foreach ( $oRes as $oRow ) {
-			$aReturn[] = \Title::newFromID( $oRow->source );
+			$aReturn[] = Title::newFromID( $oRow->source );
 		}
 		return $aReturn;
 	}
