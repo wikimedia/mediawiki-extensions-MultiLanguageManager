@@ -2,6 +2,8 @@
 
 namespace MultiLanguageManager;
 
+use MediaWiki\Title\Title;
+
 class Helper {
 
 	/**
@@ -13,10 +15,10 @@ class Helper {
 	}
 
 	/**
-	 * @param \Title|null $oTitle
+	 * @param Title|null $oTitle
 	 * @return \Status
 	 */
-	public static function isValidTitle( ?\Title $oTitle = null ) {
+	public static function isValidTitle( ?Title $oTitle = null ) {
 		if ( !$oTitle ) {
 			return \Status::newFatal( 'mlm-error-title-invalid' );
 		}
@@ -92,7 +94,7 @@ class Helper {
 		$aNew = array_filter(
 			$oNew->getTranslations(),
 			static function ( $e ) use ( $oOld ){
-				if ( !$oOld->isTranslation( \Title::newFromID( $e->id ) ) ) {
+				if ( !$oOld->isTranslation( Title::newFromID( $e->id ) ) ) {
 					return true;
 				}
 				if ( !$oOld->isTranslatedLang( $e->lang ) ) {
@@ -103,7 +105,7 @@ class Helper {
 		$aDeleted = array_filter(
 			$oOld->getTranslations(),
 			static function ( $e ) use ( $oNew ){
-				if ( !$oNew->isTranslation( \Title::newFromID( $e->id ) ) ) {
+				if ( !$oNew->isTranslation( Title::newFromID( $e->id ) ) ) {
 					return true;
 				}
 				if ( !$oNew->isTranslatedLang( $e->lang ) ) {

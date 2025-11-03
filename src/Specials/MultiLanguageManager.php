@@ -2,13 +2,15 @@
 
 namespace MultiLanguageManager\Specials;
 
+use MediaWiki\Html\Html;
+use MediaWiki\Title\Title;
 use MultiLanguageManager\Config;
 use MultiLanguageManager\Helper;
 use MultiLanguageManager\MultiLanguageTranslation as Translation;
 
 class MultiLanguageManager extends \SpecialPage {
 	/**
-	 * @var \Title|null
+	 * @var Title|null
 	 */
 	protected $oTitle = null;
 	/**
@@ -89,7 +91,7 @@ class MultiLanguageManager extends \SpecialPage {
 		if ( !$this->getRequest()->getVal( 'mlm-form', false ) ) {
 			return false;
 		}
-		$oSourceTitle = \Title::newFromText(
+		$oSourceTitle = Title::newFromText(
 			$this->getRequest()->getVal( 'mlm-sourcetitle', '' )
 		);
 
@@ -138,7 +140,7 @@ class MultiLanguageManager extends \SpecialPage {
 			''
 		);
 		if ( !empty( $sNewTranslation ) ) {
-			$oNewTranslationTitle = \Title::newFromText(
+			$oNewTranslationTitle = Title::newFromText(
 				$sNewTranslation
 			);
 			$status = $oTranslation->addTranslation(
@@ -194,19 +196,19 @@ class MultiLanguageManager extends \SpecialPage {
 			'value' => '',
 			'name' => 'mlm-sourcetitle',
 		];
-		if ( $this->oTranslation && $this->oTranslation->getSourceTitle() instanceof \Title ) {
+		if ( $this->oTranslation && $this->oTranslation->getSourceTitle() instanceof Title ) {
 			$aArgs['value'] = $this->oTranslation->getSourceTitle()->getFullText();
 			$aArgs['readonly'] = 'readonly';
 			$bDisabled = true;
 		} elseif ( $this->getRequest()->getVal( 'mlm-sourcetitle', false ) ) {
 			$aArgs['value'] = $this->getRequest()->getVal( 'mlm-sourcetitle' );
 		}
-		$sLegend = \Html::element(
+		$sLegend = Html::element(
 			'legend',
 			null,
 			wfMessage( 'mlm-input-label-sourcetitle' )->text()
 		);
-		$sInput = \Html::element( 'input', $aArgs );
+		$sInput = Html::element( 'input', $aArgs );
 		$sSystemLang = Helper::getSystemLanguageCode();
 		$sLang = \Xml::tags( 'select', [
 			'id' => 'mlm-sourcetitle-lang',
@@ -219,7 +221,7 @@ class MultiLanguageManager extends \SpecialPage {
 
 	protected function outputTranslationsForm( $sHtml = '' ) {
 		$iTranslations = count( $this->oTranslation->getTranslations() ) + 1;
-		$sLegend = \Html::element(
+		$sLegend = Html::element(
 			'legend',
 			null,
 			wfMessage(
@@ -230,11 +232,11 @@ class MultiLanguageManager extends \SpecialPage {
 		$sRows = '';
 		$bTitleInTranslations = false;
 		foreach ( $this->oTranslation->getTranslations() as $oTranslation ) {
-			$oTitle = \Title::newFromID( $oTranslation->id );
+			$oTitle = Title::newFromID( $oTranslation->id );
 			if ( $oTitle->equals( $this->oTitle ) ) {
 				$bTitleInTranslations = true;
 			}
-			$sInput = \Html::element( 'input', [
+			$sInput = Html::element( 'input', [
 				'id' => "mlm-translation-$oTranslation->id",
 				'value' => $oTitle->getFullText(),
 				'readonly' => 'readonly',
@@ -255,7 +257,7 @@ class MultiLanguageManager extends \SpecialPage {
 			$sValue = $this->getRequest()->getVal( 'mlm-newtranslation' );
 		}
 
-		$sInput = \Html::element( 'input', [
+		$sInput = Html::element( 'input', [
 			'id' => "mlm-newtranslation",
 			'value' => $sValue,
 			'name' => "mlm-newtranslation",
@@ -282,35 +284,35 @@ class MultiLanguageManager extends \SpecialPage {
 	protected function outputSaveButton() {
 		$oMsg = wfMessage( 'mlm-input-label-save' );
 		$this->getOutput()->addHTML(
-			\Html::submitButton( $oMsg->plain(), [ 'name' => 'mlm-save' ] )
+			Html::submitButton( $oMsg->plain(), [ 'name' => 'mlm-save' ] )
 		);
 	}
 
 	protected function outputDeleteButton() {
 		$oMsg = wfMessage( 'mlm-input-label-delete' );
 		$this->getOutput()->addHTML(
-			\Html::submitButton( $oMsg->plain(), [ 'name' => 'mlm-delete' ] )
+			Html::submitButton( $oMsg->plain(), [ 'name' => 'mlm-delete' ] )
 		);
 	}
 
 	protected function outputFormStart() {
-		$this->getOutput()->addHTML( \Html::openElement( 'form', [
+		$this->getOutput()->addHTML( Html::openElement( 'form', [
 			'method' => 'post',
 			'action' => $this->getPageTitle( $this->subPage )->getLocalURL(),
 			'id' => 'mlm-form',
 		] ) );
 		$this->getOutput()->addHTML(
-			\Html::hidden( 'mlm-form', true )
+			Html::hidden( 'mlm-form', true )
 		);
 	}
 
 	protected function outputFormEnd() {
-		$this->getOutput()->addHTML( \Html::closeElement( 'form' ) );
+		$this->getOutput()->addHTML( Html::closeElement( 'form' ) );
 	}
 
 	protected function makeTitleContext( $subPage = '' ) {
 		if ( !empty( $subPage ) ) {
-			$oTitle = \Title::newFromText( $subPage );
+			$oTitle = Title::newFromText( $subPage );
 			$status = Helper::isValidTitle( $oTitle );
 			if ( !$status->isOK() ) {
 				$this->outputError( $status->getHTML(), "'$subPage':" );
@@ -323,7 +325,7 @@ class MultiLanguageManager extends \SpecialPage {
 	}
 
 	protected function mayRedirect() {
-		if ( !$this->oTranslation->getSourceTitle() instanceof \Title ) {
+		if ( !$this->oTranslation->getSourceTitle() instanceof Title ) {
 			return;
 		}
 		$oSpecial = Helper::getSpecialPage();
