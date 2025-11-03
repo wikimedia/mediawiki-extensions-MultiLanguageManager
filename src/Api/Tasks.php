@@ -3,6 +3,7 @@
 namespace MultiLanguageManager\Api;
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use MultiLanguageManager\Config;
 use MultiLanguageManager\Helper;
 use MultiLanguageManager\MultiLanguageTranslation;
@@ -39,7 +40,7 @@ class Tasks extends \ApiBase {
 		if ( empty( $taskData->srcText ) ) {
 			$taskData->srcText = '';
 		}
-		$oSourceTitle = \Title::newFromText( $taskData->srcText );
+		$oSourceTitle = Title::newFromText( $taskData->srcText );
 		$status = Helper::isValidTitle(
 			$oSourceTitle
 		);
@@ -55,7 +56,7 @@ class Tasks extends \ApiBase {
 		}
 		foreach ( $taskData->translations as $translation ) {
 			$status = Helper::isValidTitle(
-				\Title::newFromText( $translation->text )
+				Title::newFromText( $translation->text )
 			);
 			if ( !$status->isOK() ) {
 				$result->message[$translation->lang] = $status->getHTML();
@@ -87,7 +88,7 @@ class Tasks extends \ApiBase {
 
 		foreach ( $mlmTranslation->getTranslations() as $translation ) {
 			$status = $mlmTranslation->removeTranslation(
-				\Title::newFromID( $translation->id )
+				Title::newFromID( $translation->id )
 			);
 			if ( !$status->isOK() ) {
 				$result->message[$translation->lang] = $status->getHTML();
@@ -96,7 +97,7 @@ class Tasks extends \ApiBase {
 		}
 		foreach ( $taskData->translations as $translation ) {
 			$status = $mlmTranslation->addTranslation(
-				\Title::newFromText( $translation->text ),
+				Title::newFromText( $translation->text ),
 				$translation->lang
 			);
 			if ( !$status->isOK() ) {
@@ -124,7 +125,7 @@ class Tasks extends \ApiBase {
 		if ( empty( $taskData->srcText ) ) {
 			$taskData->srcText = '';
 		}
-		$oSourceTitle = \Title::newFromText( $taskData->srcText );
+		$oSourceTitle = Title::newFromText( $taskData->srcText );
 		$status = Helper::isValidTitle(
 			$oSourceTitle
 		);
@@ -160,7 +161,7 @@ class Tasks extends \ApiBase {
 		if ( empty( $taskData->srcText ) ) {
 			$taskData->srcText = '';
 		}
-		$oSourceTitle = \Title::newFromText( $taskData->srcText );
+		$oSourceTitle = Title::newFromText( $taskData->srcText );
 		$status = Helper::isValidTitle(
 			$oSourceTitle
 		);
@@ -175,7 +176,7 @@ class Tasks extends \ApiBase {
 
 		$translations = $mlmTranslation->getTranslations();
 		foreach ( $translations as &$translation ) {
-			$title = \Title::newFromID( $translation->id );
+			$title = Title::newFromID( $translation->id );
 			$translation->text = $title->getPrefixedText();
 		}
 

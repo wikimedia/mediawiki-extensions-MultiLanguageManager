@@ -2,6 +2,7 @@
 
 namespace MultiLanguageManager\Hooks;
 
+use MediaWiki\Title\Title;
 use MultiLanguageManager\Helper;
 use MultiLanguageManager\MultiLanguageTranslation as Translation;
 
@@ -45,7 +46,7 @@ class UserGetLanguageObject {
 		if ( !$oTranslations ) {
 			return true;
 		}
-		if ( !$oTranslations->getSourceTitle() instanceof \Title ) {
+		if ( !$oTranslations->getSourceTitle() instanceof Title ) {
 			return true;
 		}
 		if ( $oTranslations->isSourceTitle( $oTitle ) ) {

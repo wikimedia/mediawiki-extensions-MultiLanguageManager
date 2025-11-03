@@ -2,6 +2,8 @@
 
 namespace MultiLanguageManager;
 
+use MediaWiki\Title\Title;
+
 class MultiLanguageTranslation extends DataProvider {
 	/**
 	 * Contains all created Instances
@@ -27,7 +29,7 @@ class MultiLanguageTranslation extends DataProvider {
 	 */
 	protected function __construct( $iSourceId = 0, array $aTranslations = [] ) {
 		if ( $iSourceId > 0 ) {
-			$this->oSourceTitle = \Title::newFromID( $iSourceId );
+			$this->oSourceTitle = Title::newFromID( $iSourceId );
 		}
 		$this->aTranslations = $aTranslations;
 	}
@@ -39,7 +41,7 @@ class MultiLanguageTranslation extends DataProvider {
 	 * @return \MultiLanguageManager\MultiLanguageTranslation
 	 */
 	protected static function appendCache( MultiLanguageTranslation $oInstance ) {
-		if ( !$oInstance->getSourceTitle() instanceof \Title ) {
+		if ( !$oInstance->getSourceTitle() instanceof Title ) {
 			return $oInstance;
 		}
 		static::$aInstances[
@@ -49,11 +51,11 @@ class MultiLanguageTranslation extends DataProvider {
 	}
 
 	/**
-	 * @param \Title $oTitle
+	 * @param Title $oTitle
 	 * @param bool $bNoCache
 	 * @return \MultiLanguageManager\MultiLanguageTranslation
 	 */
-	public static function newFromTitle( \Title $oTitle, $bNoCache = false ) {
+	public static function newFromTitle( Title $oTitle, $bNoCache = false ) {
 		$oStatus = Helper::isValidTitle( $oTitle );
 		if ( !$oStatus->isOk() ) {
 			return null;
@@ -70,10 +72,10 @@ class MultiLanguageTranslation extends DataProvider {
 	/**
 	 * Returns the instance from cache
 	 * TODO: Real caching
-	 * @param \Title $oTitle
+	 * @param Title $oTitle
 	 * @return \MultiLanguageManager\MultiLanguageTranslation|null
 	 */
-	protected static function fromCache( \Title $oTitle ) {
+	protected static function fromCache( Title $oTitle ) {
 		if ( isset( static::$aInstances[ (int)$oTitle->getArticleID() ] ) ) {
 			static::$aInstances[ (int)$oTitle->getArticleID() ];
 		}
@@ -94,31 +96,31 @@ class MultiLanguageTranslation extends DataProvider {
 	}
 
 	/**
-	 * Checks if given \Title is the source \Title
-	 * @param \Title $oTitle
+	 * Checks if given Title is the source Title
+	 * @param Title $oTitle
 	 * @return bool
 	 */
-	public function isSourceTitle( \Title $oTitle ) {
-		if ( !$this->getSourceTitle() instanceof \Title ) {
+	public function isSourceTitle( Title $oTitle ) {
+		if ( !$this->getSourceTitle() instanceof Title ) {
 			return false;
 		}
 		return $this->getSourceTitle()->equals( $oTitle );
 	}
 
 	/**
-	 * Returns the source \Title or null if not set
-	 * @return \Title|null
+	 * Returns the source Title or null if not set
+	 * @return Title|null
 	 */
 	public function getSourceTitle() {
 		return $this->oSourceTitle;
 	}
 
 	/**
-	 * Checks if the given \Title is a translation
-	 * @param \Title $oTitle
+	 * Checks if the given Title is a translation
+	 * @param Title $oTitle
 	 * @return bool
 	 */
-	public function isTranslation( \Title $oTitle ) {
+	public function isTranslation( Title $oTitle ) {
 		foreach ( $this->getTranslations() as $oTranslation ) {
 			if ( (int)$oTitle->getArticleID() !== $oTranslation->id ) {
 				continue;
@@ -168,11 +170,11 @@ class MultiLanguageTranslation extends DataProvider {
 
 	/**
 	 * Adds a Title as a Translation
-	 * @param \Title $oTitle
+	 * @param Title $oTitle
 	 * @param string $sLang
 	 * @return \Status
 	 */
-	public function addTranslation( \Title $oTitle, $sLang ) {
+	public function addTranslation( Title $oTitle, $sLang ) {
 		$oStatus = Helper::getValidLanguage( $sLang );
 		if ( !$oStatus->isOK() ) {
 			return $oStatus;
@@ -234,10 +236,10 @@ class MultiLanguageTranslation extends DataProvider {
 
 	/**
 	 * Removes a Title as a Translation
-	 * @param \Title $oTitle
+	 * @param Title $oTitle
 	 * @return \Status
 	 */
-	public function removeTranslation( \Title $oTitle ) {
+	public function removeTranslation( Title $oTitle ) {
 		$oStatus = Helper::isValidTitle( $oTitle );
 		if ( !$oStatus->isOk() ) {
 			return $oStatus;
@@ -259,15 +261,15 @@ class MultiLanguageTranslation extends DataProvider {
 
 	/**
 	 * Sets the source title, if there is no source title yet
-	 * @param \Title $oTitle
+	 * @param Title $oTitle
 	 * @return \Status
 	 */
-	public function setSourceTitle( \Title $oTitle ) {
+	public function setSourceTitle( Title $oTitle ) {
 		$oStatus = Helper::isValidTitle( $oTitle );
 		if ( !$oStatus->isOk() ) {
 			return $oStatus;
 		}
-		if ( $this->getSourceTitle() instanceof \Title ) {
+		if ( $this->getSourceTitle() instanceof Title ) {
 			if ( $this->isSourceTitle( $oTitle ) ) {
 				return \Status::newFatal(
 					'mlm-error-title-isalreadysource',
@@ -307,7 +309,7 @@ class MultiLanguageTranslation extends DataProvider {
 	 * @return \MultiLanguageManager\MultiLanguageTranslation
 	 */
 	public function invalidate() {
-		if ( !$this->getSourceTitle() instanceof \Title ) {
+		if ( !$this->getSourceTitle() instanceof Title ) {
 			return $this;
 		}
 		$bExists = isset(
@@ -331,13 +333,13 @@ class MultiLanguageTranslation extends DataProvider {
 			// if no translations left, delete translation set
 			return \Status::newGood( $this->delete() );
 		}
-		if ( !$this->getSourceTitle() instanceof \Title ) {
+		if ( !$this->getSourceTitle() instanceof Title ) {
 			return \Status::newFatal( 'No Source' );
 		}
 
 		$oOldInstance = static::makefromDB( $this->getSourceTitle() );
 		// never existed
-		if ( !$oOldInstance->getSourceTitle() instanceof \Title ) {
+		if ( !$oOldInstance->getSourceTitle() instanceof Title ) {
 			static::insertTranslations(
 				(int)$this->getSourceTitle()->getArticleID(),
 				$this->getTranslations()
@@ -362,12 +364,12 @@ class MultiLanguageTranslation extends DataProvider {
 	 * @return \Status
 	 */
 	public function delete() {
-		if ( !$this->getSourceTitle() instanceof \Title ) {
+		if ( !$this->getSourceTitle() instanceof Title ) {
 			return \Status::newFatal( 'No Source' );
 		}
 		$oOldInstance = static::makefromDB( $this->getSourceTitle() );
 		// never existed
-		if ( !$oOldInstance->getSourceTitle() instanceof \Title ) {
+		if ( !$oOldInstance->getSourceTitle() instanceof Title ) {
 			// TODO: Msg
 			return \Status::newFatal( 'Never existed' );
 		}
