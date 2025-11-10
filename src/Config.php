@@ -2,7 +2,9 @@
 
 namespace MultiLanguageManager;
 
-class Config extends \GlobalVarConfig {
+use MediaWiki\Config\GlobalVarConfig;
+
+class Config extends GlobalVarConfig {
 
 	const AVAILABLE_LANGUAGES = 'AvailableLanguages';
 	const PERMISSION = 'Permission';
