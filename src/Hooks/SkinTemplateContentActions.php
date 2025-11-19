@@ -9,13 +9,11 @@ use MultiLanguageManager\Helper;
 class SkinTemplateContentActions {
 
 	/**
-	 *
 	 * @var \SkinTemplate
 	 */
 	protected $oSkinTemplate = null;
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $aContentNavigation = [];
@@ -30,7 +28,6 @@ class SkinTemplateContentActions {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function process() {

@@ -9,13 +9,11 @@ use MultiLanguageManager\MultiLanguageTranslation as Translation;
 class UserGetLanguageObject {
 
 	/**
-	 *
 	 * @var \User
 	 */
 	protected $oUser = null;
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $sCode = '';
@@ -30,7 +28,6 @@ class UserGetLanguageObject {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function process() {

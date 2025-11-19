@@ -9,13 +9,11 @@ use MultiLanguageManager\MultiLanguageTranslation as Translation;
 class SkinBuildSidebar {
 
 	/**
-	 *
 	 * @var \Skin
 	 */
 	protected $oSkin = null;
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $aSidebar = [];
@@ -42,7 +40,6 @@ class SkinBuildSidebar {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function process() {
