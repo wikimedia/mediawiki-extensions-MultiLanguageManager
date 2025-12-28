@@ -1,0 +1,14 @@
+[
+	{
+		"@note": "opt-out, see https://www.mediawiki.org/wiki/Performance_budgeting",
+		"resourceModule": "ext.mlm.styles",
+		"ignoreDependencies": true,
+		"maxSize": null
+	},
+	{
+		"@note": "opt-out, see https://www.mediawiki.org/wiki/Performance_budgeting",
+		"resourceModule": "ext.mlm",
+		"ignoreDependencies": true,
+		"maxSize": null
+	}
+]
