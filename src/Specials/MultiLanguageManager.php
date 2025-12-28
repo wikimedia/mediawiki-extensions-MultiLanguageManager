@@ -165,7 +165,7 @@ class MultiLanguageManager extends \SpecialPage {
 
 	protected function outputError( $sText, $sPrefix = '' ) {
 		$this->getOutput()->addHtml(
-			\Xml::tags( 'div', [ 'class' => 'error' ], $sPrefix . $sText )
+			Html::rawElement( 'div', [ 'class' => 'error' ], $sPrefix . $sText )
 		);
 	}
 
@@ -205,17 +205,17 @@ class MultiLanguageManager extends \SpecialPage {
 		}
 		$sLegend = Html::element(
 			'legend',
-			null,
+			[],
 			wfMessage( 'mlm-input-label-sourcetitle' )->text()
 		);
 		$sInput = Html::element( 'input', $aArgs );
 		$sSystemLang = Helper::getSystemLanguageCode();
-		$sLang = \Xml::tags( 'select', [
+		$sLang = Html::rawElement( 'select', [
 			'id' => 'mlm-sourcetitle-lang',
 			'disabled' => 'disabled',
-		], \Xml::option( $sSystemLang, $sSystemLang ) );
+		], Html::element( 'option', [ 'value' => $sSystemLang ], $sSystemLang ) );
 
-		$sHtml .= \Xml::tags( 'fieldset', null, $sLegend . $sInput . $sLang );
+		$sHtml .= Html::rawElement( 'fieldset', [], $sLegend . $sInput . $sLang );
 		$this->getOutput()->addHtml( $sHtml );
 	}
 
@@ -223,7 +223,7 @@ class MultiLanguageManager extends \SpecialPage {
 		$iTranslations = count( $this->oTranslation->getTranslations() ) + 1;
 		$sLegend = Html::element(
 			'legend',
-			null,
+			[],
 			wfMessage(
 				'mlm-input-label-translationtitles',
 				$iTranslations
@@ -241,10 +241,10 @@ class MultiLanguageManager extends \SpecialPage {
 				'value' => $oTitle->getFullText(),
 				'readonly' => 'readonly',
 			] );
-			$sLang = \Xml::tags( 'select', [
+			$sLang = Html::rawElement( 'select', [
 				'id' => "mlm-translation-lang-$oTranslation->id",
 				'disabled' => 'disabled',
-			], \Xml::option( $oTranslation->lang, $oTranslation->lang ) );
+			], Html::element( 'option', [ 'value' => $oTranslation->lang ], $oTranslation->lang ) );
 			$sRows .= "$sInput$sLang<br />";
 		}
 
@@ -262,13 +262,13 @@ class MultiLanguageManager extends \SpecialPage {
 			'value' => $sValue,
 			'name' => "mlm-newtranslation",
 		] );
-		$sLang = \Xml::tags( 'select', [
+		$sLang = Html::rawElement( 'select', [
 			'id' => 'mlm-newtranslation-lang',
 			'name' => 'mlm-newtranslation-lang',
 		], $this->getLanguageSelectOptions() );
 		$sRows .= $sInput . $sLang;
 
-		$sHtml .= \Xml::tags( 'fieldset', null, $sLegend . $sRows );
+		$sHtml .= Html::rawElement( 'fieldset', [], $sLegend . $sRows );
 		$this->getOutput()->addHtml( $sHtml );
 	}
 
@@ -276,7 +276,7 @@ class MultiLanguageManager extends \SpecialPage {
 		$aLangs = Helper::getAvailableLanguageCodes( $this->oTranslation );
 
 		foreach ( $aLangs as $sLang ) {
-			$sHtml .= \Xml::option( $sLang, $sLang );
+			$sHtml .= Html::element( 'option', [ 'value' => $sLang ], $sLang );
 		}
 		return $sHtml;
 	}
