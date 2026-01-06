@@ -4,8 +4,14 @@
 			"Cabal"
 		]
 	},
+	"mlm-error-title-nsnotallowed": "$1\"। ਉਲਥੇ ਲਈ ਇਹ ਨਾਂ-ਥਾਂ ਮੰਨਣਯੋਗ ਨਹੀਂ ਏ",
+	"mlm-error-title-isalreadytranslation": "ਵਰਕਾ \"$1\" ਪਹਿਲਾਂ ਹੀ ਇੱਕ ਉਲਥਾ ਏ",
+	"mlm-error-title-isnottranslation": "ਵਰਕਾ \"$1\" ਉਲਥਾ ਨਹੀਂ ਏ",
+	"mlm-input-label-sourcetitle": "ਸਰੋਤ ਵਰਕਾ",
+	"mlm-input-label-translationtitles": "ਉਲਥਾ {{plural:$1|ਵਰਕਾ|ਵਰਕੇ}}",
 	"mlm-input-label-add": "ਤਰਜਮਾ ਜੋੜੋ",
 	"mlm-input-label-delete": "ਸਾਰੇ ਤਰਜਮੇ ਮਿਟਾਓ",
 	"mlm-input-label-cancel": "ਰੱਦ ਕਰੋ",
-	"mlm-contentaction-label": "ਤਰਜਮੇ ਦਾ ਪ੍ਰਬੰਧ ਕਰੋ"
+	"mlm-contentaction-label": "ਤਰਜਮੇ ਦਾ ਪ੍ਰਬੰਧ ਕਰੋ",
+	"apihelp-mlm-tasks-summary": "ਉਲਥਾ ਕਾਰਜਾਂ ਦਾ ਪ੍ਰਬੰਧ ਕਰੋ"
 }
