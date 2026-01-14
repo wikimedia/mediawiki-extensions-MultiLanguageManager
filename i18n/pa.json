@@ -4,6 +4,9 @@
 			"Cabal"
 		]
 	},
+	"multilanguagemanager": "ਬਹੁ-ਭਾਸ਼ਾ ਪ੍ਰਬੰਧਕ",
+	"mlm-desc": "ਇੱਕ ਮੀਡੀਆਵਿਕੀ ਵਿੱਚ ਬਹੁ-ਭਾਸ਼ਾ ਦਾ ਪ੍ਰਬੰਧ ਕਰਨ ਲਈ ਮੀਡੀਆਵਿਕੀ ਵਿਸਥਾਰ।",
+	"mlm-error-title-invalid": "ਗ਼ਲਤ ਵਰਕਾ ਨਾਂ",
 	"mlm-error-title-nsnotallowed": "$1\"। ਉਲਥੇ ਲਈ ਇਹ ਨਾਂ-ਥਾਂ ਮੰਨਣਯੋਗ ਨਹੀਂ ਏ",
 	"mlm-error-title-isalreadytranslation": "ਵਰਕਾ \"$1\" ਪਹਿਲਾਂ ਹੀ ਇੱਕ ਉਲਥਾ ਏ",
 	"mlm-error-title-isnottranslation": "ਵਰਕਾ \"$1\" ਉਲਥਾ ਨਹੀਂ ਏ",
