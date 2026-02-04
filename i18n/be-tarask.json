@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Renessaince"
+			"Renessaince",
+			"Ucukor"
 		]
 	},
+	"mlm-input-label-cancel": "Скасаваць",
 	"apihelp-mlm-tasks-param-format": "Фармат выніку"
 }
