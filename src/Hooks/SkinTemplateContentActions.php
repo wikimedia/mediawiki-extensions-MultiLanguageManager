@@ -44,21 +44,14 @@ class SkinTemplateContentActions {
 		$oConfig = Helper::getConfig();
 		$sPermission = $oConfig->get( Config::PERMISSION );
 
-		if ( class_exists( 'MediaWiki\Permissions\PermissionManager' ) ) {
-			// MW 1.33+
-			if ( !MediaWikiServices::getInstance()->getPermissionManager()
-				->userCan(
-					$sPermission,
-					$this->oSkinTemplate->getUser(),
-					$oTitle
-				)
-			) {
-				return true;
-			}
-		} else {
-			if ( !$oTitle->userCan( $sPermission ) ) {
-				return true;
-			}
+		if ( !MediaWikiServices::getInstance()->getPermissionManager()
+			->userCan(
+				$sPermission,
+				$this->oSkinTemplate->getUser(),
+				$oTitle
+			)
+		) {
+			return true;
 		}
 
 		$oSpecial = Helper::getSpecialPage();
