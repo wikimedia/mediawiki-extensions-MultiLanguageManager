@@ -21,22 +21,7 @@ class MultiLanguageManager extends \SpecialPage {
 	/** @var string */
 	protected $subPage = '';
 
-	/**
-	 * @param string $name
-	 * @param string $restriction
-	 * @param bool $listed
-	 * @param bool $function
-	 * @param string $file
-	 * @param bool $includable
-	 */
-	public function __construct(
-		$name = '',
-		$restriction = '',
-		$listed = true,
-		$function = false,
-		$file = '',
-		$includable = false
-	) {
+	public function __construct() {
 		$oConfig = Helper::getConfig();
 		$sName = $oConfig->get( Config::SPECIAL_PAGE_NAME );
 		$sPermission = $oConfig->get( Config::PERMISSION );
