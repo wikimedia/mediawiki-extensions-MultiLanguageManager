@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Malaalaa"
+		]
+	},
+	"multilanguagemanager": "Cora doonaa ayssiyagaa",
+	"mlm-error-title-notexists": "\"$1\" sinttay baawa",
+	"mlm-error-title-istalkpage": "\"$1\". Zoretaa sinttati birshshettanawu danddayokkona",
+	"mlm-error-title-isalreadytranslation": "\"$1\" sinttay kaseera birshshettiis",
+	"mlm-error-title-isalreadysource": "\"$1\" sinttaassi kasekka xuufee de'ees",
+	"mlm-error-title-isnottranslation": " \"$1\" sinttay birshshetta gidenna",
+	"mlm-error-lang-invalid": "Likke gidenna doonaa",
+	"mlm-error-lang-notallowed": "\"$1\" doonaa birshshanawu eenotay imettibeenna",
+	"mlm-error-lang-alreadytraslated": "$1 doonaassi kaseera birshshettay imettiis",
+	"mlm-input-label-add": "Birshshettaa gujja",
+	"mlm-input-label-save": "Minjja",
+	"mlm-input-label-delete": "Ubba birshshettata qucca",
+	"mlm-input-label-cancel": "Agga",
+	"mlm-contentaction-label": "Birshshettata ayssa",
+	"right-language": "Cora doonaa ayssiya sinttan go'ettada birshshettata gujja, goydanne qucca",
+	"apihelp-mlm-tasks-summary": "Birshshettaa oosota ayssa",
+	"apihelp-mlm-tasks-param-task": "Polettanawu bessiya oosuwa",
+	"mlm-input-label-translationtitles-section": "Ha kaalliya doonaa giddon:"
+}
