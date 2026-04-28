@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
@@ -25,6 +26,9 @@
 	"mlm-input-label-cancel": "취소",
 	"mlm-contentaction-label": "번역 관리",
 	"right-language": "다중언어관리자 인터페이스를 사용하여 번역을 추가, 편집, 삭제합니다",
+	"apihelp-mlm-tasks-summary": "번역 작업 관리",
+	"apihelp-mlm-tasks-param-task": "실행되어야 할 작업",
+	"apihelp-mlm-tasks-param-taskData": "작업을 위한 임의의 데이터를 가진 JSON 문자열 코딩된 객체",
 	"apihelp-mlm-tasks-param-format": "결과 형식",
 	"mlm-input-label-sourcetitle-section": "다음의 번역 정의:",
 	"mlm-input-label-translationtitles-section": "다음의 언어로:"
