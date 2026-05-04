@@ -22,14 +22,14 @@ class MultiLanguageManager extends \SpecialPage {
 	protected $subPage = '';
 
 	public function __construct() {
-		$oConfig = Helper::getConfig();
-		$sName = $oConfig->get( Config::SPECIAL_PAGE_NAME );
-		$sPermission = $oConfig->get( Config::PERMISSION );
+		$sName = Helper::getConfig()->get( Config::SPECIAL_PAGE_NAME );
 
-		parent::__construct(
-			$sName,
-			$sPermission
-		);
+		parent::__construct( $sName );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return Helper::getConfig()->get( Config::PERMISSION );
 	}
 
 	/**
