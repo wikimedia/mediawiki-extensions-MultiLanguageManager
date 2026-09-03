@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"multilanguagemanager": "Maamul luuqadaha badan",
+	"mlm-desc": "Kordhin MediaWiki ah oo lagu maamulo luuqado badan hal MediaWiki gudaheeda.",
+	"action-language": "Ku dar, wax ka beddel oo tirtir tarjumaadaha adigoo adeegsanaya is dhexgalka Maamul luuqadaha badan",
+	"mlm-error-title-invalid": "Magaca bogga ma saxna",
+	"mlm-error-title-notexists": "Bogga \"$1\" ma jiro",
+	"mlm-error-title-istalkpage": "\"$1\". Bogagga wada-hadalku lama tarjumi karo",
+	"mlm-error-title-nsnotallowed": "\"$1\". Meel magaca bogga kuma habboona tarjumaadda",
+	"mlm-error-title-isalreadytranslation": "Bogga \"$1\" hore ayuu u yahay turjumaad",
+	"mlm-error-title-isalreadysource": "Bogga \"$1\" hore ayuu u yahay isha",
+	"mlm-error-title-isnottranslation": "Bogga \"$1\" ma aha turjumaad",
+	"mlm-error-lang-invalid": "Luuqad aan sax ahayn",
+	"mlm-error-lang-notallowed": "Luuqadda \"$1\" looma oggola turjumaadda",
+	"mlm-error-lang-alreadytraslated": "Horeba waxaa u jiray turjumaad luuqadda \"$1\" ah",
+	"mlm-input-label-sourcetitle": "Isha bogga",
+	"mlm-input-label-translationtitles": "{{PLURAL:$1|Bogga turjumaadda|Bogagga turjumaadda}}",
+	"mlm-input-label-add": "Ku dar turjumaad",
+	"mlm-input-label-save": "Kaydi",
+	"mlm-input-label-delete": "Tirtir dhammaan turjumaadaha",
+	"mlm-input-label-cancel": "Jooji",
+	"mlm-contentaction-label": "Maamul turjumaadaha",
+	"right-language": "Ku dar, wax ka beddel oo tirtir tarjumaadaha adigoo adeegsanaya is dhexgalka MultiLanguageManager",
+	"apihelp-mlm-tasks-summary": "Maamul hawlaha tarjumaadda",
+	"apihelp-mlm-tasks-param-task": "Hawsha ay tahay in la fuliyo",
+	"apihelp-mlm-tasks-param-taskData": "Shay JSON ah oo xarig ahaan loo kood gareeyay, oo wata xog aan xadidnayn oo hawsha ah",
+	"apihelp-mlm-tasks-param-format": "Qaabka natiijada",
+	"mlm-input-label-sourcetitle-section": "Wuxuu qeexayaa turjumaadaha:",
+	"mlm-input-label-translationtitles-section": "Luuqadda soo socota:"
+}
